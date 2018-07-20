@@ -72,7 +72,6 @@ Win+R打开CMD之后，输入git
 
 ![](https://images2017.cnblogs.com/blog/806053/201709/806053-20170909094346882-2033109501.png)
 
-# Git配置 #
 安装成功后，打开git bash。
 
 1、设置使用GIT 时的姓名和邮箱地址。名字请用英文输入。
@@ -129,6 +128,82 @@ git的配置文件gitconfig一共有3个，
 查看当前生效的配置，命令：git config -l，
 
 这个时候会显示最终三个配置文件计算后的配置信息。
+
+
+
+# 上传文件/项目到Github #
+
+1.注册并登陆Github。
+
+2.登陆进去之后的页面，点击这个“库”，这表示你在Github上上的代码仓库，我这里已经创建过一个了，所以数量是1
+
+![](https://i.imgur.com/JBdjWdm.png)
+
+3.在仓库选项卡中，点击“新建”按钮添加一个项目。
+
+![](https://i.imgur.com/fMfI9X8.png)
+
+4.为了不废话我就翻译成了中文页面，这里填写好项目的信息。
+
+![](https://i.imgur.com/MY2rgit.png)
+
+5.创建好项目之后，在项目界面点击右边的“克隆或下载”，复制这个URL，待会会用到。
+
+![](https://i.imgur.com/N4IKc3v.png)
+
+6.在本地新建一个项目文件夹，在Git bash中cd进这个文件夹，TortoiseGit的操作方式是：
+
+![](https://i.imgur.com/ME3Z5ZS.png)
+
+![](https://i.imgur.com/Wc1pudq.png)
+
+7.命令git clone https://github.com/makeiot/test.git（这里把URL换成你刚刚复制的自己项目的）
+
+![](https://i.imgur.com/X3rVYVj.png)
+
+8.现在在你的这个目录下就多了一个以你在Github上上上的项目名字命名的文件夹了
+
+![](https://i.imgur.com/FVoLlBx.png)
+
+9.把你要上传的整个项目放入这个文件夹，如：
+
+![](https://i.imgur.com/NlNQLGd.png)
+
+10.在bash中进入这个目录cd test（你项目所在的文件目录）
+
+然后再依次执行命令：
+
+git add .  （注意：add后面是空格加.）
+
+git commit -m“描述”  （注意：“ 描述 ”里面换成你需要，如“测试版本”）
+
+git push -u origin master（注意：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
+
+![](https://i.imgur.com/c4sFBxt.png)
+
+11 通过以上步骤，一个项目就成功上传到Github上上啦，登录查看一下：
+
+![](https://i.imgur.com/M8erfZf.png)
+
+
+
+# Git连接GitHub时遇到问题处理 #
+
+git 连接github 遇到fatal：HttpRequestException encountered问题是因为 Github 禁用了TLS v1.0 and v1.1，必须更新Windows的git凭证管理器。通过以下网址下载 GCMW-1.17.0-preview.3.exe
+
+https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/
+
+
+![](https://i.imgur.com/NnEkQWL.jpg)
+
+
+
+下载之后安装重启git窗口 说明你的git和github已经可以同步了。
+
+![](https://i.imgur.com/teBzxVu.jpg)
+
+
+
 
 
 
