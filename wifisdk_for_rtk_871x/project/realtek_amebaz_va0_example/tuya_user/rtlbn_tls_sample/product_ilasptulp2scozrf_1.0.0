@@ -1,0 +1,19 @@
+/*
+rtlbn_tls_sample
+1.0.0
+rtlbn_boya_2m_flash
+*/
+
+#ifndef __COMPILE_USR_CFG_H
+#define __COMPILE_USR_CFG_H
+/*************************PID************************************/
+#define PRODECT_KEY "ilasptulp2scozrf"
+#define _IS_OEM                             0                       // 0  1
+
+/*************************LOW POWER************************************/
+#define USER_DEFINE_LOWER_POWER             0                       // 0(default)  1 
+
+/*************************DEBUG************************************/
+#define USER_DEBUG_APP                      1                       // 0  1 
+
+#endif

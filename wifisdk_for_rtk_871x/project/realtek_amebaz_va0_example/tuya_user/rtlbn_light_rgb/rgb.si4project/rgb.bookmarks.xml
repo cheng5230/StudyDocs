@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceInsightBookmarks
+	AppVer="4.00.0096"
+	AppVerMinReader="4.00.0009"
+	>
+	<Bookmarks>
+		<Mark
+			Name="0139583483330072119102"
+			Comment="RGB"
+			File="src\tuya_light_lib.c"
+			Line="4308"
+			Column="8"
+			Symbol="light_light_dp_proc"
+			SymbolInstance="0"
+			SymbolType="Function"
+			LineOffset="218"
+			/>
+	</Bookmarks>
+</SourceInsightBookmarks>

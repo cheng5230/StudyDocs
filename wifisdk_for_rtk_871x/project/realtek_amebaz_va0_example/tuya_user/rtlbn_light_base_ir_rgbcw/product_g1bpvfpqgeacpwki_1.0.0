@@ -1,0 +1,163 @@
+/*
+rtlbn_light_base
+1.0.0
+rtlbn_rgbcw_fake_cus_g1bpvfpqgeacpwki
+*/
+
+#ifndef __COMPILE_USR_CFG_H
+#define __COMPILE_USR_CFG_H
+/*************************PID************************************/
+#define PRODECT_KEY "g1bpvfpqgeacpwki"
+#define _IS_OEM                             0                       // 0  1
+
+/*************************LOW POWER************************************/
+#define USER_DEFINE_LOWER_POWER             0                       // 0(default)  1 
+
+/*************************DEBUG************************************/
+#define USER_DEBUG_APP                      0                       // 0  1 
+
+/*************************LIGHT PARM************************************/
+//USER_LIGTH_MODE_C USER_LIGTH_MODE_CW USER_LIGTH_MODE_RGB USER_LIGTH_MODE_RGBC USER_LIGTH_MODE_RGBW USER_LIGTH_MODE_RGBCW 
+//USER_LIGTH_MODE_RGBC_FAKE USER_LIGTH_MODE_RGBW_FAKE USER_LIGTH_MODE_RGBCW_FAKEC USER_LIGTH_MODE_RGBCW_FAKEW
+//USER_LIGTH_MODE_RGBCW_FAKEFC USER_LIGTH_MODE_RGBCW_FAKEFW
+#define USER_DEFINE_LIGHT_TYPE  USER_LIGTH_MODE_RGBCW_FAKE_CUS
+															  
+															  
+
+#define USER_DEFINE_WIFI_POWER_MODE         WF_CFG_SPCL             //WF_CFG_SPCL  WF_CFG_OLD
+#define USER_DEFINE_POWER_ON_OFF_MODE       POWER_ONOFF_MODE_DIRECT //POWER_ONOFF_MODE_SHADE POWER_ONOFF_MODE_DIRECT
+#define USER_DEFINE_LIGHT_DRIVER_MODE       DRV_MODE_PWM_IO         //DRV_MODE_PWM_IO DRV_MODE_IIC_SMx726 DRV_MODE_IIC_SM2135 DRV_MODE_PWM_9231
+#define USER_DEFINE_LIGHT_CW_TYPE           CW_TYPE                 //CW_TYPE CCT_TYPE
+#define USER_DEFINE_RESET_COUNT             3                       //3  5 ...
+#define USER_DEFINE_NETCONFIG_COLOR         CONFIG_COLOR_C          //CONFIG_COLOR_R CONFIG_COLOR_G CONFIG_COLOR_B CONFIG_COLOR_C CONFIG_COLOR_W
+#define USER_DEFINE_DEFAULT_LIGHT_COLOR     CONFIG_COLOR_C          //CONFIG_COLOR_R CONFIG_COLOR_G CONFIG_COLOR_B CONFIG_COLOR_C CONFIG_COLOR_W
+#define USER_DEFINE_KEY_RESET_TIMES         5                       //3 5
+
+//KEY_FUN_RESET_WIFI KEY_FUN_POWER_CTRL KEY_FUN_COLD_WHITE KEY_FUN_WARM_WHITE
+#define USER_DEFINE_LONG_KEY_FUNCTION       KEY_FUN_RESET_WIFI      
+
+//KEY_FUN_RESET_WIFI KEY_FUN_POWER_CTRL KEY_FUN_RAINBOW_CHANGE KEY_FUN_SCENE_CHANGE KEY_FUN_COLD_WHITE KEY_FUN_WARM_WHITE KEY_FUN_POWER_RAINBOW_SCENE
+#define USER_DEFINE_NORMAL_KEY_FUNCTION     KEY_FUN_POWER_RAINBOW_SCENE    
+
+/*************************LIGHT STRIP PARM************************************/
+#define USER_DEFINE_LIGHT_STRIP_LED_CONFIG  0                       //0 1 
+#define USER_DEFINE_RGBCW_ORDER_DPID        101                     //only valid when USER_DEFINE_LIGHT_STRIP_LED_CONFIG == 1
+#define USER_DEFINE_STRIP_RGB_ORDER         "GRB"                   //"GRB" or other oder, only three letter, and must upper case.
+#define USER_DEFINE_STRIP_RGBC_ORDER        "GRBC"                  //"GRBC" or other oder, only four letter, and must upper case.                   
+#define USER_DEFINE_STRIP_RGBCW_ORDER       "GRBCW"                 //"GRBCW" or other oder, only five letter, and must upper case.
+
+
+//////////////////////////////////////////////////
+//comment:
+//path
+//USER_SW_VER
+//USER_PRODUCT_KEY
+//APP_BIN_NAME
+//////////////////////////////////////////////////
+//other macro define.
+#define USER_DEFINE_LIGHT_RGBCW_FAKE_DATA  1
+static unsigned char __user_define_fake_data[101][4] = { \
+	{255, 123, 0, 32},
+	{255, 123, 0, 33},
+	{255, 124, 0, 34},
+	{255, 125, 0, 35},
+	{255, 125, 0, 37},
+	{255, 126, 0, 39},
+	{255, 127, 0, 41},
+	{255, 128, 0, 43},
+	{255, 128, 0, 45},
+	{254, 129, 0, 48},
+	{254, 129, 0, 50},
+	{253, 130, 0, 53},
+	{250, 129, 0, 54},
+	{245, 128, 0, 56},
+	{240, 126, 0, 59},
+	{238, 125, 0, 64},
+	{233, 124, 0, 66},
+	{228, 123, 0, 68},
+	{223, 122, 0, 70},
+	{222, 120, 0, 73},
+	{221, 119, 0, 76},
+	{218, 117, 0, 79},
+	{213, 115, 0, 82},
+	{206, 113, 0, 85},
+	{202, 111, 0, 90},
+	{196, 109, 0, 93},
+	{192, 107, 0, 97},
+	{187, 105, 0, 101},
+	{182, 102, 0, 106},
+	{177, 99, 0, 110},
+	{171, 97, 0, 114},
+	{162, 94, 0, 119},
+	{159, 90, 0, 124},
+	{152, 87, 0, 129},
+	{146, 84, 0, 134},
+	{138, 80, 0, 140},
+	{131, 76, 0, 145},
+	{123, 72, 0, 152},
+	{116, 68, 0, 158},
+	{106, 63, 0, 165},
+	{99, 59, 0, 172},
+	{89, 55, 0, 180},
+	{81, 48, 0, 187},
+	{71, 43, 0, 195},
+	{61, 37, 0, 203},
+	{50, 31, 0, 212},
+	{39, 24, 0, 222},
+	{14, 9, 0, 243},
+	{7, 6, 1, 249},
+	{0, 4, 3, 252},
+	{0, 8, 6, 249},
+	{0, 11, 9, 246},
+	{0, 15, 12, 243},
+	{0, 18, 15, 240},
+	{0, 21, 19, 238},
+	{0, 25, 21, 235},
+	{0, 31, 27, 230},
+	{0, 33, 30, 228},
+	{0, 37, 33, 225},
+	{0, 39, 35, 222},
+	{0, 42, 38, 220},
+	{0, 48, 44, 215},
+	{0, 50, 46, 212},
+	{0, 53, 49, 211},
+	{0, 55, 52, 208},
+	{0, 58, 55, 206},
+	{0, 62, 60, 202},
+	{0, 65, 63, 200},
+	{0, 67, 65, 198},
+	{0, 69, 68, 193},
+	{0, 71, 70, 194},
+	{0, 75, 75, 191},
+	{0, 79, 80, 187},
+	{0, 80, 82, 185},
+	{0, 82, 84, 184},
+	{0, 86, 89, 180},
+	{0, 88, 92, 179},
+	{0, 89, 94, 177},
+	{0, 92, 98, 174},
+	{0, 95, 103, 171},
+	{0, 96, 104, 169},
+	{0, 98, 107, 168},
+	{0, 101, 111, 165},
+	{0, 103, 115, 162},
+	{0, 104, 118, 161},
+	{0, 106, 120, 160},
+	{0, 108, 124, 157},
+	{0, 110, 128, 155},
+	{0, 112, 131, 152},
+	{0, 114, 135, 150},
+	{0, 116, 139, 148},
+	{0, 118, 143, 146},
+	{0, 119, 145, 145},
+	{0, 120, 146, 143},
+	{0, 121, 150, 141},
+	{0, 123, 153, 140},
+	{0, 124, 157, 138},
+	{0, 126, 160, 136},
+	{0, 127, 164, 134},
+	{0, 128, 167, 132},
+	{0, 129, 168, 133},
+};
+
+#endif

@@ -1,0 +1,87 @@
+/*
+rtlbn_light_modulator
+1.0.0
+rtlbn_light_modulator_pacmir23x3mbj8ha
+*/
+
+#ifndef __COMPILE_USR_CFG_H
+#define __COMPILE_USR_CFG_H
+/*************************PID************************************/
+#define PRODECT_KEY "pacmir23x3mbj8ha"
+#define _IS_OEM                             0                       // 0  1
+
+/*************************LOW POWER************************************/
+#define USER_DEFINE_LOWER_POWER             0                       // 0(default)  1 
+
+/*************************DEBUG************************************/
+#define USER_DEBUG_APP                      0                       // 0  1 
+
+/*****************************************通断器设置**********************************************/
+#define USER_POWER_UP_STA                    0                     //0,1
+
+/************************继电器0配置******************************/
+//继电器控制口
+#define RELAY_CONTROL_USR_TYPE          IO_DRIVE_LEVEL_NOT_EXIST                                                                                                      
+#define RELAY_CONTROL_USR_GPIO          TY_GPIOA_12
+
+//继电器按键
+#define RELAY_BUTTON_USR_TYPE           IO_DRIVE_LEVEL_NOT_EXIST	 //    IO_DRIVE_LEVEL_HIGH 高电平有效;IO_DRIVE_LEVEL_LOW 低电平有效;IO_DRIVE_LEVEL_NOT_EXIST 该IO不存在   
+#define RELAY_BUTTON_TRIG_TYPE          LEVEL_TYPE     				 //	LEVEL_TYPE 电平触发;EDGE_TYPE 边沿触发	
+#define RELAY_BUTTON_USR_GPIO           TY_GPIOA_5 
+
+//继电器灯
+#define RELAY_LED_USR_TYPE              IO_DRIVE_LEVEL_NOT_EXIST
+#define RELAY_LED_USR_GPIO              TY_GPIOA_15
+#define RELAY_DEAULT_STATE              INIT_MEM				     //INIT_MEM 上电记忆上次状态;INIT_TRUE 上电默认开;INIT_FALSE 上电默认关 
+
+//倒计时DPID   
+#define RELAY_COUNT_DOWN_DPID                 11
+#define RELAY_BOOL_DPID                       1
+
+/************************继电器1配置******************************/
+//继电器控制口
+#define RELAY1_CONTROL_USR_TYPE          IO_DRIVE_LEVEL_NOT_EXIST                                                                                                      
+#define RELAY1_CONTROL_USR_GPIO          TY_GPIOA_6
+
+//继电器按键
+#define RELAY1_BUTTON_USR_TYPE           IO_DRIVE_LEVEL_NOT_EXIST	 //    IO_DRIVE_LEVEL_HIGH 高电平有效;IO_DRIVE_LEVEL_LOW 低电平有效;IO_DRIVE_LEVEL_NOT_EXIST 该IO不存在   
+#define RELAY1_BUTTON_TRIG_TYPE          LEVEL_TYPE     				 //	LEVEL_TYPE 电平触发;EDGE_TYPE 边沿触发	
+#define RELAY1_BUTTON_USR_GPIO           TY_GPIOA_7 
+
+//继电器灯
+#define RELAY1_LED_USR_TYPE              IO_DRIVE_LEVEL_NOT_EXIST
+#define RELAY1_LED_USR_GPIO              TY_GPIOA_15
+#define RELAY1_DEAULT_STATE              INIT_TRUE				     //INIT_MEM 上电记忆上次状态;INIT_TRUE 上电默认开;INIT_FALSE 上电默认关 
+
+//倒计时DPID   
+#define RELAY1_COUNT_DOWN_DPID                 101
+#define RELAY1_BOOL_DPID                       7
+
+
+/************************WIFI状态配置***************************/
+//WIFI 模式
+#define WIFI_MODE                       LOW_POWER                    //	FLASH_ON  上电快闪模式 ；LOW_POWER  //低功耗模式    
+
+//WIFI 状态LED
+#define WIFI_LED_USR_TYPE               IO_DRIVE_LEVEL_NOT_EXIST
+#define WIFI_LED_USR_GPIO               TY_GPIOA_15
+
+//WIFI 状态LED1
+#define WIFI_LED1_USR_TYPE               IO_DRIVE_LEVEL_NOT_EXIST
+#define WIFI_LED1_USR_GPIO               TY_GPIOA_8
+
+//WIFI 状态和继电器状态复用配置
+#define WIFI_CONNECTED_LED_STATE        WFL_DIR_CHANNEL1					  // WFL_OFF wifi灯常灭；WFL_ON wifi灯常开；WFL_DIR_CHANNEL1 wifi灯指示通道1 ；WFL_DIR_CHANNEL2 wifi灯指示通道2      
+#define WIFI_NOT_CONNECTED_LED_STATE    WFL_DIR_CHANNEL1
+
+//插座总状态配置
+#define POWER_LED_USR_TYPE              IO_DRIVE_LEVEL_NOT_EXIST
+#define POWER_LED_USR_GPIO              TY_GPIOA_2
+#define POWER_BUTTON_USR_TYPE           IO_DRIVE_LEVEL_LOW
+#define POWER_BUTTON_TRIG_TYPE          LEVEL_TYPE   			     //LEVEL_TYPE 电平触发；EDGE_TYPE 边沿触发
+#define POWER_BUTTON_USR_GPIO           TY_GPIOA_5
+#define POWER_BUTTON_PRESS_HOLD_TIME    3 //长按时间(s)
+
+#endif
+
+

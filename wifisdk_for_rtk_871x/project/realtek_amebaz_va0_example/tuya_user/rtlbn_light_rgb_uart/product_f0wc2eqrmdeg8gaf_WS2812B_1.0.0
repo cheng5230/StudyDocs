@@ -1,0 +1,66 @@
+/*
+rtlbn_light_rgb_uart
+1.0.0
+rtlbn_rgb_f0wc2eqrmdeg8gaf_WS2812B
+*/
+
+#ifndef __COMPILE_USR_CFG_H
+#define __COMPILE_USR_CFG_H
+
+#define LIGHT_SK2812_config     			0
+#define LIGHT_DEFALT_RGB_or_GRB				0
+#define LIGHT_WS2812_RGBC_BALL        	    0
+
+/*************************PID************************************/
+#define PRODECT_KEY "f0wc2eqrmdeg8gaf"
+#define _IS_OEM                             0                       // 0  1
+
+/*************************LOW POWER************************************/
+#define USER_DEFINE_LOWER_POWER             0                       // 0(default)  1 
+
+/*************************DEBUG************************************/
+#define USER_DEBUG_APP                      0                       // 0  1 
+
+/*************************LIGHT PARM************************************/
+//USER_LIGTH_MODE_C USER_LIGTH_MODE_CW USER_LIGTH_MODE_RGB USER_LIGTH_MODE_RGBC USER_LIGTH_MODE_RGBW USER_LIGTH_MODE_RGBCW 
+//USER_LIGTH_MODE_RGBC_FAKE USER_LIGTH_MODE_RGBW_FAKE USER_LIGTH_MODE_RGBCW_FAKEC USER_LIGTH_MODE_RGBCW_FAKEW
+//USER_LIGTH_MODE_RGBCW_FAKEFC USER_LIGTH_MODE_RGBCW_FAKEFW
+#define USER_DEFINE_LIGHT_TYPE  USER_LIGTH_MODE_RGB
+															  
+															  
+
+#define USER_DEFINE_WIFI_POWER_MODE         WF_CFG_SPCL             //WF_CFG_SPCL  WF_CFG_OLD
+#define USER_DEFINE_POWER_ON_OFF_MODE       POWER_ONOFF_MODE_DIRECT //POWER_ONOFF_MODE_SHADE POWER_ONOFF_MODE_DIRECT
+#define USER_DEFINE_LIGHT_DRIVER_MODE       DRV_MODE_PWM_IO         //DRV_MODE_PWM_IO DRV_MODE_IIC_SMx726 DRV_MODE_IIC_SM2135 DRV_MODE_PWM_9231
+#define USER_DEFINE_LIGHT_CW_TYPE           CW_TYPE                 //CW_TYPE CCT_TYPE
+#define USER_DEFINE_RESET_COUNT             3                       //3  5 ...
+#define USER_DEFINE_NETCONFIG_COLOR         CONFIG_COLOR_C          //CONFIG_COLOR_R CONFIG_COLOR_G CONFIG_COLOR_B CONFIG_COLOR_C CONFIG_COLOR_W
+#define USER_DEFINE_DEFAULT_LIGHT_COLOR     CONFIG_COLOR_C          //CONFIG_COLOR_R CONFIG_COLOR_G CONFIG_COLOR_B CONFIG_COLOR_C CONFIG_COLOR_W
+#define USER_DEFINE_KEY_RESET_TIMES         3                       //3 5
+
+//KEY_FUN_RESET_WIFI KEY_FUN_POWER_CTRL KEY_FUN_COLD_WHITE KEY_FUN_WARM_WHITE
+#define USER_DEFINE_LONG_KEY_FUNCTION       KEY_FUN_RESET_WIFI      
+
+//KEY_FUN_RESET_WIFI KEY_FUN_POWER_CTRL KEY_FUN_RAINBOW_CHANGE KEY_FUN_SCENE_CHANGE KEY_FUN_COLD_WHITE KEY_FUN_WARM_WHITE KEY_FUN_POWER_RAINBOW_SCENE
+#define USER_DEFINE_NORMAL_KEY_FUNCTION     KEY_FUN_POWER_RAINBOW_SCENE    
+
+/*************************LIGHT STRIP PARM************************************/
+#define USER_DEFINE_LIGHT_STRIP_LED_CONFIG   0                       //0 1 
+#define USER_DEFINE_RGBCW_ORDER_DPID         101                     //only valid when USER_DEFINE_LIGHT_STRIP_LED_CONFIG == 1
+#define USER_DEFINE_STRIP_RGB_ORDER         "GRB"                   //"GRB" or other oder, only three letter, and must upper case.
+#define USER_DEFINE_STRIP_RGBC_ORDER        "GRBC"                  //"GRBC" or other oder, only four letter, and must upper case.                   
+#define USER_DEFINE_STRIP_RGBCW_ORDER       "GRBCW"                 //"GRBCW" or other oder, only five letter, and must upper case.
+
+
+//////////////////////////////////////////////////
+//comment:
+//path
+//USER_SW_VER
+//USER_PRODUCT_KEY
+//APP_BIN_NAME
+//////////////////////////////////////////////////
+//other macro define.
+#define USER_DEFINE_LIGHT_RGBCW_FAKE_DATA  0
+//static unsigned char __user_define_fake_data[101][4] = {};
+
+#endif
