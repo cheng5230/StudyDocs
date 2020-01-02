@@ -116,6 +116,7 @@ typedef enum
   KEY_MODE_SMOOTH = 0x30,
 
 #else // IR REMOTE PROVIDE BY AILY&ALLEN
+  /*********** 鑫海胜 厂家红外解码 ********************/
   KEY_BRIGHTNESS_UP = 0x00,
   KEY_BRIGHTNESS_DOWN = 0x80,
   KEY_POWER_OFF = 0x40,
@@ -170,6 +171,7 @@ typedef struct
   SFT_TIMER IrDecodeTimer;
   SEM_HANDLE ir_cmddeal_sem;
   THRD_HANDLE ir_thread;
+  MUTEX_HANDLE ir_mutex;
 } IRDEAL;
 
 //VOID gra_change_timer_cb(void);

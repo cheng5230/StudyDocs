@@ -16,7 +16,7 @@
 
 #define TUYA_LIGH_LIB_VERSION   "1.0.2"
 
-#define FASE_SW_CNT_KEY   "fsw_cnt_key"
+#define FASE_SW_CNT_KEY    "fsw_cnt_key"
 #define LIGHT_DATA_KEY     "light_data_key"
 
 #define LIGHT_PRECISION    500    //调光精度
@@ -133,6 +133,7 @@ BOOL_T data_upload_flag = FALSE;
 BOOL_T data_testFlag;
 BOOL_T Wifi_ConFlag;
 DP_DATA_S dp_data;
+uint8_t tickscnt;
 
 #ifndef NULL
 #define NULL ((void*)(0))
@@ -1079,7 +1080,6 @@ void light_VoiceData(uint8_t delta,uint8_t speed)
    uint8_t lum,temp,index;
    uint32_t colors;
    static uint8_t maxtemp;
-   static uint8_t tickscnt;
 
    /************* 亮度控制 ****************/
    if(delta<20)
@@ -1094,21 +1094,32 @@ void light_VoiceData(uint8_t delta,uint8_t speed)
    /************* 节拍处理 ****************/
    if(g_dpmode)
    {
-     if(mcu_VoiceTicks>maxtemp)
-     {
-        maxtemp = mcu_VoiceTicks;
-     }
-     else
-     {
-        maxtemp = mcu_VoiceTicks;
-        if(tickscnt++>2)
-        {
-           tickscnt = 0;
-          __voice_cnt++;
-          if(__voice_cnt>=VOICENUMS)
-            __voice_cnt = 0;
-        }
-     }
+     // 情景模式
+     #if USING_MUSICMODE
+       if(mcu_VoiceTicks>maxtemp)
+       {
+          maxtemp = mcu_VoiceTicks;
+       }
+       else
+       {
+          maxtemp = mcu_VoiceTicks;
+          if(tickscnt++>2)
+          {
+             tickscnt = 0;
+            __voice_cnt++;
+            if(__voice_cnt>=VOICENUMS)
+              __voice_cnt = 0;
+          }
+       }
+     #else
+       if(tickscnt>1)
+       {
+          tickscnt = 0;
+         __voice_cnt++;
+         if(__voice_cnt>=VOICENUMS)
+           __voice_cnt = 0;
+       }
+     #endif
      __c= 0;
      __w = 0;
   }
@@ -1673,6 +1684,7 @@ void light_scene_data_getPara(unsigned char *buf, unsigned char type, unsigned c
     {
         *times = (105 -  __str2byte (__asc2hex (buf[0]), __asc2hex (buf[1])));
         *speed = 105 -  __str2byte (__asc2hex (buf[2]), __asc2hex (buf[3])); 
+        
         light_cw_value_get(buf + 18, get_light_fin());
         light_rgb_value_get(buf + 6, get_light_fin());
     }
@@ -1906,7 +1918,7 @@ static void __light_scene_Streamer(unsigned char scene_num)
   {
       if(index>255)
       {
-        color = colorwheels((((index-255) * 256 / DISPLAY_BUF_MAX_PIXEL) + counter_mode_step) & 0xFF);
+         color = colorwheels((((index-255) * 256 / DISPLAY_BUF_MAX_PIXEL) + counter_mode_step) & 0xFF);
       }
       else
       {
@@ -1943,6 +1955,7 @@ static void __light_scene_flame(unsigned char scene_num)
   {
     update_display_one_pixel(get_light_fin()->red, get_light_fin()->green, get_light_fin()->blue, get_light_fin()->white, get_light_fin()->warm, __multi_fun_value+led_group_num*GROUP_PIXEL_NUM);   
   }
+  
   switch(__multi_fun_value)
   {
     case 0:
@@ -2321,8 +2334,11 @@ static void __light_scene_WS2812Fx(uint8_t type, uint8_t scene_num)
     /***** 手动模式标志 *******/
     if(light_IrCrtl.ManulFlag==0)
     {
-      light_IrCrtl.Speedtimes = 105-times;
-      light_IrCrtl.ManulTimes = light_IrCrtl.Speedtimes;
+	  if(light_IrCrtl.IR_Mode==0)
+	  {
+	  	light_IrCrtl.Speedtimes = 105-times;
+      	light_IrCrtl.ManulTimes = light_IrCrtl.Speedtimes;
+	  }
     }
     light_IrCrtl.IR_Nums = scene_num;
     ws2812_timer_handler(type,times,scene_num,dp_data.mode);
@@ -2543,6 +2559,22 @@ static void __light_scene_cb(void)
     else if(type==SCENE_TYPE_COLORFULL)
     {
        light_IrCrtl.ModeTotals = COLORFUL_MODES;
+    }
+	else if(type==SCENE_TYPE_MARQUEE)
+    {
+       light_IrCrtl.ModeTotals = MYPAOMA_MODES;
+    }
+	else if(type==SCENE_TYPE_BLINKING)
+    {
+       light_IrCrtl.ModeTotals = MYFLASH_MODES;
+    }
+	else if(type==SCENE_TYPE_SNOWFLAKE)
+    {
+       light_IrCrtl.ModeTotals = MYSCAN_MODES;
+    }
+	else if(type==SCENE_TYPE_STREAMER_COLOR)
+    {
+       light_IrCrtl.ModeTotals = MYTRIP_MODES;
     }
     else
     {
@@ -4097,6 +4129,16 @@ BOOL_T light_light_dp_proc (TY_OBJ_DP_S* root)
   WORD_T len, rawlen;
   UCHAR_T mode;
   BOOL_T flag = FALSE;
+  /**** 手动切换场景模式 当前遥控控制命令****/
+  if((light_IrCrtl.IR_Mode)||(light_IrCrtl.ManulFlag))
+  {
+	  light_IrCrtl.IR_Mode = 0;
+	  light_IrCrtl.ManulFlag = 0;
+	  light_IrCrtl.IR_Flag = 0;
+	  light_IrCrtl.IR_Cnts = 0;
+	  light_IrCrtl.IR_Runtimes = 0;
+  }
+  /***************************/
   dpid = root->dpid;
   PR_DEBUG ("light_light_dp_proc dpid=%d", dpid);
 
@@ -4134,7 +4176,6 @@ BOOL_T light_light_dp_proc (TY_OBJ_DP_S* root)
           light_bright_start();
         }
       }
-      
       break;
 
     case DPID_BRIGHT://亮度
@@ -5364,7 +5405,7 @@ OPERATE_RET tuya_light_init(VOID)
   if ( (FALSE == dp_data.power) && (tuya_light_dev_poweron() == TRUE))
   {
     //上电强制开灯
-    __light_power_ctl (TRUE);
+    __light_power_ctl(TRUE);
   }
   
   op_ret = light_thread_init();

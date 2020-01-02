@@ -1,0 +1,166 @@
+********************-----ESP MODULE TEST LOG-----********************
+TEST TOOL VERSION:V0.0.1
+CHIP TYPE:ESP8266
+FACTORY:fulian_link-6f1f0235
+[debug   ]:CHIP SYNC OK
+[debug   ]:flash detected
+[debug   ]:total efuse print:  dc4f22ac00b0000200371913370000
+[debug   ]:target bin is .\bin\ESP8266&ESP8089_MODULE_TEST_BIN_26m_V121_20180921.bin
+[debug   ]:Start UartDownload...,.\bin\ESP8266&ESP8089_MODULE_TEST_BIN_26m_V121_20180921.bin
+[para_in ]:vdd33:[[0.0, 0.0, -40.0], [4000.0, 180.0, 0.0]]
+
+[para_in ]:TXP_RES:[[80.0, 80.0], [98.0, 98.0]]
+
+[para_in ]:TXIQ:[[-12.0, -25.0], [12.0, 25.0]]
+
+[para_in ]:RXIQ:[[-13.0, -27.0], [13.0, 27.0]]
+
+[para_in ]:RXDC:[[128.0], [384.0]]
+
+[para_in ]:TX_POWER_BACKOFF:[[0.0, 0.0, 0.0, 0.0], [8.0, 8.0, 8.0, 8.0]]
+
+[para_in ]:BT_TXDC:[[221.0, 231.0, 241.0, 251.0], [220.0, 230.0, 240.0, 250.0]]
+
+[para_in ]:dut_rx_num:[[48.0], [98.0]]
+
+[para_in ]:TOUT:[[-50.0], [50.0]]
+
+[para_in ]:TXDC:[[3.0], [124.0]]
+
+[para_in ]:FREQ_OFFSET:[[-15.0, -15.0, -15.0, -15.0], [15.0, 15.0, 15.0, 15.0]]
+
+[para_in ]:RX_PATH_GAIN:[[45.0], [60.0]]
+
+[para_in ]:dut_rxrssi:[[30.0, 30.0, 30.0, 30.0, 30.0, 30.0], [70.0, 70.0, 70.0, 70.0, 70.0, 70.0]]
+
+[para_in ]:rssi_diff:[[-15.0], [15.0]]
+
+[para_in ]:fb_rxrssi:[[30.0, 30.0, 30.0, 30.0, 30.0, 30.0], [70.0, 70.0, 70.0, 70.0, 70.0, 70.0]]
+
+[para_in ]:VDD33:[[0.0, 0.0, -40.0], [4000.0, 180.0, 0.0]]
+
+[para_in ]:RX_NOISEFLOOR:[[-395.0], [-345.0]]
+
+[para_in ]:TX_VDD33_DIFF:[[-300.0], [300.0]]
+
+[para_in ]:fb_rx_num:[[48.0], [98.0]]
+
+[para_in ]:RXDC_RFRX_WIFI:[[241.0, 341.0], [240.0, 340.0]]
+
+[para_in ]:BT_TXIQ:[[11.0, 21.0], [10.0, 20.0]]
+
+[para_in ]:RXDC_RXBB_WIFI:[[101.0, 201.0], [100.0, 200.0]]
+
+[para_in ]:txp_result:[[48.0, 48.0], [98.0, 98.0]]
+
+[para_in ]:RXDC_RFRX_BT:[[201.0, 301.0], [200.0, 300.0]]
+
+[para_in ]:RX_PATH_SNR:[[15.0], [5000.0]]
+
+[debug   ]:test slot:1,rf start time:2018-12-28-16-53-15,test begin
+[debug   ]:test slot:1,rf start time:2018-12-28-16-53-15,test begin
+[debug   ]:record serial print 
+[debug   ]:test slot:1,rf finish time:2018-12-28-16-53-16,log catch finished
+[debug   ]:*****************************************ESP MODULE SERIAL PRINT START***************************************
+[debug   ]:MODULE_TEST START!!!
+phy_version: 1140.0, 5a803f4, Sep 21 2018, 16:46:22
+CHIP_VERSION: 0x0
+CHIP_ID: 0xdc4f22ac
+
+rc_cal_dout=23, rx_filt_dcap=10, tx_filt_dcap=18
+vdd33=3379, temp_code=0, offset=0
+cal_rf_ana_gain, rf_gain=0x5f, ana_gain=0x10, bb_atten=18, 18, 0
+rxiq_tot_pwr1=32dB, k=0
+RX_NOISEFLOOR, -378
+RX_NOISEFLOOR, -381
+RX_NOISEFLOOR, -377
+RX_NOISEFLOOR, -378
+TXCAP_TMX2G_CCT_LOAD, 15, 15, 15, 
+TXCAP_PA2G_CCT_STG1, 7, 7, 7, 
+TXCAP_PA2G_CCT_STG2, 3, 3, 2, 
+TX_POWER_BACKOFF, 0, 0, 0, 0, 
+TX_PWRCTRL_ATTEN, -7, -3, 0, 7, 11, 15, -4, 0, 4, 10, 14, 18, -2, 2, 6, 12, 16, 20, -2, 2, 6, 12, 16, 20, 
+TXIQ, 1, 4
+TXDC, 36, 63; 43, 56; 46, 55; 49, 53; 
+RXIQ, -2, -8; -2, -8; -1, -8; -3, -8; 0, -8; 
+RXDC, 256, 275, 256, 256; 255, 276, 256, 256; 255, 274, 256, 256; 254, 274, 256, 256; 254, 274, 254, 260; 253, 276, 256, 256; 252, 272, 256, 256; 251, 273, 256, 256; 251, 273, 256, 256; 251, 273, 256, 256; 250, 273, 256, 256; 250, 273, 256, 256; 250, 272, 256, 256; 250, 272, 253, 254; 250, 272, 251, 254; 249, 272, 256, 256; 249, 272, 258, 253; 249, 272, 256, 256; 250, 272, 253, 256; 250, 272, 252, 254; 249, 272, 259, 256; 249, 272, 256, 256; 249, 272, 256, 256; 249, 272, 256, 254; 250, 272, 253, 256; 250, 272, 252, 254; 249, 272, 259, 256; 249, 272, 256, 256; 249, 272, 256, 256; 249, 272, 256, 254; 
+SVN_LOG=1140
+TX_VDD33=3379, 0
+TOUT=85
+TEST_NUM=1, TEST_TIME=366855us
+
+MODULE_ANA TEST END!!!
+
+tx packet test ..
+txp_pwctrl_atten: 13
+rombist_rslt: 0
+fb_rxrssi: 60, 60, 59, 60, 59, 58, 
+dut_rxrssi: 68, 68, 69, 69, 69, 69, 
+fb_rx_num: 16, 16, 16, 16, 16, 16, 
+dut_rx_num: 15, 16, 16, 16, 16, 16, 
+FREQ_OFFSET, 11, 11, 12, 11, 
+txp_state: 0xffffffffffffffffffffffff, 0xfffffffffffffffffffffffd;
+txp_result: 96, 95, 1
+0: req_suc:1 req_times:1 data_suc:1 txdata_use_timer:0x682c 96 txreq_start_time:0x52244f txdata_start_time:0x55cd8f 
+init_time=403268us
+txdco: 35, 65; 44, 57; 47, 55; 49, 54; 
+txdc_dig: 0, 0; 0, 0; 0, 0; 0, 0; 
+
+MODULE_TEST END!!!
+
+[debug   ]:*****************************************ESP MODULE SERIAL PRINT END******************************************
+[debug   ]:Data Processing...
+
+[debug   ]:analog test ok
+[debug   ]:start tx test
+[debug   ]:"TEST ITEM:
+[debug   ]:TX TEST BEGIN
+[debug   ]:fb_rx_num 	[[48.0], [98.0]]
+
+[para_out]:FREQ_OFFSET 	-15~15
+
+[para_out]:FREQ_OFFSET 	-15~15
+
+[para_out]:FREQ_OFFSET 	-15~15
+
+[para_out]:FREQ_OFFSET 	-15~15
+
+[para_out]:TXP_RES 	80~98
+
+[debug   ]:TX TEST OK
+[debug   ]:start rx test
+[debug   ]:RX TEST BEGIN
+[para_in ]:dut_rx_num 	48~98
+
+[para_out]:fb_rxrssi 	30~70
+
+[para_out]:fb_rxrssi 	30~70
+
+[para_out]:fb_rxrssi 	30~70
+
+[para_out]:fb_rxrssi 	30~70
+
+[para_out]:fb_rxrssi 	30~70
+
+[para_out]:fb_rxrssi 	30~70
+
+[debug   ]:dut_rxrssi 	30~70
+
+[debug   ]:dut_rxrssi 	30~70
+
+[debug   ]:dut_rxrssi 	30~70
+
+[debug   ]:dut_rxrssi 	30~70
+
+[debug   ]:dut_rxrssi 	30~70
+
+[debug   ]:dut_rxrssi 	30~70
+
+[para_in ]:rssi_diff 	-15~15
+
+[para_out]:TXP_RES_1 	80~98
+
+[debug   ]:RX TEST OK
+[debug   ]:break rf loop
+[debug   ]:all item test passed
+[debug   ]:check the mutex if need release

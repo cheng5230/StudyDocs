@@ -183,21 +183,13 @@ typedef struct
 
 
 OPERATE_RET tuya_light_init (VOID);
-
 OPERATE_RET tuya_light_start (VOID);
-
 VOID light_init_stat_set (VOID);
-
 OPERATE_RET tuya_light_cw_type_set (LIGHT_CW_TYPE_E type);
-
 OPERATE_RET tuya_light_reset_mode_set (LIGHT_RESET_NETWORK_STA_E mode);
-
 OPERATE_RET tuya_light_cw_max_power_set (UCHAR_T max_power);
-
 VOID tuya_light_memory_flag_set (BOOL_T status);
-
 VOID light_key_fun_free_heap_check_start (VOID);
-
 VOID light_key_fun_free_heap_check_stop (VOID);
 
 VOID light_key_fun_power_onoff_ctrl (VOID);

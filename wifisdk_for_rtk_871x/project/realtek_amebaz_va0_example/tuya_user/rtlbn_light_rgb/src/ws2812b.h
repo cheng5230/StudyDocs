@@ -287,16 +287,25 @@ uint16_t WS2812Fx_Breath(uint8_t type,uint8_t scene_num,uint8_t times);
 uint16_t WS2812Fx_Fire(uint8_t type,uint8_t scene_num,uint8_t times);
 uint16_t WS2812Fx_Colorful(uint8_t type,uint8_t scene_num,uint8_t times);
 uint16_t WS2812Fx_PaoMa(uint8_t type,uint8_t scene_num,uint8_t times);
+uint16_t WS2812Fx_PaoMaNormal(uint8_t type,uint8_t scene_num,uint8_t times);
 uint16_t WS2812Fx_Flash(uint8_t type,uint8_t scene_num,uint8_t times);
+uint16_t WS2812Fx_FlashNormal(uint8_t type,uint8_t scene_num,uint8_t times);
 uint16_t WS2812Fx_Scan(uint8_t type,uint8_t scene_num,uint8_t times);  
+uint16_t WS2812Fx_ScanNormal(uint8_t type,uint8_t scene_num,uint8_t times);  
 uint16_t WS2812Fx_Trip(uint8_t type,uint8_t scene_num,uint8_t times);
+uint16_t WS2812Fx_TripNormal(uint8_t type,uint8_t scene_num,uint8_t times);
+
 
 #define HSV_MAXSTEPS        51
 #define STREMBER_MODES      2
 #define STREMBER_RUNCNTS    5
 #define BREATH_MODES        5
-#define FIRE_MODES          17
-#define COLORFUL_MODES      16
+#define FIRE_MODES          4 //17
+#define COLORFUL_MODES      4 //16
+#define MYPAOMA_MODES        14
+#define MYFLASH_MODES        12
+#define MYSCAN_MODES         3
+#define MYTRIP_MODES         3
 
 #define PAOMA_MODES        2
 #define PAOMA_CNTS         1
@@ -306,7 +315,6 @@ uint16_t WS2812Fx_Trip(uint8_t type,uint8_t scene_num,uint8_t times);
 #define SCAN_RUNCNTS       3
 #define TRIP_MODES         2 
 #define TRIP_RUNCNTS       3
-
 
 
 #ifdef __cplusplus

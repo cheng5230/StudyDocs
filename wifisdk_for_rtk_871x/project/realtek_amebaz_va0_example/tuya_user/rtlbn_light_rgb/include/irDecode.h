@@ -31,7 +31,7 @@ STATIC gtimer_t test_timer;
 
 #define USER_IRREMOTE   1
 
-#define irCntAllowance   10
+#define irCntAllowance   20
 #define PRINTIRCNT       0
 #define IR_GPIO_NUM      PA_14
 #define TIMER_CNT_MAX   ((145 + irCntAllowance))
@@ -186,7 +186,8 @@ typedef enum
   IRCODE0,
   IRCODE1,
   IRCODESTART,
-  IRCODEREPEAT
+  IRCODEREPEAT,
+  IRCODESTARTHEAD
 } IRCODE;
 
 typedef struct
@@ -201,6 +202,7 @@ typedef struct
   SFT_TIMER IrDecodeTimer;
   SEM_HANDLE ir_cmddeal_sem;
   THRD_HANDLE ir_thread;
+  MUTEX_HANDLE ir_mutex;
 } IRDEAL;
 
 extern IRCMD cur_ircmd;
@@ -215,3 +217,4 @@ typedef VOID (*IR_CALLBACK) (IRCMD cmd, IRCODE irType);
 void light_strip_infrared_init (IR_CALLBACK callback);
 
 #endif
+

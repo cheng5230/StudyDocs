@@ -1,0 +1,829 @@
+2019-12-11 14:03:34.9208 INFO "COM3runstart"
+2019-12-11 14:03:34.9336 INFO "COM3run2"
+2019-12-11 14:03:34.9406 INFO "COM3run3"
+2019-12-11 14:03:34.9892 INFO "COM3run4"
+2019-12-11 14:03:37.2261 INFO "COM3run5"
+2019-12-11 14:03:37.2261 INFO "COM3TaskRunstart"
+2019-12-11 14:03:52.2365 INFO "COM3runstart"
+2019-12-11 14:03:52.2384 INFO "COM3run2"
+2019-12-11 14:03:52.2384 INFO "COM3run3"
+2019-12-11 14:03:52.2534 INFO "COM3run4"
+2019-12-11 14:03:52.2534 INFO "COM3run5"
+2019-12-11 14:03:52.2534 INFO "COM3runend"
+2019-12-11 14:03:53.3007 INFO "COM3run进入SerilaChange"
+2019-12-11 14:03:53.3007 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:03:53.6219 INFO "COM3run进入SerilaChange"
+2019-12-11 14:03:53.6219 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:03:53.6219 INFO "COM3TaskRunstart"
+2019-12-11 14:03:55.5850 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"X5c5UCeXQfTCUC7y","Message":"获取固件指纹失败:固件名称不匹配或者固件版本不匹配","Result":false}
+2019-12-11 14:04:03.3787 INFO "COM3run进入SerilaChange"
+2019-12-11 14:04:03.3787 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:04:03.7562 INFO "COM3run进入SerilaChange"
+2019-12-11 14:04:03.7562 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:04:03.7562 INFO "COM3TaskRunstart"
+2019-12-11 14:04:41.8259 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"X5c5UCeXQfTCUC7y","Message":"进入产测失败:固件无返回信息","Result":false}
+2019-12-11 14:05:58.2144 INFO "COM3run进入SerilaChange"
+2019-12-11 14:05:58.2144 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:05:58.4558 INFO "COM3run进入SerilaChange"
+2019-12-11 14:05:58.4578 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:05:58.4762 INFO "COM3TaskRunstart"
+2019-12-11 14:06:28.0319 INFO "COM3run进入SerilaChange"
+2019-12-11 14:06:28.0319 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:06:28.1930 INFO "COM3run进入SerilaChange"
+2019-12-11 14:06:28.1930 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:06:28.1930 INFO "COM3TaskRunstart"
+2019-12-11 14:06:45.0471 INFO "COM3run进入SerilaChange"
+2019-12-11 14:06:45.0501 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:08:23.7793 INFO "COM3run进入SerilaChange"
+2019-12-11 14:08:23.7842 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:08:23.8042 INFO "COM3TaskRunstart"
+2019-12-11 14:08:28.6665 INFO "COM3run进入SerilaChange"
+2019-12-11 14:08:28.6665 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:08:34.2721 INFO "COM3run进入SerilaChange"
+2019-12-11 14:08:34.2721 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:08:34.2721 INFO "COM3TaskRunstart"
+2019-12-11 14:08:38.0173 INFO "COM3run进入SerilaChange"
+2019-12-11 14:08:38.0193 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:09:39.3215 INFO "COM3run进入SerilaChange"
+2019-12-11 14:09:39.3215 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:09:39.3215 INFO "COM3TaskRunstart"
+2019-12-11 14:10:52.5367 INFO "COM3run进入SerilaChange"
+2019-12-11 14:10:52.5367 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:10:53.0161 INFO "COM3run进入SerilaChange"
+2019-12-11 14:10:53.0161 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:10:53.0394 INFO "COM3TaskRunstart"
+2019-12-11 14:11:04.2760 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:04.2760 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:11:05.3265 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:05.3265 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:11:05.3315 INFO "COM3TaskRunstart"
+2019-12-11 14:11:05.5951 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:05.6001 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:05.8397 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:05.8397 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:06.0794 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:06.0893 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:06.3212 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:06.3212 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:06.5638 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:06.5658 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:06.8134 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:06.8154 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:10.5192 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:10.5461 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:10.5691 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:10.5920 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:10.6505 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:10.6734 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:11.2055 INFO "COM3run进入SerilaChange"
+2019-12-11 14:11:11.2304 INFO "COM3rundsr 信号无改变"
+2019-12-11 14:11:23.7449 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"X5c5UCeXQfTCUC7y","Message":"进入产测失败:固件无返回信息","Result":false}
+2019-12-11 14:11:44.9972 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"X5c5UCeXQfTCUC7y","Message":"进入产测失败:固件无返回信息","Result":false}
+2019-12-11 14:13:21.2234 INFO "COM3run进入SerilaChange"
+2019-12-11 14:13:21.2234 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:13:21.9485 INFO "COM3run进入SerilaChange"
+2019-12-11 14:13:21.9485 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:13:21.9485 INFO "COM3TaskRunstart"
+2019-12-11 14:13:31.8461 INFO "COM3run进入SerilaChange"
+2019-12-11 14:13:31.8481 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:13:32.0876 INFO "COM3run进入SerilaChange"
+2019-12-11 14:13:32.0876 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:13:32.0876 INFO "COM3TaskRunstart"
+2019-12-11 14:13:45.6105 INFO "COM3run进入SerilaChange"
+2019-12-11 14:13:45.6132 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:13:46.9793 INFO "COM3run进入SerilaChange"
+2019-12-11 14:13:46.9793 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:13:46.9793 INFO "COM3TaskRunstart"
+2019-12-11 14:14:02.7497 INFO "COM3run进入SerilaChange"
+2019-12-11 14:14:02.7604 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:14:03.0714 INFO "COM3run进入SerilaChange"
+2019-12-11 14:14:03.0714 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:14:03.0714 INFO "COM3TaskRunstart"
+2019-12-11 14:14:17.7653 INFO "COM3run进入SerilaChange"
+2019-12-11 14:14:17.7653 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:14:19.3740 INFO "COM3run进入SerilaChange"
+2019-12-11 14:14:19.3740 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:14:19.3978 INFO "COM3TaskRunstart"
+2019-12-11 14:14:38.6189 INFO "COM3run进入SerilaChange"
+2019-12-11 14:14:38.6189 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:14:39.4234 INFO "COM3run进入SerilaChange"
+2019-12-11 14:14:39.4262 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:14:39.4441 INFO "COM3TaskRunstart"
+2019-12-11 14:16:01.5902 INFO "COM3run进入SerilaChange"
+2019-12-11 14:16:01.5902 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:16:02.0701 INFO "COM3run进入SerilaChange"
+2019-12-11 14:16:02.0701 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:16:02.0701 INFO "COM3TaskRunstart"
+2019-12-11 14:16:29.5992 INFO "COM3run进入SerilaChange"
+2019-12-11 14:16:29.5992 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:16:30.0015 INFO "COM3run进入SerilaChange"
+2019-12-11 14:16:30.0035 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:16:30.0690 INFO "COM3TaskRunstart"
+2019-12-11 14:17:01.2874 INFO "COM3run进入SerilaChange"
+2019-12-11 14:17:01.2874 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:17:01.6853 INFO "COM3run进入SerilaChange"
+2019-12-11 14:17:01.6853 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:17:01.6853 INFO "COM3TaskRunstart"
+2019-12-11 14:17:17.4246 INFO "COM3run进入SerilaChange"
+2019-12-11 14:17:17.4246 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:17:17.9079 INFO "COM3run进入SerilaChange"
+2019-12-11 14:17:17.9099 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:17:17.9099 INFO "COM3TaskRunstart"
+2019-12-11 14:19:30.1390 INFO "COM3runstart"
+2019-12-11 14:19:30.1500 INFO "COM3run2"
+2019-12-11 14:19:30.1500 INFO "COM3run3"
+2019-12-11 14:19:30.1669 INFO "COM3run4"
+2019-12-11 14:19:30.1669 INFO "COM3run5"
+2019-12-11 14:19:30.1749 INFO "COM3runend"
+2019-12-11 14:19:30.8113 INFO "COM3run进入SerilaChange"
+2019-12-11 14:19:30.8113 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:19:30.8423 INFO "COM3TaskRunstart"
+2019-12-11 14:19:41.1508 INFO "COM3run进入SerilaChange"
+2019-12-11 14:19:41.1508 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:20:41.2979 INFO "COM3run进入SerilaChange"
+2019-12-11 14:20:41.3087 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:20:41.3087 INFO "COM3TaskRunstart"
+2019-12-11 14:20:42.9492 INFO "COM3run进入SerilaChange"
+2019-12-11 14:20:42.9492 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:20:51.1046 INFO "COM3run进入SerilaChange"
+2019-12-11 14:20:51.1046 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:20:51.1046 INFO "COM3TaskRunstart"
+2019-12-11 14:21:41.7287 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"X5c5UCeXQfTCUC7y","Message":"进入产测失败:固件无返回信息","Result":false}
+2019-12-11 14:21:42.3276 INFO "COM3run进入SerilaChange"
+2019-12-11 14:21:42.3276 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:22:16.2223 INFO "COM3run进入SerilaChange"
+2019-12-11 14:22:16.2223 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:22:16.2223 INFO "COM3TaskRunstart"
+2019-12-11 14:22:18.2574 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"获取固件指纹失败:固件名称不匹配或者固件版本不匹配","Result":false}
+2019-12-11 14:22:45.5946 INFO "COM3run进入SerilaChange"
+2019-12-11 14:22:45.5975 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:22:47.1231 INFO "COM3run进入SerilaChange"
+2019-12-11 14:22:47.1231 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:22:47.2083 INFO "COM3TaskRunstart"
+2019-12-11 14:22:58.1358 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 14:22:58.2722 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"GPIO测试成功","Result":true}
+2019-12-11 14:22:58.7255 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入hid成功","Result":true}
+2019-12-11 14:22:58.8502 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"Get Key Success","Result":true}
+2019-12-11 14:22:59.2975 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入配置信息成功","Result":true}
+2019-12-11 14:22:59.6084 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"复位成功","Result":true}
+2019-12-11 14:23:00.1218 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"读取配置成功","Result":true}
+2019-12-11 14:23:44.9941 INFO "COM3run进入SerilaChange"
+2019-12-11 14:23:44.9941 INFO "COM3runSerilaChange:dsr 0"
+2019-12-11 14:23:46.1209 INFO "COM3run进入SerilaChange"
+2019-12-11 14:23:46.1209 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:23:46.1209 INFO "COM3TaskRunstart"
+2019-12-11 14:23:57.2519 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 14:23:57.6373 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"GPIO测试成功","Result":true}
+2019-12-11 14:23:58.0595 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入hid成功","Result":true}
+2019-12-11 14:23:58.1578 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"获取key成功","Result":true}
+2019-12-11 14:23:58.5910 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入配置信息成功","Result":true}
+2019-12-11 14:23:58.9087 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"复位成功","Result":true}
+2019-12-11 14:23:59.3693 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"读取配置成功","Result":true}
+2019-12-11 14:24:43.1988 INFO "COM3runstart"
+2019-12-11 14:24:43.2217 INFO "COM3run2"
+2019-12-11 14:24:43.2217 INFO "COM3run3"
+2019-12-11 14:24:43.2407 INFO "COM3run4"
+2019-12-11 14:24:43.2407 INFO "COM3run5"
+2019-12-11 14:24:43.2407 INFO "COM3runend"
+2019-12-11 14:24:43.8145 INFO "COM3run进入SerilaChange"
+2019-12-11 14:24:43.8165 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:24:43.8444 INFO "COM3TaskRunstart"
+2019-12-11 14:24:54.9142 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 14:24:55.0498 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"GPIO测试成功","Result":true}
+2019-12-11 14:24:55.5380 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入hid成功","Result":true}
+2019-12-11 14:24:55.7049 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"获取key成功","Result":true}
+2019-12-11 14:24:56.1495 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入配置信息成功","Result":true}
+2019-12-11 14:24:56.4744 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"复位成功","Result":true}
+2019-12-11 14:24:56.5945 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"读取配置信息失败:固件无返回信息","Result":false}
+2019-12-11 14:26:04.6872 INFO "COM3runstart"
+2019-12-11 14:26:04.6980 INFO "COM3run2"
+2019-12-11 14:26:04.7060 INFO "COM3run3"
+2019-12-11 14:26:04.7060 INFO "COM3run4"
+2019-12-11 14:26:04.7060 INFO "COM3run5"
+2019-12-11 14:26:04.7220 INFO "COM3runend"
+2019-12-11 14:26:05.2086 INFO "COM3run进入SerilaChange"
+2019-12-11 14:26:05.2086 INFO "COM3runSerilaChange:dsr 1"
+2019-12-11 14:26:05.2086 INFO "COM3TaskRunstart"
+2019-12-11 14:26:16.2991 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 14:26:16.4956 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"GPIO测试成功","Result":true}
+2019-12-11 14:26:16.9504 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入hid成功","Result":true}
+2019-12-11 14:26:17.1589 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"Get Key Success","Result":true}
+2019-12-11 14:26:17.6196 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入配置信息成功","Result":true}
+2019-12-11 14:26:17.9318 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"复位成功","Result":true}
+2019-12-11 14:26:18.5854 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"读取配置成功","Result":true}
+2019-12-11 15:48:52.3881 FATAL UI线程捕获未处理异常：调用的目标发生了异常。
+2019-12-11 15:49:00.9945 INFO "COM3runstart"
+2019-12-11 15:49:00.9945 INFO "COM3run2"
+2019-12-11 15:49:00.9945 INFO "COM3run3"
+2019-12-11 15:49:01.0440 INFO "COM3run4"
+2019-12-11 15:49:01.0440 INFO "COM3run5"
+2019-12-11 15:49:01.0440 INFO "COM3TaskRunstart"
+2019-12-11 15:49:02.1759 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 15:49:02.1759 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 15:49:02.1759 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 15:49:02.1928 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 15:49:04.5232 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 15:49:04.5232 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 15:49:04.8734 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 15:49:05.8796 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 15:49:05.8796 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 15:49:05.8796 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 15:49:05.8976 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 15:49:05.8976 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 15:49:05.9095 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 15:49:05.9095 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 15:49:05.9095 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 15:49:05.9267 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 15:49:05.9267 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 15:49:05.9267 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 15:49:05.9434 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 15:49:06.0541 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 15:49:06.2277 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 15:49:06.4440 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 15:49:06.7231 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 15:49:06.8988 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 15:49:07.0975 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 15:49:07.3736 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 15:49:07.6542 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 15:49:07.9339 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 15:49:08.1077 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 15:49:08.3100 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 15:49:08.5859 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 15:49:08.7610 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 15:49:08.9616 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 15:49:09.1912 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 15:49:09.3649 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 15:49:09.5675 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 15:49:09.8024 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 15:49:09.9778 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 15:49:12.8721 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 15:49:12.8770 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 15:49:14.5064 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 15:49:14.8158 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 15:49:15.0744 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 15:49:15.2849 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 15:49:15.4816 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 15:49:15.9920 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 15:49:16.2402 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 15:49:16.7982 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 15:49:17.2602 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 15:49:17.5082 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 15:49:17.8152 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 15:55:21.4795 INFO "COM3runstart"
+2019-12-11 15:55:21.4795 INFO "COM3run2"
+2019-12-11 15:55:21.4795 INFO "COM3run3"
+2019-12-11 15:55:21.5254 INFO "COM3run4"
+2019-12-11 15:55:21.5254 INFO "COM3run5"
+2019-12-11 15:55:21.5254 INFO "COM3TaskRunstart"
+2019-12-11 15:55:21.7338 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 15:55:21.7398 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 15:55:21.7398 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 15:55:21.7518 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 15:55:22.4400 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 15:55:22.4400 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 15:55:22.7890 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 15:55:23.8013 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 15:55:23.8013 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 15:55:23.8013 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 15:55:23.8184 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 15:55:23.8184 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 15:55:23.8302 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 15:55:23.8302 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 15:55:23.8302 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 15:55:23.8482 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 15:55:23.8482 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 15:55:23.8482 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 15:55:23.8662 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 15:55:23.9753 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 15:55:24.1509 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 15:55:24.3661 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 15:55:24.6457 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 15:55:24.8207 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 15:55:25.0195 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 15:55:25.2963 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 15:55:25.5752 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 15:55:25.8557 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 15:55:26.0316 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 15:55:26.2278 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 15:55:26.5021 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 15:55:26.6770 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 15:55:26.8796 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 15:55:27.1056 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 15:55:27.2804 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 15:55:27.4799 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 15:55:27.7071 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 15:55:27.8824 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 15:55:30.8033 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 15:55:30.8033 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 15:55:32.4303 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 15:55:32.7334 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 15:55:32.9887 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 15:55:33.1946 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 15:55:33.4488 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 15:55:33.9346 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 15:55:34.1807 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 15:55:34.7306 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 15:55:35.2398 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 15:55:35.5477 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 15:55:35.8588 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 15:57:42.2498 INFO "COM3runstart"
+2019-12-11 15:57:42.2498 INFO "COM3run2"
+2019-12-11 15:57:42.2558 INFO "COM3run3"
+2019-12-11 15:57:42.2977 INFO "COM3run4"
+2019-12-11 15:57:42.2977 INFO "COM3run5"
+2019-12-11 15:57:42.2977 INFO "COM3TaskRunstart"
+2019-12-11 15:57:42.5121 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 15:57:42.5181 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 15:57:42.5181 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 15:57:42.5181 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 15:57:43.2014 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 15:57:43.2074 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 15:57:43.5496 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 15:57:44.5627 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 15:57:44.5687 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 15:57:44.5687 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 15:57:44.5807 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 15:57:44.5807 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 15:57:44.5807 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 15:57:44.5986 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 15:57:44.5986 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 15:57:44.6106 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 15:57:44.6106 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 15:57:44.6106 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 15:57:44.6286 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 15:57:44.7382 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 15:57:44.9131 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 15:57:45.1283 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 15:57:45.4079 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 15:57:45.6380 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 15:57:46.2665 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 15:57:46.2748 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 15:57:46.4447 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 15:57:46.7257 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 15:57:46.8994 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 15:57:47.1021 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 15:57:47.3456 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 15:57:47.5210 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 15:57:47.7226 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 15:57:47.9468 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 15:57:48.1231 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 15:57:48.3226 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 15:57:48.5562 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 15:57:48.7328 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 15:57:51.6396 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 15:57:51.6436 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 15:57:53.2778 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 15:57:53.5811 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 15:57:53.8405 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 15:57:54.0454 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 15:57:54.2658 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 15:57:54.8131 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 15:57:55.2402 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 15:57:55.7958 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 15:57:56.3032 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 15:57:56.4870 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 15:57:56.6955 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:02:27.9680 INFO "COM3runstart"
+2019-12-11 16:02:27.9728 INFO "COM3run2"
+2019-12-11 16:02:27.9728 INFO "COM3run3"
+2019-12-11 16:02:28.0217 INFO "COM3run4"
+2019-12-11 16:02:28.0217 INFO "COM3run5"
+2019-12-11 16:02:28.0217 INFO "COM3TaskRunstart"
+2019-12-11 16:02:28.4666 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 16:02:28.4726 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 16:02:28.4726 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:02:28.4726 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 16:02:29.1448 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 16:02:29.1448 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 16:02:29.4935 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 16:02:30.4998 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 16:02:30.5058 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 16:02:30.5058 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 16:02:30.5178 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 16:02:30.5178 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 16:02:30.5178 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 16:02:30.5358 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 16:02:30.5358 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 16:02:30.5358 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 16:02:30.5528 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 16:02:30.5528 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 16:02:30.5649 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:02:30.6748 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 16:02:30.8505 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 16:02:31.0612 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 16:02:31.3407 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 16:02:31.5170 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 16:02:31.7144 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 16:02:31.9935 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 16:02:32.2742 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 16:02:32.5553 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 16:02:32.7293 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 16:02:32.9283 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 16:02:33.2054 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 16:02:33.3801 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 16:02:33.5813 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 16:02:33.8114 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 16:02:33.9862 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 16:02:34.1855 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 16:02:34.4224 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 16:02:34.5982 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 16:02:37.5209 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 16:02:37.5209 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 16:02:39.2083 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:02:39.5164 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 16:02:39.7263 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 16:02:39.9864 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:02:40.2780 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 16:02:40.8461 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 16:02:41.1553 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 16:02:41.7122 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:02:42.1722 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 16:02:42.4214 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 16:02:42.7312 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:11:19.7169 INFO "COM3runstart"
+2019-12-11 16:11:19.7169 INFO "COM3run2"
+2019-12-11 16:11:19.7228 INFO "COM3run3"
+2019-12-11 16:11:19.7647 INFO "COM3run4"
+2019-12-11 16:11:19.7647 INFO "COM3run5"
+2019-12-11 16:11:19.7647 INFO "COM3TaskRunstart"
+2019-12-11 16:11:19.9696 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 16:11:19.9756 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 16:11:19.9756 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:11:19.9875 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 16:11:20.1651 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 16:11:20.1651 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 16:11:20.5134 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 16:11:21.5228 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 16:11:21.5228 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 16:11:21.5348 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 16:11:21.5348 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 16:11:21.5348 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 16:11:21.5517 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 16:11:21.5517 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 16:11:21.5517 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 16:11:21.5687 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 16:11:21.5687 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 16:11:21.5799 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 16:11:21.5799 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:11:21.6971 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 16:11:21.8720 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 16:11:22.0848 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 16:11:22.3632 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 16:11:22.5383 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 16:11:22.7369 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 16:11:23.0153 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 16:11:23.2992 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 16:11:23.5819 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 16:11:23.7564 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 16:11:23.9572 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 16:11:24.2321 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 16:11:24.4071 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 16:11:24.6100 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 16:11:24.8318 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 16:11:25.0069 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 16:11:25.2094 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 16:11:25.4427 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 16:11:25.6177 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 16:11:28.5397 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 16:11:28.5397 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 16:11:30.2204 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:11:30.5277 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 16:11:30.7847 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 16:11:30.9925 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:11:31.3220 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 16:11:31.8687 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 16:11:32.2956 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 16:11:32.8496 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:11:33.3568 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 16:11:33.5418 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 16:11:33.7473 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:15:31.8571 INFO "COM3runstart"
+2019-12-11 16:15:31.8611 INFO "COM3run2"
+2019-12-11 16:15:31.8611 INFO "COM3run3"
+2019-12-11 16:15:31.9102 INFO "COM3run4"
+2019-12-11 16:15:31.9102 INFO "COM3run5"
+2019-12-11 16:15:31.9102 INFO "COM3TaskRunstart"
+2019-12-11 16:15:32.1240 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 16:15:32.1300 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 16:15:32.1300 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:15:32.1420 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 16:15:32.3190 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 16:15:32.3190 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 16:15:32.6707 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 16:15:33.6817 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 16:15:33.6817 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 16:15:33.6930 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 16:15:33.6930 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 16:15:33.7050 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 16:15:33.7050 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 16:15:33.7050 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 16:15:33.7233 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 16:15:33.7233 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 16:15:33.7233 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 16:15:33.7410 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 16:15:33.7410 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:15:33.8566 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 16:15:34.0311 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 16:15:34.2420 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 16:15:34.5220 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 16:15:34.6968 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 16:15:34.8959 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 16:15:35.1750 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 16:15:35.4567 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 16:15:35.7362 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 16:15:35.9103 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 16:15:36.1113 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 16:15:36.3862 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 16:15:36.5611 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 16:15:36.7627 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 16:15:36.9941 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 16:15:37.1682 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 16:15:37.3706 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 16:15:37.6059 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 16:15:37.7818 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 16:15:40.7073 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 16:15:40.7073 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 16:15:42.3448 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:15:42.6526 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 16:15:42.9115 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 16:15:43.1204 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:15:43.3608 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 16:15:43.8716 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 16:15:44.1204 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 16:15:44.6832 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:15:45.1944 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 16:15:45.5009 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 16:15:45.8118 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:18:01.7211 INFO "COM3runstart"
+2019-12-11 16:18:01.7211 INFO "COM3run2"
+2019-12-11 16:18:01.7211 INFO "COM3run3"
+2019-12-11 16:18:01.7689 INFO "COM3run4"
+2019-12-11 16:18:01.7689 INFO "COM3run5"
+2019-12-11 16:18:01.7689 INFO "COM3TaskRunstart"
+2019-12-11 16:18:01.9703 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 16:18:01.9703 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 16:18:01.9703 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:18:01.9883 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 16:18:02.2192 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 16:18:02.2262 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 16:18:02.5702 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 16:18:03.5871 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 16:18:03.5871 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 16:18:03.6000 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 16:18:03.6000 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 16:18:03.6120 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 16:18:03.6120 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 16:18:03.6120 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 16:18:03.6299 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 16:18:03.6299 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 16:18:03.6419 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 16:18:03.6419 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 16:18:03.6419 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:18:03.7645 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 16:18:03.9387 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 16:18:04.1402 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 16:18:04.4209 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 16:18:04.5951 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 16:18:04.7937 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 16:18:05.0708 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 16:18:05.3535 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 16:18:05.6366 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 16:18:05.8117 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 16:18:06.0069 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 16:18:06.2842 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 16:18:06.4590 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 16:18:06.6605 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 16:18:06.8929 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 16:18:07.0660 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 16:18:07.2680 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 16:18:07.4989 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 16:18:07.6732 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 16:18:10.5911 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 16:18:24.2961 INFO "COM3runstart"
+2019-12-11 16:18:24.3008 INFO "COM3run2"
+2019-12-11 16:18:24.3008 INFO "COM3run3"
+2019-12-11 16:18:24.3487 INFO "COM3run4"
+2019-12-11 16:18:24.3487 INFO "COM3run5"
+2019-12-11 16:18:24.3487 INFO "COM3TaskRunstart"
+2019-12-11 16:18:24.5731 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 16:18:24.5731 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 16:18:24.5851 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:18:24.5851 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 16:18:24.9371 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 16:18:24.9441 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 16:18:25.2872 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 16:18:26.3024 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 16:18:26.3024 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 16:18:26.3144 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 16:18:26.3144 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 16:18:26.3144 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 16:18:26.3323 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 16:18:26.3323 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 16:18:26.3323 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 16:18:26.3502 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 16:18:26.3502 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 16:18:26.3622 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 16:18:26.3622 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:18:26.4780 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 16:18:26.6532 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 16:18:26.8705 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 16:18:27.1499 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 16:18:27.3238 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 16:18:27.5205 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 16:18:27.8021 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 16:18:28.0805 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 16:18:28.3622 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 16:18:28.5370 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 16:18:28.7400 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 16:18:29.0171 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 16:18:29.1932 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 16:18:29.3954 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 16:18:29.6207 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 16:18:29.7961 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 16:18:29.9963 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 16:18:30.2268 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 16:18:30.4008 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 16:18:33.2952 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 16:18:33.3002 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 16:18:34.9240 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:18:35.2316 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 16:18:35.4903 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 16:18:35.7000 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:18:35.9315 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 16:18:36.4440 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 16:18:36.6937 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 16:18:37.2515 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:18:37.7134 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 16:18:37.9625 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 16:18:38.2688 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:26:16.7507 INFO "COM3runstart"
+2019-12-11 16:26:16.7555 INFO "COM3run2"
+2019-12-11 16:26:16.7555 INFO "COM3run3"
+2019-12-11 16:26:16.8036 INFO "COM3run4"
+2019-12-11 16:26:16.8036 INFO "COM3run5"
+2019-12-11 16:26:16.8036 INFO "COM3TaskRunstart"
+2019-12-11 16:26:17.0290 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 16:26:17.0350 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 16:26:17.0350 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:26:17.0350 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 16:26:17.2395 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 16:26:17.2395 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 16:26:17.5925 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 16:26:18.6078 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 16:26:18.6138 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 16:26:18.6138 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 16:26:18.6138 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 16:26:18.6317 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 16:26:18.6317 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 16:26:18.6437 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 16:26:18.6437 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 16:26:18.6437 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 16:26:18.6617 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 16:26:18.6617 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 16:26:18.6737 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:26:18.7823 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 16:26:18.9569 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 16:26:19.1673 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 16:26:19.4491 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 16:26:19.6248 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 16:26:19.8215 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 16:26:20.1009 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 16:26:20.3807 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 16:26:20.6601 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 16:26:20.8348 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 16:26:21.0325 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 16:26:21.3098 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 16:26:21.4863 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 16:26:21.6883 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 16:26:21.9136 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 16:26:22.0871 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 16:26:22.2897 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 16:26:22.5295 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 16:26:22.7036 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 16:26:25.6246 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 16:26:25.6335 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 16:26:27.2643 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:26:27.5729 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 16:26:27.8320 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 16:26:28.0439 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:26:28.3261 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 16:26:28.9017 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 16:26:29.3322 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 16:26:29.9017 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:26:30.3645 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 16:26:30.6139 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 16:26:30.9235 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:27:06.2178 INFO "COM3runstart"
+2019-12-11 16:27:06.2178 INFO "COM3run2"
+2019-12-11 16:27:06.2238 INFO "COM3run3"
+2019-12-11 16:27:06.2238 INFO "COM3run4"
+2019-12-11 16:27:06.2238 INFO "COM3run5"
+2019-12-11 16:27:06.2238 INFO "COM3TaskRunstart"
+2019-12-11 16:27:06.4285 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 16:27:06.4285 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 16:27:06.4404 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:27:06.4404 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 16:27:06.6279 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 16:27:06.6279 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 16:27:06.9760 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 16:27:07.9915 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 16:27:07.9915 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 16:27:08.0035 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 16:27:08.0035 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 16:27:08.0035 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 16:27:08.0214 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 16:27:08.0214 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 16:27:08.0334 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 16:27:08.0334 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 16:27:08.0334 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 16:27:08.0514 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 16:27:08.0514 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:27:08.1651 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 16:27:08.3406 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 16:27:08.5531 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 16:27:08.8325 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 16:27:09.0078 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 16:27:09.2057 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 16:27:09.4844 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 16:27:09.7658 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 16:27:10.0487 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 16:27:10.2247 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 16:27:10.4266 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 16:27:10.7051 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 16:27:10.8796 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 16:27:11.0820 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 16:27:11.3093 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 16:27:11.4840 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 16:27:11.6846 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 16:27:11.9193 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 16:27:12.0942 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 16:27:15.0121 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 16:27:15.0121 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 16:27:16.6321 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:27:16.9354 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 16:27:17.1909 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 16:27:17.3978 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:27:17.6503 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 16:27:18.1370 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 16:27:18.3817 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 16:27:18.9472 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:27:19.4041 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 16:27:19.6500 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 16:27:19.8561 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:41:50.5614 INFO "COM3runstart"
+2019-12-11 16:41:50.5664 INFO "COM3run2"
+2019-12-11 16:41:50.5664 INFO "COM3run3"
+2019-12-11 16:41:50.6142 INFO "COM3run4"
+2019-12-11 16:41:50.6142 INFO "COM3run5"
+2019-12-11 16:41:50.6142 INFO "COM3TaskRunstart"
+2019-12-11 16:41:50.8426 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Microsoft Windows [版本 10.0.18362.476]","Result":true}
+2019-12-11 16:41:50.8486 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录(c) 2019 Microsoft Corporation。保留所有权利。","Result":true}
+2019-12-11 16:41:50.8486 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:41:50.8606 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-12-11 16:41:51.0501 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录esptool.py v2.7-dev","Result":true}
+2019-12-11 16:41:51.0501 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Serial port COM3","Result":true}
+2019-12-11 16:41:51.4033 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Connecting....","Result":true}
+2019-12-11 16:41:52.4197 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Detecting chip type... ESP8266","Result":true}
+2019-12-11 16:41:52.4257 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Chip is ESP8266EX","Result":true}
+2019-12-11 16:41:52.4257 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Features: WiFi","Result":true}
+2019-12-11 16:41:52.4257 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录MAC: 84:f3:eb:39:5d:ad","Result":true}
+2019-12-11 16:41:52.4437 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Uploading stub...","Result":true}
+2019-12-11 16:41:52.4437 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Running stub...","Result":true}
+2019-12-11 16:41:52.4556 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Stub running...","Result":true}
+2019-12-11 16:41:52.4556 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changing baud rate to 1500000","Result":true}
+2019-12-11 16:41:52.4556 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Changed.","Result":true}
+2019-12-11 16:41:52.4736 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Configuring flash size...","Result":true}
+2019-12-11 16:41:52.4736 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Compressed 1044480 bytes to 326938...","Result":true}
+2019-12-11 16:41:52.4855 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录","Result":true}
+2019-12-11 16:41:52.5953 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00000000... (5 %)","Result":true}
+2019-12-11 16:41:52.7708 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00004000... (10 %)","Result":true}
+2019-12-11 16:41:52.9843 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00008000... (15 %)","Result":true}
+2019-12-11 16:41:53.2632 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0000c000... (20 %)","Result":true}
+2019-12-11 16:41:53.4381 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00010000... (25 %)","Result":true}
+2019-12-11 16:41:53.6351 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00014000... (30 %)","Result":true}
+2019-12-11 16:41:53.9154 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00018000... (35 %)","Result":true}
+2019-12-11 16:41:54.1961 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0001c000... (40 %)","Result":true}
+2019-12-11 16:41:54.4777 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00020000... (45 %)","Result":true}
+2019-12-11 16:41:54.6522 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00024000... (50 %)","Result":true}
+2019-12-11 16:41:54.8541 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00028000... (55 %)","Result":true}
+2019-12-11 16:41:55.1305 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0002c000... (60 %)","Result":true}
+2019-12-11 16:41:55.3053 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00030000... (65 %)","Result":true}
+2019-12-11 16:41:55.5072 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00034000... (70 %)","Result":true}
+2019-12-11 16:41:55.7372 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00038000... (75 %)","Result":true}
+2019-12-11 16:41:55.9106 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0003c000... (80 %)","Result":true}
+2019-12-11 16:41:56.1154 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00040000... (85 %)","Result":true}
+2019-12-11 16:41:56.3500 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00044000... (90 %)","Result":true}
+2019-12-11 16:41:56.5239 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x00048000... (95 %)","Result":true}
+2019-12-11 16:41:59.4402 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录Writing at 0x0004c000... (100 %)","Result":true}
+2019-12-11 16:41:59.4402 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"烧录成功","Result":true}
+2019-12-11 16:42:01.1076 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:42:01.4178 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"固件指纹匹配成功","Result":true}
+2019-12-11 16:42:01.6274 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"GPIO测试成功","Result":true}
+2019-12-11 16:42:01.8906 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}
+2019-12-11 16:42:02.1462 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取key成功","Result":true}
+2019-12-11 16:42:02.5953 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入配置信息成功","Result":true}
+2019-12-11 16:42:02.8434 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"写入国家码成功","Result":true}
+2019-12-11 16:42:03.4084 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"进入产测模式","Result":true}
+2019-12-11 16:42:03.8724 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取配置成功","Result":true}
+2019-12-11 16:42:04.1214 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"读取国家码成功","Result":true}
+2019-12-11 16:42:04.4291 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"获取Mac成功:84f3eb395dad","Result":true}

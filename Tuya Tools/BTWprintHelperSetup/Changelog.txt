@@ -1,0 +1,10 @@
+﻿version:1.0.1
+date:2018-06-04
+git tag:智选BTW标签打印工具v1.0.1
+note:
+	* 增加导出功能
+version:1.0.0
+date:2018-06-03
+git tag:智选BTW标签打印工具v1.0.0
+note:
+	* 智选BTW标签打印工具首版

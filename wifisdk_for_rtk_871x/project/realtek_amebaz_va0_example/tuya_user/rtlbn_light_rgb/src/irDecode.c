@@ -29,8 +29,15 @@ STATIC SEM_HANDLE g_remote_control_semp;
 
 SFT_TIMER LightGraTimer;
 
-uint16_t ir_temp[128];
+uint32_t ir_temp[128];
+uint16_t IRCode_temp[33];
+uint8_t IR_temp[4];
 uint8_t ir_cnt = 0;
+uint8_t ir_flag = 0;
+uint8_t ir_start = 0;
+uint8_t Flag_ir_start = 0;
+uint8_t	IR_num = 0;		 
+uint8_t ir_repeatcnts = 0;
 
 STATIC uint8_t isInRange (uint16_t n, uint16_t target, uint8_t range)
 {
@@ -66,52 +73,101 @@ STATIC IRCODE IrDecodePh (uint16_t cnt)
   return IRCODEERROR;
 }
 
+STATIC IRCODE IrDecode_Data(uint16_t cnt)
+{
+	if(isInRange(cnt,18,4)){  //3
+		return IRCODE1;
+	}
+	else if(isInRange(cnt,9,4)){
+		return IRCODE0;
+	}
+	
+	return IRCODEERROR;
+}
+
+STATIC IRCODE IrDecode_Start(uint16_t cnt)
+{
+	if(isInRange(cnt,110,15)){  //5
+		return IRCODESTART;
+	}
+	else if(isInRange(cnt,88,6)){
+		return IRCODEREPEAT;
+	}
+	
+	return IRCODEERROR;
+}
+
+
+void IR_Decode(uint16_t IR_time)
+{
+     /********* 确定起始码*******/
+	if(isInRange(IR_time,110,10)) 
+	{
+		 Flag_ir_start = 1;
+		 IR_num = 0;		//清空数据
+		 irCmd=0;
+	}
+	else
+	{
+		/******** 开始解码 ********/ 
+		if((Flag_ir_start==1))
+		{
+			irCmd<<=1;
+			if(isInRange(IR_time,18,4))
+			{
+				irCmd |= 0x00000001;
+			}
+			IR_num++;
+			if(IR_num>31)
+			{
+				/******** 解码完成 ********/ 
+				IR_temp[0] = (uint8_t)((irCmd>>0)&0xff);
+				IR_temp[1] = (uint8_t)((irCmd>>8)&0xff);
+				IR_temp[2] = (uint8_t)((irCmd>>16)&0xff);
+				IR_temp[3] = (uint8_t)((irCmd>>24)&0xff);
+				irCmd=0;
+				IR_num=0;
+				irType = IRCODESTART;
+				Flag_ir_start=0;
+			}
+		}
+		else
+		{
+			irCmd=0;
+			IR_num=0;
+		}
+	}
+}
+
 
 STATIC void IrCmdDeal (VOID)
 {
   uint8_t* p;
   UCHAR i;
-  p = (uint8_t*) &irCmd;
-  #if 1 // always lost bit code, and fail. So skip this check func.
-  if(p[3]!=0x0)
-	{ 
+ #if 1
+	  p = (uint8_t*) &IR_temp;
+	  //PR_NOTICE("%d p[0]=0x%02x, p[1]=0x%02x,p[2]=0x%02x, p[3]=0x%02x\r\n",irType, p[0],p[1],p[2], p[3]);
+	  if (!((p[2] == 0xf7) && (p[3] == 0x00)))
+	  {
+	    PR_DEBUG_RAW("p[0]=0x%02x, != ~p[1]=0x%02x\r\n", p[0], ~p[1]);
+	    irCmd = 0;
+	    irType = IRCODEERROR;
+	    return;
+	  }
+	  cur_ircmd = p[1];
+#else
+      p = (uint8_t*) &IR_temp;
+	  PR_NOTICE("p[0]=0x%02x, p[1]=0x%02x,p[2]=0x%02x, p[3]=0x%02x\r\n", p[0],p[1],p[2], p[3]);
+	  if ((uint8_t) (p[2] & 0xff) != (uint8_t) (~p[3] & 0xff))
+	  {
+		//PR_DEBUG_RAW("p[2]=0x%02x, != ~p[3]=0x%02x\r\n", p[2], ~p[3]);
 		irCmd = 0;
-		irType = IRCODEERROR;
-		// PR_DEBUG_RAW("IR CODE ERR!\r\n");
-		return;
-	}
-  #else
-  if (p[2]!=0xf7 || p[3]!=0x0) // IR REMOTE PROVIDE BY AILY&ALLEN
-  {
-    // if(p[2]!=0xff || p[3]!=0x0){ // SPECIAL IR REMOTE
-    irCmd = 0;
-    irType = IRCODEERROR;
-    // PR_DEBUG_RAW("IR CODE ERR!\r\n");
-    return;
-  }
-  #endif
-
-  #if 0
-  if ( (uint8_t) (p[0] & 0xff) != (uint8_t) (~p[1] & 0xff) )
-  {
-    // PR_DEBUG_RAW("p[0]=0x%02x, != ~p[1]=0x%02x\r\n", p[0], ~p[1]);
-    irCmd = 0;
-    irType = IRCODEERROR;
-    return;
-  }
-  #endif
-  
-  /***** 解码自适应 ******/
-	if(p[2] == 0xff)
-	{
-        cur_ircmd = p[0];
-	}
-	else if (p[2] == 0xf7)
-	{
-	    cur_ircmd = p[1];
-	}
-  
-  cur_irType = irType;//IRCODESTART;
+	    irType = IRCODEERROR;
+	    return;
+	  }
+	  cur_ircmd = p[1];
+ #endif
+  cur_irType = irType;
   light_IrCrtl.IR_Flag = 0;
   PostSemaphore (irdeal.ir_cmddeal_sem);
   irType = IRCODEERROR;
@@ -120,161 +176,111 @@ STATIC void IrCmdDeal (VOID)
 
 STATIC void IrDecode (uint16_t cnt)
 {
-  IRCODE code;
-  STATIC uint8_t irDecodeSecondByte;
-#if 0//纯打印
-  STATIC uint32_t x = 0;
-  STATIC UCHAR ir_cmd_ = 0x00;
-  STATIC UCHAR ir_temp_[7];
-  ir_temp[ir_cnt] = cnt;
-  ir_cnt ++;
-
-  if (ir_cnt >= 32) //大于这个最少按两次
+  uint8_t i;
+  ir_flag = 1;
+  if(ir_start==0)
   {
-    //直接数据全局打印
-    uint8_t i;
-    PR_DEBUG_RAW ("ir%d: ", x++);
-    ir_temp_[5] = 1;
-
-    for (i = 0; i < 48; i ++)
-    {
-      if (i%8 == 0)
+	  // 起始码判断
+	  if((cnt>108)&&(cnt<118))
       {
-        PR_DEBUG_RAW ("\r\nnum:%d  ", i/8);
-      }
-
-      PR_DEBUG_RAW ("%04d ", ir_temp[i]);
-    }
-
-    PR_DEBUG_RAW ("\r\n");
-    ir_cnt = 0;
-
-    /*下面为解析数据*/
-    for (i=0; i<48; i++) //二进制
-    {
-      if (isInRange (ir_temp[i], 18, 2) )
-      {
-        ir_cmd_ = (ir_cmd_<<1) | 0x01;
-        PR_DEBUG_RAW ("1");
-      }
-      else if (isInRange (ir_temp[i], 9, 2) )
-      {
-        ir_cmd_ = ir_cmd_<<1;
-        PR_DEBUG_RAW ("0");
-      }
-      else if (isInRange (ir_temp[i], 108, 5) )
-      {
-        PR_DEBUG_RAW ("S");  //头
-      }
-      else if (isInRange (ir_temp[i], 90, 5) )
-      {
-        PR_DEBUG_RAW ("P");  //重复码1
-      }
-      else if (isInRange (ir_temp[i], 145, 5) ) //经检验，重复码2 = CODE0
-      {
-        PR_DEBUG_RAW ("p");  //重复码2
-      }
-      else
-      {
-        PR_DEBUG_RAW ("e"); //错误码
-      }
-
-      //
-      if (i%8 == 7)
-      {
-        ir_temp_[i/7 - 1] = ir_cmd_;
-        PR_DEBUG_RAW ("   analysis num:%d \r\n", i/7 - 1);
-      }
-    }
-
-    PR_DEBUG_RAW ("\r\n");
-    memset (ir_temp, 0, 48);
-
-    for (i=0; i<6; i++) //十六进制
-    {
-      PR_DEBUG_RAW ("code num:%d -> 0X%02x\r\n", i, ir_temp_[i]);
-    }
+		ir_start = 1;
+		ir_temp[ir_cnt] = cnt;
+	    ir_cnt ++;
+	  }
+	  // 判断重复码 
+	  else if((cnt>85)&&(cnt<95))
+	  {
+		  IR_num = 0;	  
+		  ir_cnt = 0;
+		  ir_flag = 0;
+		  ir_start = 0;
+		  timer_cnt = 0;
+	      irCmd=IR_temp[1];
+		  #if 0
+		  // 电源键 模式加和减 不支持长按
+		  if((irCmd==KEY_POWER_ON)||(irCmd==KEY_G_LEVEL_4)||(irCmd==KEY_MODE_FLASH))
+		  {
+			irCmd = 0;
+			irType = IRCODEERROR;
+			return;
+		  }
+		  #else
+		  // 长按触发时间 
+		  ir_repeatcnts++;
+		  if(ir_repeatcnts<4)
+		  {
+			return;
+		  }
+		  else
+		  {
+			ir_repeatcnts = 0;
+		  }
+		  #endif
+		  irType = IRCODEREPEAT;
+		  PostSemaphore (irdeal.ir_cmddeal_sem);
+		  irType = IRCODEERROR;
+		  irCmd = 0;
+	  }
   }
-
-#else//解码
-  //  STATIC IRCODE CmdType = IRCODEERROR;
-  if (irType == IRCODESTART)
+  else
   {
-    //注意头码容易和重复码靠近
-    switch (IrDecodePh (cnt) )
-    {
-      case IRCODE1:
-        irCmd = (irCmd<<1) | 0x01;
-        break;
-
-      case IRCODE0:
-        irCmd = (irCmd<<1);
-        break;
-
-      default:
-        irType = IRCODEERROR;
-        irCmd = 0;
-        ir_cnt = 0;
-        return;
-        break;
-    }
-
-    ir_cnt++;
-    if (ir_cnt >= 32)
-    {
-      // PR_DEBUG_RAW("if(ir_cnt >= 32) irType:%d\r\n", irType);
-      IrCmdDeal();
-      ir_cnt = 0;
-      irType = IRCODEERROR;
-    }
-
-    return;
+	  ir_temp[ir_cnt] = cnt;
+	  ir_cnt ++;
+	  if(ir_cnt >32)  
+	  { 
+		//MutexLock (irdeal.ir_mutex);
+		//MutexUnLock (irdeal.ir_mutex);
+		
+		for (i = 0; i < 33; i ++)
+	    {
+	      //PR_NOTICE("%d %04d ",i, ir_temp[i]);
+	      IR_Decode(ir_temp[i]);
+	    }
+		ir_repeatcnts = 0;
+		ir_start = 0;
+	    ir_cnt = 0;
+		ir_flag = 0;
+		timer_cnt = 0;
+		IrCmdDeal();
+	  }
   }
-
-  if (irType == IRCODEREPEAT)
-  {
-    cur_irType = IRCODEREPEAT;
-    light_IrCrtl.IR_Flag = 0;
-    PostSemaphore (irdeal.ir_cmddeal_sem);
-    irType = IRCODEERROR;
-  }
-
-  irType = IrDecodePh (cnt);
-#endif
 }
-
 
 STATIC void ir_test_timer_handler (uint32_t id)
 {
+  #if 0
   timer_cnt ++;
-
   if (timer_cnt > TIMER_CNT_MAX)
   {
     timer_cnt = 0;
     ir_cnt = 0;
     irCmd = 0;
-    cur_ircmd = 0xff; // invalid code!
+	irType = IRCODEERROR;
+    cur_ircmd = 0xff;    // invalid code!
   }
+  #else
+  if(ir_flag)
+  {
+  	 timer_cnt ++;
+  }
+  #endif
 }
 
 STATIC void gpio_interrupt (uint32_t id, gpio_irq_event event)
 {
   if (id == IR_GPIO_NUM)
   {
-    // PR_NOTICE("gpio_interrupt, timer_cnt=%d", timer_cnt);
-    //获取计数
-    IrDecode (timer_cnt);
+	IrDecode(timer_cnt);
     timer_cnt = 0;
   }
 }
-
 
 
 //*****************************************************
 //******************红外线程***************************
 STATIC IR_CALLBACK __ir_callback = NULL;
 
-STATIC VOID IrCmdDealThread (PVOID pArg)
+STATIC VOID IrCmdDealThread(PVOID pArg)
 {
   static int i = 0;
 
@@ -291,23 +297,21 @@ STATIC VOID IrCmdDealThread (PVOID pArg)
 
 
 //********************************************************
-//******************红外相关初始化************************
+//******************红外相关初***********************
 STATIC void gpio_intr_init (VOID)
 {
-#if 1//IR中断
-  uint32_t gpio_irq_id = IR_GPIO_NUM;
+   uint32_t gpio_irq_id = IR_GPIO_NUM;
+  
+  //gpio_init (&test_gpio_x, IR_GPIO_NUM);
+  //gpio_dir (&test_gpio_x, PIN_INPUT);      // Direction: Output
+  //gpio_mode (&test_gpio_x, PullUp);	      // No pull
+  
   gpio_irq_init (&ir_irq, IR_GPIO_NUM, gpio_interrupt, (uint32_t) gpio_irq_id);
   gpio_irq_set (&ir_irq, IRQ_FALL, 1);
   gpio_irq_enable (&ir_irq);
   irType = IRCODEERROR;
-  // last_irType = IRCODEERROR;
-#else//测试使用
-  gpio_init (&test_gpio_x, PA_12);
-  gpio_dir (&test_gpio_x, PIN_OUTPUT);   // Direction: Output
-  gpio_mode (&test_gpio_x, PullNone);    // No pull
-  gpio_write (&test_gpio_x, 0); //测试正常可用,接高点亮依据亮度看现象
-#endif
 }
+
 STATIC void TimerInit (VOID)
 {
   gtimer_init (&ir_timer, TIMER3);
@@ -332,7 +336,14 @@ STATIC VOID UtilInit (IR_CALLBACK callback)
     PR_ERR ("PostSemp err:%d", op_ret);
     return ;
   }
+  
+  op_ret = CreateMutexAndInit(&irdeal.ir_mutex);
 
+  if (OPRT_OK != op_ret)
+  {
+    PR_ERR ("CreateMutexAndInit err ");
+  } 
+  
   THRD_PARAM_S thrd_param;
   thrd_param.stackDepth = 1024+512;
   thrd_param.priority = TRD_PRIO_2;

@@ -1,0 +1,21 @@
+﻿Author: Maxim Mogilevsky (Midlinesoft).
+
+Third party code:
+1. Qt - cross-platform application and UI framework.
+http://qt.digia.com/
+2. xpdf - PDF text extractor.
+http://www.foolabs.com/xpdf/
+3. QuaZIP - Qt/C++ wrapper for ZIP/UNZIP package.
+http://quazip.sourceforge.net/
+
+Thanks to translators:
+Česky (CZ) - Martin Chrastek
+中文 (简体) (CS) - Haiwen Kuang
+Deutsch (DE) - Thomas Duntze
+Ελληνικά (EL) - geogeo http://www.geogeo.gr
+Español (ES) - Eickhel Mendoza
+Français (FR) - Manuel Flury
+日本の (JA) - Tilt
+Magyar (HU) - Tibor Kornyei
+Italiano (IT) - Leandro D'Anna
+Polski (PL) - Radek Pytlik

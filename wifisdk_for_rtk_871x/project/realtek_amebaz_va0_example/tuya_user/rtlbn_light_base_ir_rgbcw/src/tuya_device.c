@@ -4,6 +4,7 @@
 *  Date: 20150605
 ***********************************************************/
 #define __DEVICE_GLOBALS
+
 #include ".compile_usr_cfg.h"
 #include "tuya_device.h"
 #include "tuya_light_lib.h"
@@ -11,7 +12,6 @@
 #include "tuya_hw_table.h"
 #include "irDecode.h"
 #include "uf_file.h"
-
 
 /***********************************************************
 *************************micro define***********************
@@ -25,7 +25,7 @@
 *************************function define********************
 ***********************************************************/
 extern  VOID start_test (VOID);
-STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType);
+VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType);
 
 OPERATE_RET set_reset_cnt (INT_T val);
 
@@ -33,7 +33,7 @@ LED_HANDLE wf_light = NULL;
 
 STATIC BOOL recv_debug_flag = FALSE;
 
-VOID tuya_light_pre_device_init (VOID)
+VOID tuya_light_pre_device_init(VOID)
 {
 #if USER_DEBUG_APP
   SetLogManageAttr (LOG_LEVEL_DEBUG);
@@ -46,8 +46,9 @@ VOID tuya_light_pre_device_init (VOID)
   tuya_set_lp_mode (TRUE);
 #endif
   tuya_light_config_param_get();
-  sys_log_uart_off();
-  tuya_light_init();  //light硬件相关初始化
+  //sys_log_uart_on();
+  tuya_light_init();  //light硬件相关初始
+  //sys_log_uart_off();
 }
 
 #if _IS_OEM
@@ -82,7 +83,7 @@ STATIC OPERATE_RET __read_product_key_fast( )
 }
 #endif
 
-static void __product_key_init()
+void __product_key_init(void)
 {
 #if _IS_OEM
   memset (__product_key, 0x0, PRODUCT_KEY_LEN+4);
@@ -120,7 +121,7 @@ VOID tuya_light_app_init (VOID)
   light_prod_init (PROD_TEST_TYPE_V2, prod_test);
 }
 
-STATIC OPERATE_RET device_differ_init (VOID)
+OPERATE_RET device_differ_init (VOID)
 {
   OPERATE_RET op_ret;
   op_ret = tuya_light_key_init (tuya_light_key_process);
@@ -161,8 +162,7 @@ VOID normal_key_function_cb (VOID)
 #if (USER_DEFINE_LIGHT_TYPE == USER_LIGTH_MODE_C || USER_DEFINE_LIGHT_TYPE == USER_LIGTH_MODE_CW)
   fun = KEY_FUN_POWER_CTRL;
 #endif
-  TUYA_GW_WIFI_NW_STAT_E wf_stat = tuya_light_get_wf_gw_status(); //处于配网状态下，功能暂时屏蔽
-
+  TUYA_GW_WIFI_NW_STAT_E wf_stat = tuya_light_get_wf_gw_status(); //处于配网状态下，功能暂时屏�?
   if (wf_stat == STAT_UNPROVISION || wf_stat == STAT_AP_STA_UNCFG)
   {
     return;
@@ -270,12 +270,12 @@ VOID tuya_light_key_process (INT_T gpio_no, PUSH_KEY_TYPE_E type, INT_T cnt)
   }
 }
 
-STATIC VOID __userIrCmdDeal1 (IRCMD cmd, IRCODE irType)
+ VOID __userIrCmdDeal1 (IRCMD cmd, IRCODE irType)
 {
 	PR_NOTICE ("\n\r%s get cmd %d,irType %d \r\n", __FUNCTION__,cmd,irType);
 }
 
-STATIC VOID __userIrCmdDeal(IRCMD cmd, IRCODE irType)
+VOID __userIrCmdDeal(IRCMD cmd, IRCODE irType)
 {
   STATIC IRCMD_new last_cmd = -1;
   static uint8_t I = 0;
@@ -288,7 +288,7 @@ STATIC VOID __userIrCmdDeal(IRCMD cmd, IRCODE irType)
     if (irType == IRCODESTART)
     {
       last_cmd = cmd;
-      PR_DEBUG ("NEW CMD:%x\r\n", last_cmd);
+      PR_NOTICE("NEW CMD:%x\r\n", last_cmd);
       I = 0;
     }
     else
@@ -298,7 +298,8 @@ STATIC VOID __userIrCmdDeal(IRCMD cmd, IRCODE irType)
 
       switch (last_cmd)
       {
-        case KEY_POWER_ON_OFF:
+		#if USER_IR5LU_OR_IR2LU
+		case KEY_POWER_ON_OFF:
           if (I >= 48)
           {
             PR_DEBUG ("===>ir remote KEY_POWER_ON long press\r\n");
@@ -307,7 +308,8 @@ STATIC VOID __userIrCmdDeal(IRCMD cmd, IRCODE irType)
           }
 
           return;
-
+        #endif
+		
         case KEY_BRIGHTNESS_UP: //0x00,
         case KEY_BRIGHTNESS_DOWN: //0x80,
 
@@ -323,37 +325,58 @@ STATIC VOID __userIrCmdDeal(IRCMD cmd, IRCODE irType)
 
   TUYA_GW_WIFI_NW_STAT_E wf_stat = tuya_light_get_wf_gw_status();
 
-  if ( (wf_stat == STAT_UNPROVISION) || (wf_stat == STAT_AP_STA_UNCFG) )
+  if ((wf_stat == STAT_UNPROVISION) || (wf_stat == STAT_AP_STA_UNCFG))
   {
     return;
   }
 
   switch (last_cmd)
   {
-    case KEY_POWER_ON_OFF:          				//����
+	#if USER_IR5LU_OR_IR2LU
+	case KEY_POWER_ON_OFF:          				//����
 	  light_ir_fun_power_on_off_ctrl();
       break;
-    case KEY_BRIGHTNESS_UP:							//����
+	#else
+	  case KEY_POWER_ON:
+	  	light_ir_fun_power_on_ctrl();
+	  	break;
+
+	  case KEY_POWER_OFF:
+	  	light_ir_fun_power_off_ctrl();
+	  	break;
+	#endif
+	
+    case KEY_BRIGHTNESS_UP:							
       light_ir_fun_bright_up();
       break;
 
-    case KEY_BRIGHTNESS_DOWN:						//����
+    case KEY_BRIGHTNESS_DOWN:						
       light_ir_fun_bright_down();
       break;
-    case KEY_WHITE_W:
-  	  light_ir_key_fun_white_w();
+    case KEY_WHITE_W: 
+  	   //light_ir_key_fun_white_w();
+  	   #if USER_IR5LU_OR_IR2LU
+  	   light_ir_key_fun_ColorDown();
+	   #else
+	   light_ir_key_fun_ColorUP();
+	   #endif
   	  break;
     case KEY_WHITE_C:
-  	  light_ir_key_fun_white_c();
+  	  //light_ir_key_fun_white_c();
+	  #if USER_IR5LU_OR_IR2LU
+  	  light_ir_key_fun_ColorUP();
+	  #else
+	  light_ir_key_fun_ColorDown();
+	  #endif
   	  break;
     case KEY_WHITE_xiaoye:
   	  light_ir_key_fun_white_xiaoye();
   	  break;
     case KEY_MODE_SMOOTH:
-      light_ir_fun_scene_change (4);   //7
+      light_ir_fun_scene_change (7);   //7
       break;
     case KEY_MODE_FLASH:
-      light_ir_fun_scene_change (5);   //6
+      light_ir_fun_scene_change (6);   //6
       break;
     case KEY_RGB_TURN_ROUND:
   	  rgb_turn_round_cnt++;
@@ -381,7 +404,6 @@ STATIC VOID __userIrCmdDeal(IRCMD cmd, IRCODE irType)
   	    cw_turn_round_cnt = 0;
   	  }
   	  break;
-
 
 		
     case KEY_R_LEVEL_5:

@@ -61,7 +61,7 @@ extern "C" {
 #define LOW_POWER_3    LOW_POWER_0
 #define LOW_POWER_4    PA_15
 
-#define KEY_BUTTON     PA_0
+#define KEY_BUTTON     PA_0   // PA_5
 
 #define MODULE_TYPE_1  "WR2L"
 #define MODULE_TYPE_2  "WR3-WR3L"

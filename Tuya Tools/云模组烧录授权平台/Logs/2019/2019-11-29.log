@@ -1,0 +1,27 @@
+2019-11-29 16:17:20.0500 INFO "COM3runstart"
+2019-11-29 16:17:20.0500 INFO "COM3run2"
+2019-11-29 16:17:20.0700 INFO "COM3run3"
+2019-11-29 16:17:20.1154 INFO "COM3run4"
+2019-11-29 16:17:20.1154 INFO "COM3run5"
+2019-11-29 16:17:20.1154 INFO "COM3runend"
+2019-11-29 16:17:20.6811 INFO "COM3run进入SerilaChange"
+2019-11-29 16:17:20.6811 INFO "COM3runSerilaChange:dsr 1"
+2019-11-29 16:17:20.6891 INFO "COM3TaskRunstart"
+2019-11-29 16:17:47.0807 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"kKKGAkERU8HfyR6e","Message":"固件指纹匹配成功","Result":true}
+2019-11-29 16:17:47.7921 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"kKKGAkERU8HfyR6e","Message":"写入hid成功","Result":true}
+2019-11-29 16:17:47.9672 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"kKKGAkERU8HfyR6e","Message":"获取key成功","Result":true}
+2019-11-29 16:17:48.4221 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"kKKGAkERU8HfyR6e","Message":"写入配置信息成功","Result":true}
+2019-11-29 16:17:48.7528 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"kKKGAkERU8HfyR6e","Message":"复位成功","Result":true}
+2019-11-29 16:17:49.5944 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"kKKGAkERU8HfyR6e","Message":"读取配置成功","Result":true}
+2019-11-29 16:18:21.9735 INFO "COM3run进入SerilaChange"
+2019-11-29 16:18:21.9735 INFO "COM3runSerilaChange:dsr 0"
+2019-11-29 16:18:22.4565 INFO "COM3run进入SerilaChange"
+2019-11-29 16:18:22.4565 INFO "COM3runSerilaChange:dsr 1"
+2019-11-29 16:18:22.4565 INFO "COM3TaskRunstart"
+2019-11-29 16:18:24.5719 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"kKKGAkERU8HfyR6e","Message":"固件指纹匹配成功","Result":true}
+2019-11-29 16:18:24.9365 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"kKKGAkERU8HfyR6e","Message":"读取配置成功","Result":true}
+2019-11-29 16:18:34.8462 INFO "COM3run进入SerilaChange"
+2019-11-29 16:18:34.8462 INFO "COM3runSerilaChange:dsr 0"
+2019-11-29 16:18:35.2484 INFO "COM3run进入SerilaChange"
+2019-11-29 16:18:35.2514 INFO "COM3runSerilaChange:dsr 1"
+2019-11-29 16:18:35.2706 INFO "COM3TaskRunstart"

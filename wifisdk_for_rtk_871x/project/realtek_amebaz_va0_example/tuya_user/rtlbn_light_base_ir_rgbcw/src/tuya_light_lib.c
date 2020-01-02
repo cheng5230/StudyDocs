@@ -3,9 +3,10 @@
 #include "tuya_light_hard.h"
 #include "uf_file.h"
 
+
 #define TUYA_LIGH_LIB_VERSION   "1.0.2"
 
-#define FASE_SW_CNT_KEY   "fsw_cnt_key"
+#define FASE_SW_CNT_KEY    "fsw_cnt_key"
 #define LIGHT_DATA_KEY     "light_data_key"
 
 #define LIGHT_PRECISION    500    //调光精度
@@ -32,14 +33,14 @@
 #define BRIGHT_VAL_MIN          10              //新面板下发最小亮度
 
 #define COLOR_DATA_LEN         12     //颜色数据长度
-#define COLOR_DATA_DEFAULT  "000003e803e8"     //新版本默认彩光数据
+#define COLOR_DATA_DEFAULT      "000003e803e8"     //新版本默认彩光数据
 #define FC_COLOR_DATA_DEFAULT   "000003e8000a"     //彩光&白光同时控制状态下，彩光初始数值
 #define RGBCW_ORDER_DATA_LEN 6                   //RGBCW
 
 //新版本默认情景数据
-#define SCENE_DATA_DEFAULT_RGBC  "000e0d00002e03e8000000c803e8"//彩灯
+#define SCENE_DATA_DEFAULT_RGBC "000e0d00002e03e8000000c803e8"//彩灯
 #define SCENE_DATA_DEFAULT_RGB  "000e0d00002e03e802cc00000000"
-#define SCENE_DATA_DEFAULT_CW  "000e0d00002e03e8000000c80000"//CW双色
+#define SCENE_DATA_DEFAULT_CW   "000e0d00002e03e8000000c80000"//CW双色
 #define SCENE_DATA_DEFAULT_DIM  "000e0d00002e03e8000000c803e8"//单色灯
 
 //情景参数
@@ -50,28 +51,65 @@
 #define SCENE_DATA_LEN_MIN  (SCENE_HEAD_LEN + SCENE_UNIT_LEN)       //情景数据最小长度
 #define SCENE_DATA_LEN_MAX  (SCENE_HEAD_LEN + SCENE_UNIT_LEN * SCENE_UNIT_NUM_MAX)  //情景数据最大长度
 
+//新版本默认情景数据
+#if 1
+/**************************** 4 路默认情景数据 ***********/
+#define KEY_SCENE0_DEFDATA0 "000e0d00002e03e8000000c803e8"
+#define KEY_SCENE0_DEFDATA1 "000d0d0000000000000000c803e8"
+
+#define KEY_SCENE1_DEFDATA0 "010e0d0000000000000003e803e8" 
+#define KEY_SCENE1_DEFDATA1 "010e0d0000840000000003e803e8"
+
+#define KEY_SCENE2_DEFDATA0 "020e0d0000000000000003e803e8"  
+#define KEY_SCENE2_DEFDATA1 "020e0d0000e80383000003e803e8" 
+
+#define KEY_SCENE3_DEFDATA0 "030e0d0000000000000001f403e8"  
+#define KEY_SCENE3_DEFDATA1 "030e0d00001403e8000001f403e8"
+
+#define KEY_SCENE4_DEFDATA "04464602007803e803e800000000464602007803e8000a00000000" 
+#define KEY_SCENE5_DEFDATA "05464601000003e803e800000000464601007803e803e80000000046460100f003e803e800000000"
+#define KEY_SCENE6_DEFDATA "06464601000003e803e800000000464601007803e803e80000000046460100f003e803e800000000" 
+#define KEY_SCENE7_DEFDATA "07464602000003e803e800000000464602007803e803e80000000046460200f003e803e800000000464602003d03e803e80000000046460200ae03e803e8"
+#else
+/**************************** 3 路默认情景数据 ***********/
+#define KEY_SCENE0_DEFDATA0 "000e0d00002e03e802cc00000000"   
+#define KEY_SCENE0_DEFDATA1 "000d0d0000000000000000c803e8"
+
+#define KEY_SCENE1_DEFDATA0 "010e0d000084000003e800000000" 
+#define KEY_SCENE1_DEFDATA1 "010e0d000084000003e800000000"
+
+#define KEY_SCENE2_DEFDATA0 "020e0d00001403e803e800000000"  
+#define KEY_SCENE2_DEFDATA1 "020e0d0000e80383000003e803e8" 
+
+#define KEY_SCENE3_DEFDATA0 "030e0d0000e80383031c00000000"  
+#define KEY_SCENE3_DEFDATA1 "030e0d00001403e8000001f403e8"
+
+#define KEY_SCENE4_DEFDATA "04464602007803e803e800000000464602007803e8000a00000000"  
+#define KEY_SCENE5_DEFDATA "05464601000003e803e800000000464601007803e803e80000000046460100f003e803e800000000"
+#define KEY_SCENE6_DEFDATA "06464601000003e803e800000000464601007803e803e80000000046460100f003e803e800000000" 
+#define KEY_SCENE7_DEFDATA "07464602000003e803e800000000464602007803e803e80000000046460200f003e803e800000000464602003d03e803e80000000046460200ae03e803e800000000464602011303e803e800000000"
+#endif
+
 
 //音乐灯默认数据
 #define MUSIC_INIT_VAL  COLOR_DATA_DEFAULT
 
 #ifdef KEY_CHANGE_SCENE_FUN
   #define MAX_KEY_SCENE_BUF  (SCENE_DATA_LEN_MAX * 8) //按键情景需要的长度
-
-  #define KEY_SCENE0_DEF_DATA "000d0d00002e03e802cc00000000"
-  #define KEY_SCENE1_DEF_DATA "010d0d000084000003e800000000"
-  #define KEY_SCENE2_DEF_DATA "020d0d00001403e803e800000000"
-  #define KEY_SCENE3_DEF_DATA "030e0d0000e80383031c00000000"
-  #define KEY_SCENE4_DEF_DATA "04464602007803e803e800000000464602007803e8000a00000000"
-  #define KEY_SCENE5_DEF_DATA "05464601000003e803e800000000464601007803e803e80000000046460100f003e803e800000000"
-  #define KEY_SCENE6_DEF_DATA "06464601000003e803e800000000464601007803e803e800000000"
-  #define KEY_SCENE7_DEF_DATA "07464602000003e803e800000000464602007803e803e80000000046460200f003e803e800000000464602003d03e803e80000000046460200ae03e803e800000000464602011303e803e800000000"
-
+  #define KEY_SCENE0_DEF_DATA "004f4f01016803e803e8000000004f4f01007803e803e8000000004f4f0100f003e803e800000000"
+  #define KEY_SCENE1_DEF_DATA "013e3e01016803e803e8000000003e3e01007803e803e8000000003e3e0100f003e803e800000000" 
+  #define KEY_SCENE2_DEF_DATA "024e4e01016803e803e8000000004e4e01007803e803e8000000004e4e0100f003e803e800000000" 
+  #define KEY_SCENE3_DEF_DATA "034d4d01016803e803e8000000004d4d01007803e803e8000000004d4d0100f003e803e800000000" 
+  #define KEY_SCENE4_DEF_DATA "044a4a01016803e803e8000000004a4a01007803e803e8000000004a4a0100f003e803e800000000" 
+  #define KEY_SCENE5_DEF_DATA "05464601016803e803e800000000464601007803e803e80000000046460100f003e803e800000000"
+  #define KEY_SCENE6_DEF_DATA "06464601000003e803e800000000464601007803e803e80000000046460100f003e803e800000000464601003603e803e80000000046460100bb03e803e800000000464601012003e803e8000000004646010089000003e800000000" 
+  #define KEY_SCENE7_DEF_DATA "07464602000003e803e800000000464602007803e803e80000000046460200f003e803e800000000464602003d03e803e80000000046460200ae03e803e800000000464602011303e803e800000000464602006c000003e800000000"
 #else
   #define MAX_KEY_SCENE_BUF  0
 #endif
 
-#define MAX_FLASH_BUF   (512 + MAX_KEY_SCENE_BUF)
 
+#define MAX_FLASH_BUF   (512 + MAX_KEY_SCENE_BUF)
 
 typedef enum
 {
@@ -122,13 +160,10 @@ typedef struct
 {
   BRIGHT_DATA_S fin;                  //灯光目标值
   BRIGHT_DATA_S curr;                 //灯光当前值
-
   SCENE_TYPE_E scene_type;
   UCHAR scene_cnt;
-
   BOOL_T scene_enable;                  //SCENE使能标志
   BOOL_T scene_new;                     //计算新值标志
-
   BOOL_T shade_new;//新渐变标志
   //BOOL_T memory;//断电记忆标志
 } LIGHT_HANDLE_S;
@@ -164,7 +199,6 @@ typedef struct
 #endif
   MUTEX_HANDLE mutex;
   MUTEX_HANDLE light_send_mutex;
-
   SEM_HANDLE sem_shade;
 } SYS_HANDLE_S;
 
@@ -177,6 +211,8 @@ typedef struct
   UCHAR_T times;//0-100
 } SCENE_HEAD_S;
 
+static uint8_t staticFlag,breathflag,raindropflag,colorfulflag;
+static uint8_t marqueeflag,blinkingflag,snowcolorflag,streamerflag;
 
 /*******************************************************
 内部函数、变量声明
@@ -211,9 +247,11 @@ STATIC UCHAR_T _white_light_max_power = 100; //白光最大功率（冷暖混色
   STATIC BYTE_T lowpower_flag = 0; //低功耗控制位
 #endif
 /* 功能相关定义 */
-STATIC UCHAR_T key_trig_num = 0; //按键触发次数
+UCHAR_T key_trig_num = 0; //按键触发次数
+STATIC USHORT_T key_trig_length = 0; 
 STATIC USHORT_T light_precison = LIGHT_PRECISION;
 STATIC UINT_T normal_delay_time = NORMAL_DELAY_TIME;
+STATIC BOOL_T JumpFlag;
 
 
 /*******************************************************
@@ -252,7 +290,7 @@ STATIC CHAR_T __hex2asc (CHAR_T data)
 {
   CHAR_T result;
 
-  if ( (data>=0) && (data<=9) )       //变成ascii数字
+  if ( (data>=0) && (data<=9) )             //变成ascii数字
   {
     result = data + 0x30;
   }
@@ -264,7 +302,6 @@ STATIC CHAR_T __hex2asc (CHAR_T data)
   {
     result = 0xff;
   }
-
   return result;
 }
 
@@ -375,6 +412,7 @@ STATIC light_color_data_hex2asc (UCHAR_T* buf, USHORT_T data, BYTE_T len)
 ********************************************************/
 STATIC VOID timer_key_cb (UINT_T timerID, PVOID_T pTimerArg)
 {
+
 }
 
 #if USER_DEFINE_LOWER_POWER
@@ -400,7 +438,7 @@ VOID tuya_light_wf_stat_cb (GW_WIFI_NW_STAT_E wf_stat)
   {
     PR_DEBUG ("last_wf_stat:%d", last_wf_stat);
     PR_DEBUG ("wf_stat:%d", wf_stat);
-    PR_DEBUG ("size:%d", tuya_light_get_free_heap_size() );
+    PR_DEBUG ("size:%d", tuya_light_get_free_heap_size());
 
     switch (wf_stat)
     {
@@ -438,7 +476,6 @@ VOID tuya_light_wf_stat_cb (GW_WIFI_NW_STAT_E wf_stat)
       }
       break;
     }
-
     last_wf_stat = wf_stat;
   }
 }
@@ -524,7 +561,7 @@ VOID light_lib_lowpower_disable (VOID)
 /* MQTT连接后同步, key and ir sync*/
 STATIC VOID idu_timer_cb (UINT_T timerID, PVOID_T pTimerArg)
 {
-  if (tuya_light_get_gw_mq_conn_stat() == TRUE)
+  if(tuya_light_get_gw_mq_conn_stat() == TRUE)
   {
     light_dp_upload();
     sys_stop_timer (sys_handle.timer_init_dpdata);
@@ -832,8 +869,7 @@ STATIC VOID light_bright_data_get (VOID)
 
       case COLOR_MODE:
         light_rgb_value_get (dp_data.color, &light_handle.fin);
-        PR_DEBUG ("light_handle.fin -> r = %d   g = %d  b = %d", light_handle.fin.red, light_handle.fin.green,
-                  light_handle.fin.blue);
+        PR_DEBUG ("light_handle.fin -> r = %d   g = %d  b = %d", light_handle.fin.red, light_handle.fin.green, light_handle.fin.blue);
         break;
 
       default:
@@ -845,8 +881,7 @@ STATIC VOID light_bright_data_get (VOID)
     light_bright_cw_change (dp_data.bright, dp_data.col_temp, &light_handle.fin);
     PR_DEBUG ("light_handle.fin -> cw = %d   ww = %d", light_handle.fin.white, light_handle.fin.warm);
     light_rgb_value_get (dp_data.color, &light_handle.fin);
-    PR_DEBUG ("light_handle.fin -> r = %d   g = %d  b = %d", light_handle.fin.red, light_handle.fin.green,
-              light_handle.fin.blue);
+    PR_DEBUG ("light_handle.fin -> r = %d   g = %d  b = %d", light_handle.fin.red, light_handle.fin.green,light_handle.fin.blue);
   }
 }
 
@@ -1016,20 +1051,20 @@ STATIC VOID light_thread_shade (PVOID pArg)
         w_scale  = __abs (delata_white) / 1.0 / max_value;
         ww_scale = __abs (delata_warm)  / 1.0 / max_value;
         light_handle.shade_new = FALSE;
-      }//按差值对应MAX计算比例
+      }
+	  //按差值对应MAX计算比例
 
       //2、各路按比例得到实际差值
-
-      if (max_value == __abs (delata_red) )
+      if (max_value == __abs (delata_red))
       {
         RED_GRA_STEP = 1;
       }
       else
       {
-        RED_GRA_STEP =  __abs (delata_red) - max_value*r_scale;
+        RED_GRA_STEP =  __abs(delata_red) - max_value*r_scale;
       }
 
-      if (max_value == __abs (delata_green) )
+      if (max_value == __abs(delata_green))
       {
         GREEN_GRA_STEP = 1;
       }
@@ -1038,7 +1073,7 @@ STATIC VOID light_thread_shade (PVOID pArg)
         GREEN_GRA_STEP =  __abs (delata_green) - max_value*g_scale;
       }
 
-      if (max_value == __abs (delata_blue) )
+      if (max_value == __abs (delata_blue))
       {
         BLUE_GRA_STEP = 1;
       }
@@ -1047,7 +1082,7 @@ STATIC VOID light_thread_shade (PVOID pArg)
         BLUE_GRA_STEP =  __abs (delata_blue) - max_value*b_scale;
       }
 
-      if (max_value == __abs (delata_white) )
+      if (max_value == __abs (delata_white))
       {
         WHITE_GRA_STEP = 1;
       }
@@ -1160,6 +1195,7 @@ STATIC VOID light_thread_shade (PVOID pArg)
           }
         }
       }
+	  
       if (dp_data.power == FALSE) 
       {
         light_send_data (0, 0, 0, 0, 0);
@@ -1228,16 +1264,16 @@ VOID light_scene_start (VOID)
   {
     case SCENE_TYPE_SHADOW:
       //呼吸情景会直接进入第一个单元
-      light_handle.scene_cnt ++;
+      //light_handle.scene_cnt ++;
       memcpy (&light_handle.curr, &light_handle.fin, SIZEOF (BRIGHT_DATA_S) );
       light_handle.scene_enable = TRUE;
-      light_send_data (light_handle.fin.red, light_handle.fin.green, light_handle.fin.blue,
-                       light_handle.fin.white, light_handle.fin.warm);
+      light_send_data (light_handle.fin.red, light_handle.fin.green, light_handle.fin.blue,light_handle.fin.white, light_handle.fin.warm);
       MutexUnLock (sys_handle.mutex);
       break;
 
     case SCENE_TYPE_JUMP:
       //直接显示
+      JumpFlag = 1;
       light_shade_stop();
       light_handle.scene_enable = TRUE;
       MutexUnLock (sys_handle.mutex);
@@ -1298,8 +1334,7 @@ STATIC VOID light_thread_scene (PVOID pArg)
     {
       MutexLock (sys_handle.mutex);
       light_handle.scene_new = TRUE;
-      scene_total = strlen (dp_data.scene + 2) /
-                    SCENE_UNIT_LEN;                                    //通过总数据长度计算情景个数
+      scene_total = strlen (dp_data.scene + 2) /SCENE_UNIT_LEN;                                    //通过总数据长度计算情景个数
       //  PR_DEBUG("Num:%d", scene_total);
       scene_total = strlen (dp_data.scene + 2) / SCENE_UNIT_LEN;
 
@@ -1342,6 +1377,11 @@ STATIC VOID light_thread_scene (PVOID pArg)
       if (scene.type == SCENE_TYPE_JUMP)
       {
         light_send_data (light_handle.fin.red, light_handle.fin.green, light_handle.fin.blue, light_handle.fin.white,light_handle.fin.warm);
+		if(JumpFlag)
+		{
+			Last_tick = GetSystemTickCount() * GetTickRateMs();
+			JumpFlag = 0;
+		}
       }
       else if (scene.type == SCENE_TYPE_SHADOW)
       {
@@ -1349,7 +1389,7 @@ STATIC VOID light_thread_scene (PVOID pArg)
       }
       MutexUnLock (sys_handle.mutex);
     }
-
+    
     if ((GetSystemTickCount() * GetTickRateMs() - Last_tick) / 100 > scene.times)
     {
       light_handle.scene_new = FALSE;
@@ -1529,7 +1569,8 @@ VOID light_dp_upload (VOID)
   cJSON* root = NULL;
   CHAR_T* out = NULL;
   DEV_CNTL_N_S* dev_cntl = tuya_light_get_dev_cntl();
-
+  UCHAR_T cmpflag;
+  
   if (dev_cntl == NULL)
   {
     return;
@@ -1572,6 +1613,301 @@ VOID light_dp_upload (VOID)
     cJSON_AddStringToObject (root, tmp, dp_data.color);
   }
 
+  /*******************默认上报数据处理************/
+  PR_DEBUG("------------------------------------------------------------- %s", dp_data.scene);
+  if(dp_data.scene[1]==0x30)
+  {
+    if(strcmp(dp_data.scene,KEY_SCENE0_DEF_DATA)==0)
+    {
+        cmpflag = 0;
+    }
+    else
+    {
+        if(staticFlag)
+        {
+          if(strcmp(dp_data.scene,KEY_SCENE0_DEFDATA0)==0)
+          {
+             cmpflag = 0; 
+          }
+          else
+          {
+             if(strcmp(dp_data.scene,KEY_SCENE0_DEFDATA1)==0)
+             {
+                cmpflag = 0; 
+             }
+             else
+             {
+                cmpflag = 1;
+             }
+          }
+        }
+        else
+        {
+          staticFlag = 1;
+          cmpflag = 0;
+        }
+    }
+    /********* 初始状态发生改变 ********/
+    if(cmpflag==0)
+    {
+      memcpy(dp_data.scene, KEY_SCENE0_DEF_DATA, strlen (KEY_SCENE0_DEF_DATA) + 1);
+      memcpy(key_scene_data[0], KEY_SCENE0_DEF_DATA, strlen (KEY_SCENE0_DEF_DATA) + 1);
+      key_trig_length = strlen (KEY_SCENE0_DEF_DATA);
+    }
+  }
+  else if(dp_data.scene[1]==0x31)
+  {
+    if(strcmp(dp_data.scene,KEY_SCENE1_DEF_DATA)==0)
+    {
+        cmpflag = 0;
+    }
+    else
+    {
+        if(breathflag)
+        {
+          if(strcmp(dp_data.scene,KEY_SCENE1_DEFDATA0)==0)
+          {
+             cmpflag = 0; 
+          }
+          else
+          {
+             if(strcmp(dp_data.scene,KEY_SCENE1_DEFDATA1)==0)
+             {
+                 cmpflag = 0; 
+             }
+             else
+             {
+               cmpflag = 1;
+             }
+          }
+        }
+        else
+        {
+          breathflag = 1;
+          cmpflag = 0;
+        }
+    }
+    /********* 初始状态发生改变 ********/
+    if(cmpflag==0)
+    {
+      memcpy(dp_data.scene, KEY_SCENE1_DEF_DATA, strlen (KEY_SCENE1_DEF_DATA) + 1);
+      memcpy(key_scene_data[1], KEY_SCENE1_DEF_DATA, strlen (KEY_SCENE1_DEF_DATA) + 1);
+      key_trig_length = strlen (KEY_SCENE1_DEF_DATA);
+    }
+  }
+  else if(dp_data.scene[1]==0x32)
+  {
+    if(strcmp(dp_data.scene,KEY_SCENE2_DEF_DATA)==0)
+    {
+        cmpflag = 0;
+    }
+    else
+    {
+        if(raindropflag)
+        {
+          if(strcmp(dp_data.scene,KEY_SCENE2_DEFDATA0)==0)
+          {
+             cmpflag = 0; 
+          }
+          else
+          {
+             if(strcmp(dp_data.scene,KEY_SCENE2_DEFDATA1)==0)
+             {
+               cmpflag = 0; 
+             }
+             else
+             {
+                cmpflag = 1;
+             }
+          }
+        }
+        else
+        {
+          raindropflag = 1;
+          cmpflag = 0;
+        }
+    }
+    /********* 初始状态发生改变 ********/
+    if(cmpflag==0)
+    {
+      memcpy(dp_data.scene, KEY_SCENE2_DEF_DATA, strlen (KEY_SCENE2_DEF_DATA) + 1);
+      memcpy(key_scene_data[2], KEY_SCENE2_DEF_DATA, strlen (KEY_SCENE2_DEF_DATA) + 1);
+      key_trig_length = strlen (KEY_SCENE2_DEF_DATA);
+    }
+  }
+  else if(dp_data.scene[1]==0x33)
+  {
+    if(strcmp(dp_data.scene,KEY_SCENE3_DEF_DATA)==0)
+    {
+        cmpflag = 0;
+    }
+    else
+    {
+        if(colorfulflag)
+        {
+          if(strcmp(dp_data.scene,KEY_SCENE3_DEFDATA0)==0)
+          {
+             cmpflag = 0; 
+          }
+          else
+          {
+             if(strcmp(dp_data.scene,KEY_SCENE3_DEFDATA1)==0)
+             {
+                cmpflag = 0; 
+             }
+             else
+             {
+                cmpflag = 1;
+             }
+          }
+        }
+        else
+        {
+          colorfulflag = 1;
+          cmpflag = 0;
+        }
+    }
+    /********* 初始状态发生改变 ********/
+    if(cmpflag==0)
+    {
+      memcpy(dp_data.scene, KEY_SCENE3_DEF_DATA, strlen (KEY_SCENE3_DEF_DATA) + 1);
+      memcpy(key_scene_data[3], KEY_SCENE3_DEF_DATA, strlen (KEY_SCENE3_DEF_DATA) + 1);
+      key_trig_length = strlen (KEY_SCENE3_DEF_DATA);
+    }
+  }
+  else if(dp_data.scene[1]==0x34)
+  {
+    if(strcmp(dp_data.scene,KEY_SCENE4_DEF_DATA)==0)
+    {
+        cmpflag = 0;
+    }
+    else
+    {
+        if(marqueeflag)
+        {
+          if(strcmp(dp_data.scene,KEY_SCENE4_DEFDATA)==0)
+          {
+             cmpflag = 0; 
+          }
+          else
+          {
+             cmpflag = 1;
+          }
+        }
+        else
+        {
+          marqueeflag = 1;
+          cmpflag = 0;
+        }
+    }
+    /********* 初始状态发生改变 ********/
+    if(cmpflag==0)
+    {
+      memcpy(dp_data.scene, KEY_SCENE4_DEF_DATA, strlen (KEY_SCENE4_DEF_DATA) + 1);
+      memcpy(key_scene_data[4], KEY_SCENE4_DEF_DATA, strlen (KEY_SCENE4_DEF_DATA) + 1);
+      key_trig_length = strlen (KEY_SCENE4_DEF_DATA);
+    }
+  }
+  else if(dp_data.scene[1]==0x35)
+  {
+    if(strcmp(dp_data.scene,KEY_SCENE5_DEF_DATA)==0)
+    {
+        cmpflag = 0;
+    }
+    else
+    {
+        if(blinkingflag)
+        {
+          if(strcmp(dp_data.scene,KEY_SCENE5_DEFDATA)==0)
+          {
+             cmpflag = 0; 
+          }
+          else
+          {
+             cmpflag = 1;
+          }
+        }
+        else
+        {
+          blinkingflag = 1;
+          cmpflag = 0;
+        }
+    }
+    /********* 初始状态发生改变 ********/
+    if(cmpflag==0)
+    {
+      memcpy(dp_data.scene, KEY_SCENE5_DEF_DATA, strlen (KEY_SCENE5_DEF_DATA) + 1);
+      memcpy(key_scene_data[5], KEY_SCENE5_DEF_DATA, strlen (KEY_SCENE5_DEF_DATA) + 1);
+      key_trig_length = strlen (KEY_SCENE5_DEF_DATA);
+    }
+  }
+  else if(dp_data.scene[1]==0x36)
+  {
+    if(strcmp(dp_data.scene,KEY_SCENE6_DEF_DATA)==0)
+    {
+        cmpflag = 0;
+    }
+    else
+    {
+        if(snowcolorflag)
+        {
+          if(strcmp(dp_data.scene,KEY_SCENE6_DEFDATA)==0)
+          {
+             cmpflag = 0; 
+          }
+          else
+          {
+             cmpflag = 1;
+          }
+        }
+        else
+        {
+          snowcolorflag = 1;
+          cmpflag = 0;
+        }
+    }
+    /********* 初始状态发生改变 ********/
+    if(cmpflag==0)
+    {
+      memcpy(dp_data.scene, KEY_SCENE6_DEF_DATA, strlen (KEY_SCENE6_DEF_DATA) + 1);
+      memcpy(key_scene_data[6], KEY_SCENE6_DEF_DATA, strlen (KEY_SCENE6_DEF_DATA) + 1);
+      key_trig_length = strlen (KEY_SCENE6_DEF_DATA);
+    }
+  }
+  else if(dp_data.scene[1]==0x37)
+  {
+    if(strcmp(dp_data.scene,KEY_SCENE7_DEF_DATA)==0)
+    {
+        cmpflag = 0;
+    }
+    else
+    {
+        if(streamerflag)
+        {
+          if(strcmp(dp_data.scene,KEY_SCENE7_DEFDATA)==0)
+          {
+             cmpflag = 0; 
+          }
+          else
+          {
+             cmpflag = 1;
+          }
+        }
+        else
+        {
+          streamerflag = 1;
+          cmpflag = 0;
+        }
+    }
+    /********* 初始状态发生改变 ********/
+    if(cmpflag==0)
+    {
+      memcpy(dp_data.scene, KEY_SCENE7_DEF_DATA, strlen (KEY_SCENE7_DEF_DATA) + 1);
+      memcpy(key_scene_data[7], KEY_SCENE7_DEF_DATA, strlen (KEY_SCENE7_DEF_DATA) + 1);
+      key_trig_length = strlen (KEY_SCENE7_DEF_DATA);
+    }
+  }
+  
   dpid2str (tmp, DPID_SCENE);
   cJSON_AddStringToObject (root, tmp, dp_data.scene);
   dpid2str (tmp, DPID_COUNTDOWN);
@@ -1609,6 +1945,22 @@ VOID light_dp_upload (VOID)
     return;
   }
 
+  if (dp_data.mode == SCENE_MODE)
+  {
+    MutexLock (sys_handle.mutex);
+    //strdata_to_hexdata(dp_data.scene,key_trig_length,Scenevalue);
+    /*************** 呼吸顺序处理       ***************/
+    unsigned char scene_num = (key_trig_length-1)/26;
+    //if(Scenevalue[0]==1)
+    //{
+    //  __scene_cnt = scene_num-1;
+    //}
+    /***************************************/
+    MutexUnLock (sys_handle.mutex);
+    //light_scene_start();
+    //PR_DEBUG ("num1:%s\n",dp_data.scene);
+    //PR_DEBUG("key_trig_num=%d-%d\r\n",Scenevalue[0],key_trig_length);
+  }
   return;
 }
 
@@ -1705,7 +2057,6 @@ STATIC VOID __deal_rgbcw_order (UCHAR* rgbcw_order, UCHAR* str, UCHAR len)
     memcpy (rgbcw_order, str, len);
     rgbcw_order[len] = '\0';
   }
-
   tuya_light_set_rgbcw_order (rgbcw_order);
 }
 
@@ -2178,12 +2529,13 @@ STATIC OPERATE_RET light_data_write_flash (VOID)
       cJSON_AddStringToObject (root, "color", COLOR_DATA_DEFAULT);
     }
   }
-
   //情景设定任何模式下保持记忆
   cJSON_AddStringToObject (root, "scene", dp_data.scene);
+  
 #if USER_DEFINE_LIGHT_STRIP_LED_CONFIG
-  cJSON_AddStringToObject (root, "rgbcw_order", dp_data.rgbcw_order);
+  cJSON_AddStringToObject(root, "rgbcw_order", dp_data.rgbcw_order);
 #endif
+
 #ifdef KEY_CHANGE_SCENE_FUN
   cJSON_AddStringToObject (root, "scene0", key_scene_data[0]);
   cJSON_AddStringToObject (root, "scene1", key_scene_data[1]);
@@ -2694,6 +3046,24 @@ VOID light_ir_fun_power_on_off_ctrl (VOID)
   }
 }
 
+VOID light_ir_fun_power_on_ctrl (VOID)
+{
+#if USER_DEFINE_LOWER_POWER
+
+  if (lowpower_flag == 1)
+  {
+    lowpower_flag = 0;
+    light_lib_lowpower_disable();
+  }
+#endif
+    if (dp_data.power == FALSE)
+    {
+    	light_switch_set (TRUE);
+    	light_dp_data_autoupload (FAST_DP_UPLOAD_TIME);
+    }
+}
+
+
 VOID light_ir_fun_power_off_ctrl (VOID)
 {
 #if USER_DEFINE_LOWER_POWER
@@ -2703,14 +3073,12 @@ VOID light_ir_fun_power_off_ctrl (VOID)
     lowpower_flag = 0;
     light_lib_lowpower_disable();
   }
-
 #endif
-
-  if (dp_data.power == TRUE)
-  {
-    light_switch_set (FALSE);
-    light_dp_data_autoupload (FAST_DP_UPLOAD_TIME);
-  }
+    if (dp_data.power == TRUE)
+    {
+    	light_switch_set (FALSE);
+    	light_dp_data_autoupload (FAST_DP_UPLOAD_TIME);
+    }
 }
 
 STATIC VOID __light_ir_key_fun_color (USHORT_T hue, USHORT_T s)
@@ -2823,6 +3191,51 @@ VOID light_ir_key_fun_white_c()
   light_dp_data_autosave();
 }
 
+VOID light_ir_key_fun_ColorDown()
+{
+  if (dp_data.power != TRUE)
+  {
+    return;
+  }
+
+  if (_def_cfg.color_type == LIGHT_COLOR_RGB)
+  {
+    __light_ir_key_fun_color (0, 0);
+    return;
+  }
+
+  dp_data.mode = WHITE_MODE;
+  if(dp_data.col_temp<100)
+  dp_data.col_temp = 0;
+  else
+  dp_data.col_temp -= 100;
+  light_bright_start();
+  light_dp_data_autoupload (NORMAL_DP_UPLOAD_TIME);
+  light_dp_data_autosave();
+}
+
+VOID light_ir_key_fun_ColorUP()
+{
+  if (dp_data.power != TRUE)
+  {
+    return;
+  }
+
+  if (_def_cfg.color_type == LIGHT_COLOR_RGB)
+  {
+    __light_ir_key_fun_color (0, 0);
+    return;
+  }
+
+  dp_data.mode = WHITE_MODE;
+  dp_data.col_temp += 100;
+  if(dp_data.col_temp>1000)
+  	dp_data.col_temp = 1000;
+  
+  light_bright_start();
+  light_dp_data_autoupload (NORMAL_DP_UPLOAD_TIME);
+  light_dp_data_autosave();
+}
 
 VOID light_ir_key_fun_white()
 {
@@ -2851,7 +3264,13 @@ VOID light_ir_fun_bright_down( )
     return;
   }
 
-  if ( (dp_data.mode != COLOR_MODE) && (dp_data.mode != WHITE_MODE) )
+  #if USER_IR5LU_OR_IR2LU
+
+  #else
+  dp_data.mode = WHITE_MODE;
+  #endif
+  
+  if ((dp_data.mode != COLOR_MODE) && (dp_data.mode != WHITE_MODE))
   {
     return;
   }
@@ -2859,12 +3278,10 @@ VOID light_ir_fun_bright_down( )
   if (dp_data.mode == WHITE_MODE)
   {
     PR_DEBUG ("bright:%d \n", dp_data.bright);
-
     if (dp_data.bright < BRIGHT_STEP)
     {
       return;
     }
-
     dp_data.bright = (dp_data.bright > BRIGHT_STEP*2) ? (dp_data.bright - BRIGHT_STEP) : BRIGHT_STEP;
     PR_DEBUG ("bright:%d \n", dp_data.bright);
   }
@@ -2883,7 +3300,7 @@ VOID light_ir_fun_bright_down( )
     PR_DEBUG ("value:%d \n", value);
     light_color_data_hex2asc (&dp_data.color[8], value, 4);
   }
-
+  
   light_bright_start();
   light_dp_data_autoupload (NORMAL_DP_UPLOAD_TIME);
   light_dp_data_autosave();
@@ -2896,6 +3313,12 @@ VOID light_ir_fun_bright_up( )
     return;
   }
 
+  #if USER_IR5LU_OR_IR2LU
+
+  #else
+  dp_data.mode = WHITE_MODE;
+  #endif
+  
   if ( (dp_data.mode != COLOR_MODE) && (dp_data.mode != WHITE_MODE) )
   {
     return;
@@ -2928,7 +3351,7 @@ VOID light_ir_fun_bright_up( )
     PR_DEBUG ("value:%d \n", value);
     light_color_data_hex2asc (&dp_data.color[8], value, 4);
   }
-
+  
   light_bright_start();
   light_dp_data_autoupload (NORMAL_DP_UPLOAD_TIME);
   light_dp_data_autosave();
@@ -3309,7 +3732,7 @@ VOID light_init_stat_set (VOID)
     }
   }
 
-  PR_DEBUG ("power = %d  mode = %d", dp_data.power, dp_data.mode);
+  //PR_NOTICE ("power = %d  mode = %d", dp_data.power, dp_data.mode);
 
   if (dp_data.power == TRUE)
   {
@@ -3319,13 +3742,14 @@ VOID light_init_stat_set (VOID)
     light_handle.curr.blue  = light_handle.fin.blue;
     light_handle.curr.white = light_handle.fin.white;
     light_handle.curr.warm  = light_handle.fin.warm;
-
+	
+    //PR_NOTICE ("init send:R:%d G:%d B:%d C:%d W:%d", light_handle.fin.red, light_handle.fin.green, light_handle.fin.blue,light_handle.fin.white, light_handle.fin.warm);
+	
     switch (dp_data.mode)
     {
       case WHITE_MODE:
       case COLOR_MODE:
-        PR_NOTICE ("init send:R:%d G:%d B:%d C:%d W:%d", light_handle.fin.red, light_handle.fin.green, light_handle.fin.blue,
-                   light_handle.fin.white, light_handle.fin.warm);
+        
         light_send_data (light_handle.fin.red, light_handle.fin.green, light_handle.fin.blue, light_handle.fin.white,
                          light_handle.fin.warm);
         break;
@@ -3421,7 +3845,7 @@ STATIC OPERATE_RET light_cfg_param_set (VOID)
     _def_cfg.wf_rst_cnt = 3;
   }
 
-  if ( (_def_cfg.color_type < LIGHT_COLOR_C) || (_def_cfg.color_type > LIGHT_COLOR_RGBCW) )
+  if ((_def_cfg.color_type < LIGHT_COLOR_C) || (_def_cfg.color_type > LIGHT_COLOR_RGBCW))
   {
     PR_ERR ("config param color_type err: %d", _def_cfg.color_type);
     _def_cfg.color_type = LIGHT_COLOR_RGBCW;
@@ -3480,6 +3904,7 @@ STATIC OPERATE_RET light_cfg_param_set (VOID)
   PR_NOTICE ("bright_min_precent:%d", _def_cfg.bright_min_precent);
   PR_NOTICE ("white_color_mutex:%d", _def_cfg.whihe_color_mutex);
 #endif
+
   return OPRT_OK;
 }
 

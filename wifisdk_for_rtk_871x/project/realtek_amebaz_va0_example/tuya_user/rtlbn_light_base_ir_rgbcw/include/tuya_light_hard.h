@@ -50,8 +50,6 @@ VOID tuya_set_wf_config_default_off (VOID);
 
 VOID tuya_light_pwm_stop_sta_set (VOID);
 
-
-
 //LIGHT_CW_TYPE_E tuya_light_cw_type_config_get(VOID);
 
 //VOID tuya_light_gpio_pin_config(VOID);

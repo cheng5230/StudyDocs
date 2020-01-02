@@ -1,0 +1,735 @@
+2019-11-27 11:09:55.8941 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£º’\nþN\u0000,\u001bÿùèp\u0000\u0000??`?\u0000\u0000\u0000?\u0000\u0000\u0000\u0000\u0000ƒî\u001a\u000e?\u0000\u001d\u0011û \u0000\u0000\u0000\u0000\u0000\u0000>b?/\u0000\u0012344É€\u0000\u0000\u0000\u0000c \u0000\u0000\u0000\u0000?\u0000\u0000\u0000\u0000\u0000†îJ>B\u0000 \"þÐ\u0000\u0000\u0000\u0000\u0000\u0000ne?2\u0000\u0012344Ì°\u0000\u0000\u0000\u0000f\u0000\u00003\"\u0011","Result":true}
+2019-11-27 11:09:55.9649 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾ÝÒì³££ºNewtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: ’. Path '', line 0, position 0.\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.Read()\r\n   ÔÚ Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)\r\n   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.GetData2(Object sender, Byte[] dataBytes) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 215","Result":false}
+2019-11-27 11:10:10.7725 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£º{\r\n\"name\": \"SnInfo\",\t\r\n    \"datas\": [\r\n        {\r\n            \"KeyName\": \"SN1\",\r\n            \"KeyValue\": \"12333434\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN2\",\r\n            \"KeyValue\": \"12333434\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN3\",\r\n            \"KeyValue\": \"12333434\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN4\",\r\n            \"KeyValue\": \"12333434\"\r\n        }\r\n    ]\r\n}\r\n","Result":true}
+2019-11-27 11:10:10.8327 INFO "COM32runstart"
+2019-11-27 11:10:10.8327 INFO "COM3runstart"
+2019-11-27 11:10:10.8566 INFO "COM32run2"
+2019-11-27 11:10:10.8786 INFO "COM3run2"
+2019-11-27 11:10:10.8955 INFO "COM32run3"
+2019-11-27 11:10:10.8955 INFO "COM3run3"
+2019-11-27 11:10:10.9645 INFO "COM3run4"
+2019-11-27 11:10:10.9705 INFO "COM3run5"
+2019-11-27 11:10:10.9705 INFO "COM3TaskRunstart"
+2019-11-27 11:10:10.9974 INFO "Ïß³ÌÒì³£task£ºSystem.NullReferenceException: Î´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£\r\n   ÔÚ NewTuYaSmart.UC.BurnAuthorizeShowUc.TaskRun[T]() Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\UC\\BurnAuthorizeShowUc.xaml.cs:ÐÐºÅ 420"
+2019-11-27 11:10:10.9974 INFO "COM32run4"
+2019-11-27 11:10:11.0044 INFO "COM32run5"
+2019-11-27 11:10:11.0044 INFO "COM32TaskRunstart"
+2019-11-27 11:10:11.0184 INFO "Ïß³ÌÒì³£task£ºSystem.NullReferenceException: Î´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£\r\n   ÔÚ NewTuYaSmart.UC.BurnAuthorizeShowUc.TaskRun[T]() Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\UC\\BurnAuthorizeShowUc.xaml.cs:ÐÐºÅ 420"
+2019-11-27 11:10:11.2171 INFO "Run£ºÎ´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£"
+2019-11-27 11:10:11.2291 INFO "Run£ºÎ´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£"
+2019-11-27 11:24:22.4667 INFO "COM3runstart"
+2019-11-27 11:24:22.4737 INFO "COM32runstart"
+2019-11-27 11:24:22.4737 INFO "COM3run2"
+2019-11-27 11:24:22.4986 INFO "COM32run2"
+2019-11-27 11:24:22.5126 INFO "COM3run3"
+2019-11-27 11:24:22.5126 INFO "COM32run3"
+2019-11-27 11:24:22.5196 INFO "COM3run4"
+2019-11-27 11:24:22.5196 INFO "COM32run4"
+2019-11-27 11:24:22.5196 INFO "COM3run5"
+2019-11-27 11:24:22.5535 INFO "COM3TaskRunstart"
+2019-11-27 11:24:22.5535 INFO "COM32run5"
+2019-11-27 11:24:22.5535 INFO "COM32TaskRunstart"
+2019-11-27 11:24:24.1108 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-11-27 11:24:24.1108 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"1\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-11-27 11:24:25.0555 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-11-27 11:24:25.0555 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"2\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-11-27 11:24:27.1559 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"--<SYNC FAIL>--","Result":true}
+2019-11-27 11:24:27.1599 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-11-27 11:24:27.2317 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
+2019-11-27 11:24:27.2626 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"1Êý¾ÝÄ£¿é-SN2:12333434","Result":false}
+2019-11-27 11:24:28.0938 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 1 ","Result":true}
+2019-11-27 11:24:30.5668 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 2 ","Result":true}
+2019-11-27 11:24:33.0390 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 3 ","Result":true}
+2019-11-27 11:24:35.5089 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 4 ","Result":true}
+2019-11-27 11:24:37.9796 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 5 ","Result":true}
+2019-11-27 11:24:39.9137 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"--<SYNC FAIL>--","Result":true}
+2019-11-27 11:24:39.9137 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-11-27 11:24:39.9685 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
+2019-11-27 11:24:40.0214 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"2Êý¾ÝÄ£¿é-SN1:12333434","Result":false}
+2019-11-27 14:25:45.3742 INFO "COM3runstart"
+2019-11-27 14:25:45.3742 INFO "COM32runstart"
+2019-11-27 14:25:45.3879 INFO "COM3run2"
+2019-11-27 14:25:45.3879 INFO "COM32run2"
+2019-11-27 14:25:45.4159 INFO "COM3run3"
+2019-11-27 14:25:45.4159 INFO "COM32run3"
+2019-11-27 14:25:45.4617 INFO "COM3run4"
+2019-11-27 14:25:45.4617 INFO "COM3run5"
+2019-11-27 14:25:45.4727 INFO "COM3TaskRunstart"
+2019-11-27 14:25:45.4907 INFO "COM32run4"
+2019-11-27 14:25:45.4907 INFO "COM32run5"
+2019-11-27 14:25:45.4907 INFO "COM32TaskRunstart"
+2019-11-27 14:25:46.7922 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-11-27 14:25:46.7922 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"1\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-11-27 14:25:46.8999 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-11-27 14:25:46.8999 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"2\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-11-27 14:25:49.8255 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"--<SYNC FAIL>--","Result":true}
+2019-11-27 14:25:49.8255 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-11-27 14:25:49.8863 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
+2019-11-27 14:25:49.9482 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"System.NullReferenceException: Î´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£\r\n   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.<Register>b__39_6(DatasItem msg) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 335Î´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.<Register>b__39_6(DatasItem msg) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 335","Result":false}
+2019-11-27 14:25:50.2321 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 1 ","Result":true}
+2019-11-27 14:25:52.7066 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 2 ","Result":true}
+2019-11-27 14:25:55.1793 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 3 ","Result":true}
+2019-11-27 14:25:57.6515 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 4 ","Result":true}
+2019-11-27 14:26:00.1277 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"sync count : 5 ","Result":true}
+2019-11-27 14:26:02.0599 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"--<SYNC FAIL>--","Result":true}
+2019-11-27 14:26:02.0638 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-11-27 14:26:02.1107 INFO {"Type":null,"PortName":"","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
+2019-11-27 14:26:02.1586 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"System.NullReferenceException: Î´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£\r\n   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.<Register>b__39_6(DatasItem msg) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 335Î´½«¶ÔÏóÒýÓÃÉèÖÃµ½¶ÔÏóµÄÊµÀý¡£   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.<Register>b__39_6(DatasItem msg) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 335","Result":false}
+2019-11-27 14:40:05.9220 INFO "COM41runstart"
+2019-11-27 14:40:05.9220 INFO "COM3runstart"
+2019-11-27 14:40:05.9337 INFO "COM41run2"
+2019-11-27 14:40:05.9337 INFO "COM3run2"
+2019-11-27 14:40:05.9619 INFO "COM41run3"
+2019-11-27 14:40:05.9619 INFO "COM3run3"
+2019-11-27 14:40:06.0113 INFO "COM3run4"
+2019-11-27 14:40:06.0113 INFO "COM41run4"
+2019-11-27 14:40:06.0423 INFO "COM3run5"
+2019-11-27 14:40:06.0423 INFO "COM41run5"
+2019-11-27 14:40:06.0655 INFO "COM3runend"
+2019-11-27 14:40:06.0857 INFO "COM41runend"
+2019-11-27 14:41:16.3480 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£º{\r\n\"name\": \"SnInfo\",\t\r\n    \"datas\": [\r\n        {\r\n            \"KeyName\": \"SN1\",\r\n            \"KeyValue\": \"12333434\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN2\",\r\n            \"KeyValue\": \"12333434\"\r\n        }\r\n    ]\r\n}","Result":true}
+2019-11-27 14:41:16.3690 INFO "COM3runstart"
+2019-11-27 14:41:16.3690 INFO "COM3run2"
+2019-11-27 14:41:16.3859 INFO "COM3run3"
+2019-11-27 14:41:16.3859 INFO "COM41runstart"
+2019-11-27 14:41:16.3979 INFO "COM41run2"
+2019-11-27 14:41:16.3979 INFO "COM3run4"
+2019-11-27 14:41:16.4079 INFO "COM41run3"
+2019-11-27 14:41:16.4328 INFO "COM3run5"
+2019-11-27 14:41:16.4328 INFO "COM3runend"
+2019-11-27 14:41:16.4408 INFO "COM41run4"
+2019-11-27 14:41:16.4408 INFO "COM41run5"
+2019-11-27 14:41:16.4408 INFO "COM41runend"
+2019-11-27 14:41:21.9149 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 14:41:21.9149 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 14:41:21.9149 INFO "COM41TaskRunstart"
+2019-11-27 14:41:21.9827 INFO "COM3run½øÈëSerilaChange"
+2019-11-27 14:41:21.9827 INFO "COM3runSerilaChange:dsr 1"
+2019-11-27 14:41:22.0087 INFO "COM3TaskRunstart"
+2019-11-27 14:41:22.4349 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 14:41:22.4438 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 14:41:22.4438 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 14:41:22.4710 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 14:41:22.4710 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 14:41:22.4710 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM41 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\cYfdEWBXxEPbJZ9j\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-27 14:41:22.4710 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 14:41:22.4900 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\cYfdEWBXxEPbJZ9j\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-27 14:41:24.2163 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 14:41:24.2243 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Serial port COM3","Result":true}
+2019-11-27 14:41:24.5620 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 14:41:24.8494 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 14:41:24.8494 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Serial port COM41","Result":true}
+2019-11-27 14:41:25.2009 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 14:41:25.5739 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 14:41:25.5819 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 14:41:25.5819 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 14:41:25.5969 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼MAC: bc:dd:c2:ec:1d:68","Result":true}
+2019-11-27 14:41:25.5969 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 14:41:25.6118 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 14:41:25.6118 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 14:41:25.6268 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 14:41:25.6268 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 14:41:25.6427 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 14:41:25.6427 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326030...","Result":true}
+2019-11-27 14:41:25.6577 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 14:41:25.7508 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 14:41:25.9261 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 14:41:26.1386 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 14:41:26.2143 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 14:41:26.2233 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 14:41:26.2233 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 14:41:26.2383 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼MAC: 84:f3:eb:ed:43:0f","Result":true}
+2019-11-27 14:41:26.2383 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 14:41:26.2532 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 14:41:26.2532 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 14:41:26.2682 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 14:41:26.2682 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 14:41:26.2842 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 14:41:26.2842 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326030...","Result":true}
+2019-11-27 14:41:26.3002 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 14:41:26.3719 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 14:41:26.3899 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 14:41:26.5465 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 14:41:26.5644 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 14:41:26.7569 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 14:41:26.7908 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 14:41:26.9807 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 14:41:27.1146 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 14:41:27.2243 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 14:41:27.2891 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 14:41:27.5029 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 14:41:27.5178 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 14:41:27.6780 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 14:41:27.8344 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 14:41:27.8813 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 14:41:28.1215 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 14:41:28.1734 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 14:41:28.2987 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 14:41:28.5022 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 14:41:28.5022 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 14:41:28.6773 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 14:41:28.7311 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 14:41:28.9011 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 14:41:28.9011 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 14:41:29.1109 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 14:41:29.2199 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 14:41:29.3335 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 14:41:29.3953 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 14:41:29.5086 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 14:41:29.6042 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 14:41:29.8348 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 14:41:30.0096 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 14:41:30.2180 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 14:41:30.4547 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 14:41:30.6285 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 14:41:32.3368 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 14:41:32.3368 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 14:41:33.6508 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 14:41:33.6508 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 14:41:34.2580 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 14:41:34.7123 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"¹Ì¼þÖ¸ÎÆÆ¥Åä³É¹¦","Result":true}
+2019-11-27 14:41:35.0410 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:bcddc2ec1d68","Result":true}
+2019-11-27 14:41:35.4105 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 14:41:35.4105 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡key³É¹¦","Result":true}
+2019-11-27 14:41:35.7725 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"¹Ì¼þÖ¸ÎÆÆ¥Åä³É¹¦","Result":true}
+2019-11-27 14:41:36.0718 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´ÈëÅäÖÃÐÅÏ¢³É¹¦","Result":true}
+2019-11-27 14:41:36.1147 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:84f3ebed430f","Result":true}
+2019-11-27 14:41:36.2393 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡keyÊ§°ÜSN=12333434ÒÑ¾­ÊÚÈ¨£¬²»ÄÜ¸ø²»Í¬µÄmacÊÚÈ¨","Result":false}
+2019-11-27 14:41:36.2393 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"1Êý¾ÝÄ£¿é-SN2:12333434","Result":false}
+2019-11-27 14:41:36.5385 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´Èë¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 14:41:37.2077 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 14:41:37.7201 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡ÅäÖÃ³É¹¦","Result":true}
+2019-11-27 14:41:38.0616 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 14:41:38.3305 INFO {"Type":null,"PortName":"COM3","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:bcddc2ec1d68","Result":true}
+2019-11-27 14:41:38.4925 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"2Êý¾ÝÄ£¿é-SN1:12333434","Result":false}
+2019-11-27 14:41:38.4925 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"µÚÒ»´Î´«À´³É¹¦Ä£¿éSN1:12333434","Result":false}
+2019-11-27 14:43:08.6647 INFO "COM3run½øÈëSerilaChange"
+2019-11-27 14:43:08.6647 INFO "COM3runSerilaChange:dsr 0"
+2019-11-27 14:43:10.8226 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 14:43:10.8226 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 14:43:11.6801 INFO "COM3run½øÈëSerilaChange"
+2019-11-27 14:43:11.7024 INFO "COM3runSerilaChange:dsr 1"
+2019-11-27 14:43:11.7094 INFO "COM3TaskRunstart"
+2019-11-27 14:43:11.7094 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 14:43:11.7345 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 14:43:11.7645 INFO "COM41TaskRunstart"
+2019-11-27 14:43:11.9712 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 14:43:11.9712 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 14:43:11.9852 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 14:43:11.9852 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 14:43:11.9852 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 14:43:11.9852 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\cYfdEWBXxEPbJZ9j\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-27 14:43:12.0031 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 14:43:12.0031 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM41 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\cYfdEWBXxEPbJZ9j\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-27 14:43:12.6418 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 14:43:12.6418 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Serial port COM3","Result":true}
+2019-11-27 14:43:12.6657 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 14:43:12.6727 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Serial port COM41","Result":true}
+2019-11-27 14:43:12.9924 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 14:43:13.0154 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 14:43:14.0009 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 14:43:14.0009 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 14:43:14.0009 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 14:43:14.0219 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 14:43:14.0219 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼MAC: bc:dd:c2:ec:1d:68","Result":true}
+2019-11-27 14:43:14.0219 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 14:43:14.0219 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 14:43:14.0378 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 14:43:14.0378 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 14:43:14.0378 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼MAC: 84:f3:eb:ed:43:0f","Result":true}
+2019-11-27 14:43:14.0478 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 14:43:14.0478 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 14:43:14.0478 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 14:43:14.0478 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 14:43:14.0637 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 14:43:14.0637 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 14:43:14.0637 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 14:43:14.0637 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 14:43:14.0637 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326030...","Result":true}
+2019-11-27 14:43:14.0837 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 14:43:14.0837 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 14:43:14.1122 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 14:43:14.1122 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326030...","Result":true}
+2019-11-27 14:43:14.1279 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 14:43:14.1758 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 14:43:14.1977 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 14:43:14.3518 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 14:43:14.3737 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 14:43:14.5982 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 14:43:14.6431 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 14:43:14.9193 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 14:43:14.9193 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 14:43:15.0941 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 14:43:15.0951 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 14:43:15.3252 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 14:43:15.3909 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 14:43:15.6492 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 14:43:15.6662 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 14:43:15.9534 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 14:43:15.9912 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 14:43:16.2319 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 14:43:16.3246 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 14:43:16.4076 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 14:43:16.4998 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 14:43:16.6128 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 14:43:16.7231 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 14:43:16.8502 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 14:43:17.0250 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 14:43:17.0390 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 14:43:17.2135 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 14:43:17.2335 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 14:43:17.4253 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 14:43:17.4532 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 14:43:17.6287 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 14:43:17.6447 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 14:43:17.8195 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 14:43:17.8325 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 14:43:18.0270 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 14:43:18.0632 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 14:43:18.2390 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 14:43:18.2630 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 14:43:18.4389 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 14:43:21.1789 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 14:43:21.1789 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 14:43:21.4465 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 14:43:21.4754 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 14:43:22.8232 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 14:43:23.1825 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"¹Ì¼þÖ¸ÎÆÆ¥Åä³É¹¦","Result":true}
+2019-11-27 14:43:23.3530 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 14:43:23.5096 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:bcddc2ec1d68","Result":true}
+2019-11-27 14:43:23.6775 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"¹Ì¼þÖ¸ÎÆÆ¥Åä³É¹¦","Result":true}
+2019-11-27 14:43:23.8832 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡key³É¹¦","Result":true}
+2019-11-27 14:43:23.9759 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:84f3ebed430f","Result":true}
+2019-11-27 14:43:24.1658 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡key³É¹¦","Result":true}
+2019-11-27 14:43:24.4187 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´ÈëÅäÖÃÐÅÏ¢³É¹¦","Result":true}
+2019-11-27 14:43:24.6889 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´ÈëÅäÖÃÐÅÏ¢³É¹¦","Result":true}
+2019-11-27 14:43:24.8795 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´Èë¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 14:43:25.0311 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´Èë¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 14:43:25.4669 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 14:43:25.7053 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 14:43:25.9157 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡ÅäÖÃ³É¹¦","Result":true}
+2019-11-27 14:43:26.2428 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 14:43:26.2428 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡ÅäÖÃ³É¹¦","Result":true}
+2019-11-27 14:43:26.5566 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:bcddc2ec1d68","Result":true}
+2019-11-27 14:43:26.5978 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 14:43:26.7293 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"2Êý¾ÝÄ£¿é-SN1:","Result":false}
+2019-11-27 14:43:26.8669 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:84f3ebed430f","Result":true}
+2019-11-27 14:43:27.0407 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"2Êý¾ÝÄ£¿é-SN2:","Result":false}
+2019-11-27 14:48:00.5346 INFO "COM3runstart"
+2019-11-27 14:48:00.5346 INFO "COM41runstart"
+2019-11-27 14:48:00.5346 INFO "COM3run2"
+2019-11-27 14:48:00.5346 INFO "COM41run2"
+2019-11-27 14:48:00.5756 INFO "COM3run3"
+2019-11-27 14:48:00.5756 INFO "COM41run3"
+2019-11-27 14:48:00.6215 INFO "COM41run4"
+2019-11-27 14:48:00.6264 INFO "COM3run4"
+2019-11-27 14:48:00.6524 INFO "COM41run5"
+2019-11-27 14:48:00.6524 INFO "COM3run5"
+2019-11-27 14:48:00.6524 INFO "COM41runend"
+2019-11-27 14:48:00.6763 INFO "COM3runend"
+2019-11-27 14:49:03.4723 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£ºp_êÞ,\u0000\n?×ÆP\u0000\u0000?`??\u0000\u0000\u0000?\u0000\u0000\u0000\u0000\u0000aîú?\u0000?Ù€\u0000\u0000\u0000\u0000\u0000\u0000\u001e@ªî\r\u0000?\t¸p\u0000\u0000\u0000\u0000R\u0010\u0000\u0000\u0000\u0000?\u0000\u0000\u0000\u0000\u0000u?.1\u0000\u000f\"íÀ\u0000\u0000\u0000\u0000\u0000\u0000^T?!\u0000\u0012344» \u0000\u0000\u0000\u0000U\u0000\u0000\"\u0011","Result":true}
+2019-11-27 14:49:03.5042 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾ÝÒì³££ºNewtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: p. Path '', line 0, position 0.\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ParseValue()\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.Read()\r\n   ÔÚ Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)\r\n   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.GetData2(Object sender, Byte[] dataBytes) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 215","Result":false}
+2019-11-27 14:50:01.4832 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£º{\r\n\"name\": \"SnInfo\",\t\r\n    \"datas\": [\r\n        {\r\n            \"KeyName\": \"SN1\",\r\n            \"KeyValue\": \"\\00009\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN2\",\r\n            \"KeyValue\": \"12333434\"\r\n        }\r\n    ]\r\n}[","Result":true}
+2019-11-27 14:50:03.0698 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾ÝÒì³££ºNewtonsoft.Json.JsonReaderException: Bad JSON escape sequence: \\0. Path 'datas[0].KeyValue', line 6, position 27.\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadStringIntoBuffer(Char quote)\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadAsString()\r\n   ÔÚ Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)\r\n   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.GetData2(Object sender, Byte[] dataBytes) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 215","Result":false}
+2019-11-27 14:50:50.1843 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£º{\r\n\"name\": \"SnInfo\",\t\r\n    \"datas\": [\r\n        {\r\n            \"KeyName\": \"SN1\",\r\n            \"KeyValue\": \"\\00009\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN2\",\r\n            \"KeyValue\": \"12333434\"\r\n        }\r\n    ]\r\n}[","Result":true}
+2019-11-27 14:50:51.5712 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾ÝÒì³££ºNewtonsoft.Json.JsonReaderException: Bad JSON escape sequence: \\0. Path 'datas[0].KeyValue', line 6, position 27.\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadStringIntoBuffer(Char quote)\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadAsString()\r\n   ÔÚ Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)\r\n   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.GetData2(Object sender, Byte[] dataBytes) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 215","Result":false}
+2019-11-27 15:04:25.0181 INFO "COM3runstart"
+2019-11-27 15:04:25.0181 INFO "COM3run2"
+2019-11-27 15:04:25.0370 INFO "COM3run3"
+2019-11-27 15:04:25.0809 INFO "COM3run4"
+2019-11-27 15:04:25.0809 INFO "COM3run5"
+2019-11-27 15:04:25.0809 INFO "COM3runend"
+2019-11-27 15:04:25.3722 INFO "COM41runstart"
+2019-11-27 15:04:25.3722 INFO "COM41run2"
+2019-11-27 15:04:25.3811 INFO "COM41run3"
+2019-11-27 15:04:25.4250 INFO "COM41run4"
+2019-11-27 15:04:25.4250 INFO "COM41run5"
+2019-11-27 15:04:25.4250 INFO "COM41runend"
+2019-11-27 15:04:27.6606 INFO "COM3run½øÈëSerilaChange"
+2019-11-27 15:04:27.6606 INFO "COM3runSerilaChange:dsr 0"
+2019-11-27 15:04:28.6482 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 15:04:28.6482 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 15:04:35.9141 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£º{\r\n\"name\": \"SnInfo\",\t\r\n    \"datas\": [\r\n        {\r\n            \"KeyName\": \"SN1\",\r\n            \"KeyValue\": \"\\00009\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN2\",\r\n            \"KeyValue\": \"12333434\"\r\n        }\r\n    ]\r\n}\r\n","Result":true}
+2019-11-27 15:04:37.9099 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾ÝÒì³££ºNewtonsoft.Json.JsonReaderException: Bad JSON escape sequence: \\0. Path 'datas[0].KeyValue', line 6, position 27.\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadStringIntoBuffer(Char quote)\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadAsString()\r\n   ÔÚ Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)\r\n   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.GetData2(Object sender, Byte[] dataBytes) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 215","Result":false}
+2019-11-27 15:05:02.5442 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£º{\r\n\"name\": \"SnInfo\",\t\r\n    \"datas\": [\r\n        {\r\n            \"KeyName\": \"SN1\",\r\n            \"KeyValue\": \"\\00009\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN2\",\r\n            \"KeyValue\": \"12333434\"\r\n        }\r\n    ]\r\n}","Result":true}
+2019-11-27 15:05:02.5572 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾ÝÒì³££ºNewtonsoft.Json.JsonReaderException: Bad JSON escape sequence: \\0. Path 'datas[0].KeyValue', line 6, position 27.\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadStringIntoBuffer(Char quote)\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadStringValue(ReadType readType)\r\n   ÔÚ Newtonsoft.Json.JsonTextReader.ReadAsString()\r\n   ÔÚ Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)\r\n   ÔÚ Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)\r\n   ÔÚ Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)\r\n   ÔÚ Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)\r\n   ÔÚ NewTuYaSmart.ViewModel.MainViewModel.GetData2(Object sender, Byte[] dataBytes) Î»ÖÃ D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\ViewModel\\MainViewModel.cs:ÐÐºÅ 215","Result":false}
+2019-11-27 15:05:07.8480 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"×Ô¶¯»¯ÊÓ¾õ´«À´Êý¾Ý£º{\r\n\"name\": \"SnInfo\",\t\r\n    \"datas\": [\r\n        {\r\n            \"KeyName\": \"SN1\",\r\n            \"KeyValue\": \"00009\"\r\n        },\r\n        {\r\n            \"KeyName\": \"SN2\",\r\n            \"KeyValue\": \"12333434\"\r\n        }\r\n    ]\r\n}","Result":true}
+2019-11-27 15:05:07.8480 INFO "COM3runstart"
+2019-11-27 15:05:07.8630 INFO "COM41runstart"
+2019-11-27 15:05:07.8630 INFO "COM3run2"
+2019-11-27 15:05:07.8889 INFO "COM41run2"
+2019-11-27 15:05:07.8999 INFO "COM41run3"
+2019-11-27 15:05:07.8999 INFO "COM3run3"
+2019-11-27 15:05:07.9290 INFO "COM41run4"
+2019-11-27 15:05:07.9290 INFO "COM41run5"
+2019-11-27 15:05:07.9290 INFO "COM41runend"
+2019-11-27 15:05:07.9290 INFO "COM3run4"
+2019-11-27 15:05:07.9400 INFO "COM3run5"
+2019-11-27 15:05:07.9400 INFO "COM3runend"
+2019-11-27 15:08:21.2209 INFO "COM3run½øÈëSerilaChange"
+2019-11-27 15:08:21.2359 INFO "COM3runSerilaChange:dsr 1"
+2019-11-27 15:08:21.2359 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 15:08:21.2668 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 15:08:21.2748 INFO "COM3TaskRunstart"
+2019-11-27 15:08:21.2748 INFO "COM41TaskRunstart"
+2019-11-27 15:08:22.3690 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 15:08:22.3770 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 15:08:22.3770 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 15:08:22.3770 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 15:08:22.3770 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 15:08:22.3939 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\cYfdEWBXxEPbJZ9j\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-27 15:08:22.3939 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 15:08:22.3939 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM41 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\cYfdEWBXxEPbJZ9j\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-27 15:08:23.0563 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 15:08:23.0653 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Serial port COM3","Result":true}
+2019-11-27 15:08:23.0653 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 15:08:23.0803 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Serial port COM41","Result":true}
+2019-11-27 15:08:23.4046 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 15:08:23.4235 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 15:08:24.4241 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 15:08:24.4241 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 15:08:24.4401 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 15:08:24.4401 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 15:08:24.4401 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼MAC: bc:dd:c2:ec:1d:68","Result":true}
+2019-11-27 15:08:24.4401 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 15:08:24.4561 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 15:08:24.4561 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 15:08:24.4561 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 15:08:24.4561 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼MAC: 84:f3:eb:ed:43:0f","Result":true}
+2019-11-27 15:08:24.4700 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 15:08:24.4700 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 15:08:24.4700 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 15:08:24.4700 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 15:08:24.4700 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 15:08:24.4880 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 15:08:24.4880 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 15:08:24.4880 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 15:08:24.4880 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326030...","Result":true}
+2019-11-27 15:08:24.5029 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 15:08:24.5029 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 15:08:24.5029 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 15:08:24.5179 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326030...","Result":true}
+2019-11-27 15:08:24.5179 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 15:08:24.6007 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 15:08:24.6196 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 15:08:24.7745 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 15:08:24.7945 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 15:08:25.0201 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 15:08:25.0651 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 15:08:25.3379 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 15:08:25.3379 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 15:08:25.5131 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 15:08:25.5131 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 15:08:25.7468 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 15:08:25.8086 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 15:08:26.0653 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 15:08:26.0803 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 15:08:26.3681 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 15:08:26.4099 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 15:08:26.6446 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 15:08:26.7385 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 15:08:26.8196 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 15:08:26.9153 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 15:08:27.0240 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 15:08:27.1400 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 15:08:27.2626 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 15:08:27.4371 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 15:08:27.4531 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 15:08:27.6288 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 15:08:27.6437 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 15:08:27.8385 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 15:08:27.8686 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 15:08:28.0431 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 15:08:28.0713 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 15:08:28.2458 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 15:08:28.2458 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 15:08:28.4542 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 15:08:28.4752 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 15:08:28.6507 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 15:08:28.6896 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 15:08:28.8641 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 15:08:31.5372 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 15:08:31.5372 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 15:08:31.8908 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 15:08:31.9118 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 15:08:33.2058 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 15:08:33.5621 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"¹Ì¼þÖ¸ÎÆÆ¥Åä³É¹¦","Result":true}
+2019-11-27 15:08:33.7696 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 15:08:33.8862 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:bcddc2ec1d68","Result":true}
+2019-11-27 15:08:34.1745 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"¹Ì¼þÖ¸ÎÆÆ¥Åä³É¹¦","Result":true}
+2019-11-27 15:08:34.2194 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡key³É¹¦","Result":true}
+2019-11-27 15:08:34.4190 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:84f3ebed430f","Result":true}
+2019-11-27 15:08:34.6635 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡key³É¹¦","Result":true}
+2019-11-27 15:08:34.7557 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´ÈëÅäÖÃÐÅÏ¢³É¹¦","Result":true}
+2019-11-27 15:08:35.0395 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´Èë¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 15:08:35.2423 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´ÈëÅäÖÃÐÅÏ¢³É¹¦","Result":true}
+2019-11-27 15:08:35.6036 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 15:08:35.7806 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"Ð´Èë¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 15:08:36.1500 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡ÅäÖÃ³É¹¦","Result":true}
+2019-11-27 15:08:37.0710 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 15:08:37.1231 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 15:08:37.8927 INFO {"Type":null,"PortName":"COM3","Sn":"00009","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:bcddc2ec1d68","Result":true}
+2019-11-27 15:08:37.9395 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡ÅäÖÃ³É¹¦","Result":true}
+2019-11-27 15:08:38.0492 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"1Êý¾ÝÄ£¿é-SN1:00009","Result":false}
+2019-11-27 15:08:38.0492 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"µÚÒ»´Î´«À´³É¹¦Ä£¿éSN1:00009","Result":false}
+2019-11-27 15:08:38.2008 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"¶ÁÈ¡¹ú¼ÒÂë³É¹¦","Result":true}
+2019-11-27 15:08:38.5315 INFO {"Type":null,"PortName":"COM41","Sn":"12333434","Token":"cYfdEWBXxEPbJZ9j","Message":"»ñÈ¡Mac³É¹¦:84f3ebed430f","Result":true}
+2019-11-27 15:08:38.7200 INFO {"Type":null,"PortName":null,"Sn":null,"Token":null,"Message":"2Êý¾ÝÄ£¿é-SN2:12333434","Result":false}
+2019-11-27 16:10:45.1465 INFO "COM3runstart"
+2019-11-27 16:10:45.1465 INFO "COM41runstart"
+2019-11-27 16:10:45.1604 INFO "COM3run2"
+2019-11-27 16:10:45.1604 INFO "COM41run2"
+2019-11-27 16:10:45.1894 INFO "COM3run3"
+2019-11-27 16:10:45.1894 INFO "COM41run3"
+2019-11-27 16:10:45.2381 INFO "COM3run4"
+2019-11-27 16:10:45.2381 INFO "COM41run4"
+2019-11-27 16:10:45.2680 INFO "COM3run5"
+2019-11-27 16:10:45.2680 INFO "COM41run5"
+2019-11-27 16:10:45.2680 INFO "COM3runend"
+2019-11-27 16:10:45.2912 INFO "COM41runend"
+2019-11-27 16:10:45.8070 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:10:45.8070 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 16:10:45.8649 INFO "COM41TaskRunstart"
+2019-11-27 16:10:49.1096 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-11-27 16:10:49.1096 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"2\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-11-27 16:10:49.5724 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"--<SYNC FAIL>--","Result":true}
+2019-11-27 16:10:49.5773 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-11-27 16:10:49.6332 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
+2019-11-27 16:11:15.9923 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:11:15.9943 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 16:11:17.1887 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:11:17.1887 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 16:11:17.1887 INFO "COM41TaskRunstart"
+2019-11-27 16:11:53.7153 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-11-27 16:11:53.7153 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"2\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-11-27 16:11:54.5943 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"--<SYNC FAIL>--","Result":true}
+2019-11-27 16:11:54.5943 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-11-27 16:11:54.6581 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
+2019-11-27 16:12:55.5080 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:12:55.5100 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 16:12:55.9109 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:12:55.9109 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 16:12:55.9109 INFO "COM41TaskRunstart"
+2019-11-27 16:13:08.9802 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-11-27 16:13:08.9802 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"2\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-11-27 16:13:10.4316 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"--<SYNC FAIL>--","Result":true}
+2019-11-27 16:13:10.4356 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-11-27 16:13:10.4874 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
+2019-11-27 16:13:13.8971 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:13:13.8971 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 16:13:14.2203 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:13:14.2203 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 16:13:14.2343 INFO "COM41TaskRunstart"
+2019-11-27 16:13:39.8637 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-11-27 16:13:39.8697 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"2\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-11-27 16:13:41.3454 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"--<SYNC FAIL>--","Result":true}
+2019-11-27 16:13:41.3454 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-11-27 16:13:41.4033 INFO {"Type":null,"PortName":"","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
+2019-11-27 16:13:44.2883 INFO "COM3runstart"
+2019-11-27 16:13:44.2883 INFO "COM41runstart"
+2019-11-27 16:13:44.2883 INFO "COM3run2"
+2019-11-27 16:13:44.3133 INFO "COM41run2"
+2019-11-27 16:13:44.3414 INFO "COM3run3"
+2019-11-27 16:13:44.3414 INFO "COM41run3"
+2019-11-27 16:13:44.3414 INFO "COM3run4"
+2019-11-27 16:13:44.3414 INFO "COM3run5"
+2019-11-27 16:13:44.3414 INFO "COM3runend"
+2019-11-27 16:13:44.3634 INFO "COM41run4"
+2019-11-27 16:13:44.3634 INFO "COM41run5"
+2019-11-27 16:13:44.3694 INFO "COM41runend"
+2019-11-27 16:13:44.8363 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:13:44.8391 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 16:13:45.2527 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:13:45.2759 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 16:13:45.3045 INFO "COM41TaskRunstart"
+2019-11-27 16:13:45.5190 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 16:13:45.5270 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 16:13:45.5270 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 16:13:45.5430 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM41 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\LmC3WgQ7A0rA7a4C\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-11-27 16:13:46.1985 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 16:13:46.1985 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Serial port COM41","Result":true}
+2019-11-27 16:13:46.5473 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 16:13:47.5614 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 16:13:47.5614 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 16:13:47.5783 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 16:13:47.5783 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼MAC: 84:f3:eb:ed:43:0f","Result":true}
+2019-11-27 16:13:47.5933 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 16:13:47.5933 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 16:13:47.6083 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 16:13:47.6083 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 16:13:47.6232 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 16:13:47.6232 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 16:13:47.6382 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326938...","Result":true}
+2019-11-27 16:13:47.6382 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 16:13:47.7389 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 16:13:47.9177 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 16:13:48.1422 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 16:13:48.4664 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 16:13:48.6416 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 16:13:48.8681 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 16:13:49.1893 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 16:13:49.5277 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 16:13:49.8569 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 16:13:50.0349 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 16:13:50.2574 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 16:13:50.5744 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 16:13:50.7500 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 16:13:50.9587 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 16:13:51.1935 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 16:13:51.3689 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 16:13:51.5756 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 16:13:51.8122 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 16:13:51.9863 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 16:13:55.0183 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 16:13:55.0183 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 16:13:56.8557 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"½øÈë²ú²âÄ£Ê½","Result":true}
+2019-11-27 16:13:57.1780 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"¹Ì¼þÖ¸ÎÆÆ¥Åä³É¹¦","Result":true}
+2019-11-27 16:13:57.7285 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"»ñÈ¡Mac³É¹¦:84f3ebed430f","Result":true}
+2019-11-27 16:13:57.9599 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"LmC3WgQ7A0rA7a4C","Message":"»ñÈ¡keyÊ§°Ü³¬³öÁËtokenµÄÊÚÈ¨ÊýÁ¿","Result":false}
+2019-11-27 16:27:19.0037 INFO "COM3runstart"
+2019-11-27 16:27:19.0037 INFO "COM41runstart"
+2019-11-27 16:27:19.0167 INFO "COM3run2"
+2019-11-27 16:27:19.0167 INFO "COM41run2"
+2019-11-27 16:27:19.0456 INFO "COM3run3"
+2019-11-27 16:27:19.0456 INFO "COM41run3"
+2019-11-27 16:27:19.0945 INFO "COM3run4"
+2019-11-27 16:27:19.0945 INFO "COM41run4"
+2019-11-27 16:27:19.0945 INFO "COM3run5"
+2019-11-27 16:27:19.1104 INFO "COM3runend"
+2019-11-27 16:27:19.1104 INFO "COM41run5"
+2019-11-27 16:27:19.1104 INFO "COM41runend"
+2019-11-27 16:27:19.4987 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:27:19.4987 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 16:27:19.8213 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:27:19.8233 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 16:27:19.8662 INFO "COM41TaskRunstart"
+2019-11-27 16:27:21.0803 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 16:27:21.0882 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 16:27:21.0882 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 16:27:21.0882 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM41 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-11-27 16:27:21.7510 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 16:27:21.7510 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Serial port COM41","Result":true}
+2019-11-27 16:27:22.0975 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 16:27:23.1085 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 16:27:23.1085 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 16:27:23.1244 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 16:27:23.1244 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼MAC: 84:f3:eb:ed:43:0f","Result":true}
+2019-11-27 16:27:23.1384 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 16:27:23.1384 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 16:27:23.1536 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 16:27:23.1536 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 16:27:23.1694 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 16:27:23.1694 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 16:27:23.1844 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326938...","Result":true}
+2019-11-27 16:27:23.1844 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 16:27:23.2846 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 16:27:23.4611 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 16:27:23.6873 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 16:27:24.0145 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 16:27:24.1887 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 16:27:24.4199 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 16:27:24.7413 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 16:27:25.0804 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 16:27:25.4175 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 16:27:25.5937 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 16:27:25.8176 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 16:27:26.1382 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 16:27:26.3135 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 16:27:26.5232 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 16:27:26.7522 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 16:27:26.9274 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 16:27:27.1354 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 16:27:27.3714 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 16:27:27.5464 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 16:27:30.5510 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 16:27:30.5659 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 16:27:32.6192 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:27:32.6212 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 16:27:32.9827 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:27:32.9827 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 16:27:32.9827 INFO "COM41TaskRunstart"
+2019-11-27 16:27:33.2211 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 16:27:33.2290 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 16:27:33.2290 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 16:27:33.2450 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM41 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-11-27 16:27:33.9060 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 16:27:33.9060 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Serial port COM41","Result":true}
+2019-11-27 16:27:34.2568 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 16:27:35.2704 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 16:27:35.2784 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 16:27:35.2784 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 16:27:35.2945 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼MAC: 84:f3:eb:ed:43:0f","Result":true}
+2019-11-27 16:27:35.2945 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 16:27:35.3103 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 16:27:35.3103 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 16:27:35.3253 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 16:27:35.3253 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 16:27:35.3404 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 16:27:35.3404 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326938...","Result":true}
+2019-11-27 16:27:35.3553 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 16:27:35.4457 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 16:27:35.6228 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 16:27:35.8484 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 16:27:36.1724 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 16:27:36.3469 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 16:27:36.5782 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 16:27:36.9010 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 16:27:37.2385 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 16:27:37.5744 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 16:27:37.7485 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 16:27:37.9727 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 16:27:38.2911 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 16:27:38.4666 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 16:27:38.6762 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 16:27:38.9093 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 16:27:39.0833 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 16:27:39.2906 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 16:27:39.5348 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 16:27:39.7105 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 16:27:42.7135 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 16:27:42.7364 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼³É¹¦","Result":true}
+2019-11-27 16:27:52.6760 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:27:52.6760 INFO "COM41runSerilaChange:dsr 0"
+2019-11-27 16:27:53.0514 INFO "COM41run½øÈëSerilaChange"
+2019-11-27 16:27:53.0514 INFO "COM41runSerilaChange:dsr 1"
+2019-11-27 16:27:53.0514 INFO "COM41TaskRunstart"
+2019-11-27 16:27:53.2831 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Microsoft Windows [°æ±¾ 10.0.18362.476]","Result":true}
+2019-11-27 16:27:53.2831 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼(c) 2019 Microsoft Corporation¡£±£ÁôËùÓÐÈ¨Àû¡£","Result":true}
+2019-11-27 16:27:53.2980 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 16:27:53.2980 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼D:\\Work\\LocalGit\\ProductionTest\\TYDA\\ÐÂ°æÍ¿Ñ»¹¤³§ÉÕÂ¼ÊÚÈ¨¼ì²âÈí¼þ\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM41 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\FD7BC9mWtMF85q5Z\\esp_common_raw_3.1.3_target_QIO.bin\"&exit","Result":true}
+2019-11-27 16:27:53.9488 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼esptool.py v2.7-dev","Result":true}
+2019-11-27 16:27:53.9488 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Serial port COM41","Result":true}
+2019-11-27 16:27:54.2989 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Connecting....","Result":true}
+2019-11-27 16:27:55.3132 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Detecting chip type... ESP8266","Result":true}
+2019-11-27 16:27:55.3132 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Chip is ESP8266EX","Result":true}
+2019-11-27 16:27:55.3291 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Features: WiFi","Result":true}
+2019-11-27 16:27:55.3291 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼MAC: 84:f3:eb:ed:43:0f","Result":true}
+2019-11-27 16:27:55.3451 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Uploading stub...","Result":true}
+2019-11-27 16:27:55.3451 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Running stub...","Result":true}
+2019-11-27 16:27:55.3610 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Stub running...","Result":true}
+2019-11-27 16:27:55.3610 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Changing baud rate to 1500000","Result":true}
+2019-11-27 16:27:55.3760 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Changed.","Result":true}
+2019-11-27 16:27:55.3760 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Configuring flash size...","Result":true}
+2019-11-27 16:27:55.3910 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Compressed 1044480 bytes to 326938...","Result":true}
+2019-11-27 16:27:55.3910 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼","Result":true}
+2019-11-27 16:27:55.4900 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00000000... (5 %)","Result":true}
+2019-11-27 16:27:55.6677 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00004000... (10 %)","Result":true}
+2019-11-27 16:27:55.8931 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00008000... (15 %)","Result":true}
+2019-11-27 16:27:56.2204 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0000c000... (20 %)","Result":true}
+2019-11-27 16:27:56.3945 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00010000... (25 %)","Result":true}
+2019-11-27 16:27:56.6263 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00014000... (30 %)","Result":true}
+2019-11-27 16:27:56.9502 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00018000... (35 %)","Result":true}
+2019-11-27 16:27:57.2911 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0001c000... (40 %)","Result":true}
+2019-11-27 16:27:57.6233 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00020000... (45 %)","Result":true}
+2019-11-27 16:27:57.7985 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00024000... (50 %)","Result":true}
+2019-11-27 16:27:58.0229 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00028000... (55 %)","Result":true}
+2019-11-27 16:27:58.3423 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0002c000... (60 %)","Result":true}
+2019-11-27 16:27:58.5177 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00030000... (65 %)","Result":true}
+2019-11-27 16:27:58.7287 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00034000... (70 %)","Result":true}
+2019-11-27 16:27:58.9520 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00038000... (75 %)","Result":true}
+2019-11-27 16:27:59.1284 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0003c000... (80 %)","Result":true}
+2019-11-27 16:27:59.3392 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00040000... (85 %)","Result":true}
+2019-11-27 16:27:59.5755 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00044000... (90 %)","Result":true}
+2019-11-27 16:27:59.7501 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x00048000... (95 %)","Result":true}
+2019-11-27 16:28:02.7517 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼Writing at 0x0004c000... (100 %)","Result":true}
+2019-11-27 16:28:02.7517 INFO {"Type":null,"PortName":"COM41","Sn":"","Token":"FD7BC9mWtMF85q5Z","Message":"ÉÕÂ¼³É¹¦","Result":true}

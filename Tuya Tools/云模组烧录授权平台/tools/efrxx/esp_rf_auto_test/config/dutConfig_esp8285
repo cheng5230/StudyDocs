@@ -1,0 +1,102 @@
+[common_conf]
+position = local
+fw_ver = ver_1.1.1
+po_no = c0393
+mpn_no = 5112ZCXV
+fac_sid = fulian_link-6f1f0235
+batch_sid = fulian_link
+fac_plan = fulian_link
+test_from = RAM
+bin_path =.\bin\ESP8266&ESP8089_MODULE_TEST_BIN_26m_V121_20180921.bin
+threshold_path = .\config\
+manu_lgp = 
+auto_start = 1
+tmp_server_ip = download.espressif.com
+tmp_server_port = 8000
+auto_login = 1
+auth_token = esp-own-test-FID-dbd42d01-86e0ee8a023b5b346115
+repeat_check = 0
+po_type = 0
+auth_account = test111
+auth_password = 111
+auth_checked = 1
+
+[DUT1]
+port1 =COM3
+rate1 =115200
+port2 =COM3
+rate2 =115200
+
+[DUT2]
+port1 = COM4
+rate1 = 115200
+port2 = COM4
+rate2 = 115200
+
+[DUT3]
+port1 = COM5
+rate1 = 115200
+port2 = COM5
+rate2 = 115200
+
+[DUT4]
+port1 = COM6
+rate1 = 115200
+port2 = COM6
+rate2 = 115200
+
+[chip_conf]
+freq = 26M
+efuse_mode = 1
+chip_type = ESP8285
+
+[manu_test_flow]
+flash_id_check = 0
+cmd_manu_definition = 0
+esp32_bit_efuse_check = 0
+flash_id =0x4014h
+cmd_emit = COLLECTION-./config/cmd_settings.txt
+check_bit = ADC_SORTING-OR-{'RDATA4[8]':1,'RDATA4[9]':1,'RDATA4[10]':1,'RDATA4[11]':1,'RDATA4[12]':1}
+sleep_times = 0
+
+[test_flow]
+TX = 1
+RX = 1
+ANALOG = 1
+GPIO_8266_TEST = 0
+GPIO_32_TEST = 0
+USER_FW_CHECK = 0
+COMPONENTS_MANU_DEFINITION = 0
+
+THRESHOLD_PATH_8266 = ./config/full_Threshold_8266.xlsx
+THRESHOLD_PATH_32 = ./config/full_Threshold_32.xlsx
+
+GPIO_8266_TEST_PIN = 0x7020
+GPIO_8266_TEST_VAL = 0x1020
+GPIO_8266_TEST_VAL_TARGET = 0x7020
+GPIO_8266_TEST_READ_EN = 1
+
+GPIO_8285_TEST_PIN = 0x7020
+GPIO_8285_TEST_VAL = 0x1020
+GPIO_8285_TEST_VAL_TARGET = 0x7020
+GPIO_8285_TEST_READ_EN = 1
+
+GPIO_32_TEST_VAL_0 = 0xD9000C20
+GPIO_32_TEST_VAL_1 = 0x0054E0E0
+GPIO_32_TEST_VAL_2 = 0x00000055
+GPIO_32_TEST_TARGET_0 = 0x33000000
+GPIO_32_TEST_TARGET_1 = 0x00AC0000
+GPIO_32_TEST_TARGET_2 = 0x000000BB
+
+USER_FW_VER_STR =espcmd_en
+USER_FW_VER_TIMEOUT(s) = 3
+USER_FW_VER_DELAY(s) = 0
+USER_TEST_CMD<cmd,rsp,tmo> =<AT+GMR,"1.6.2",5>
+
+
+COMPONENTS_EXEC = XX.exe
+COMPONENTS_PARAMS = '{"port":"COM4","baudrate":"115200"}'
+COMPONENTS_LOGS_PRINT = True
+
+
+

@@ -14,6 +14,7 @@
 
 #define IIC_MAX 255
 #define IIC_DATA_SEND_CAL(val) (val * IIC_MAX / PWM_MAX)
+
 #if USER_DEFINE_LIGHT_STRIP_LED_CONFIG
   STATIC UCHAR __rgbcw_r_index = 0;
   STATIC UCHAR __rgbcw_g_index = 1;
@@ -26,6 +27,7 @@
   STATIC USHORT_T __cw_value = LIGHT_MAX_CTL_VAL + 100;
   STATIC USHORT_T __ww_value = LIGHT_MAX_CTL_VAL + 100;
 #endif
+
 STATIC TIMER_ID wf_config_timer;
 STATIC VOID wf_config_timer_cb (UINT timerID, PVOID pTimerArg);
 STATIC VOID tuya_light_pwm_output (USHORT_T R_value, USHORT_T G_value, USHORT_T B_value, USHORT_T CW_value,
@@ -711,7 +713,6 @@ STATIC VOID __change_pwm_if_needed (USHORT_T* R_value, USHORT_T* G_value, USHORT
   if (light_work_mode_get() == 1) //color mode
   {
 #if USER_DEFINE_LIGHT_RGBCW_FAKE_DATA
-
     switch (USER_DEFINE_LIGHT_TYPE)
     {
       case USER_LIGTH_MODE_RGBCW_FAKE_CUS:
@@ -732,7 +733,6 @@ STATIC VOID __change_pwm_if_needed (USHORT_T* R_value, USHORT_T* G_value, USHORT
     if (*R_value != 0 || *G_value != 0 || *B_value != 0)
     {
 #if USER_DEFINE_LIGHT_RGBCW_FAKE_DATA
-
       switch (USER_DEFINE_LIGHT_TYPE)
       {
         case USER_LIGTH_MODE_RGBCW_FAKE_CUS:
@@ -743,7 +743,6 @@ STATIC VOID __change_pwm_if_needed (USHORT_T* R_value, USHORT_T* G_value, USHORT
         default:
           break;
       }
-
 #endif
       return;
     }
@@ -875,28 +874,39 @@ VOID __light_pwm_set_duty (UINT_T duty, UCHAR_T channel)
 {
   UINT pwm_gpio_info[6] = {PWM_0_OUT_IO_NUM, PWM_1_OUT_IO_NUM, PWM_2_OUT_IO_NUM, PWM_3_OUT_IO_NUM, PWM_4_OUT_IO_NUM, PWM_5_OUT_IO_NUM};
   static char pwm_status[6] = {1, 1, 1, 1, 1, 1};
-
+  UINT pwm_gpio = pwm_gpio_info[channel];
+  HW_TABLE_S* hw_table = get_hw_table();
+  
+  if(hw_table->light_mode <= LIGHT_MODE_RGB)
+  {
+  	  pwm_gpio = pwm_gpio_info[channel];
+  }
+  else
+  {
+	 pwm_gpio = pwm_gpio_info[channel+3];
+  }
+  
   if (duty == 0)
   {
     if (pwm_status[channel] == 0)
     {
-      //PR_NOTICE ("channel %d is already gpio mode", channel);
+      PR_DEBUG ("channel %d is already gpio mode", channel);
       return;
     }
 
     pwm_status[channel] = 0;
-    //PR_NOTICE ("channel %d is change to gpio mode", channel);
-    tuya_light_device_one_pwm_mute (pwm_gpio_info[channel]);
+    PR_DEBUG ("channel %d is change to gpio mode", channel);
+    tuya_light_device_one_pwm_mute (pwm_gpio);
     return;
   }
 
   if (pwm_status[channel] == 0)
   {
     pwm_status[channel] = 1;
-    //PR_NOTICE ("channel %d is change to pwm mode", channel);
-    tuya_light_device_one_pwm_hw_init (pwm_gpio_info[channel], channel);
+    PR_DEBUG ("channel %d is change to pwm mode", channel);
+    tuya_light_device_one_pwm_hw_init (pwm_gpio, channel);
   }
-
+  //PR_NOTICE ("channel %d %d",duty, channel);
   pwm_set_duty (duty, channel);
 }
 
@@ -950,7 +960,6 @@ STATIC VOID tuya_light_pwm_output (USHORT_T R_value, USHORT_T G_value, USHORT_T 
           __light_pwm_set_duty (WW_value, 4);
         }
       }
-
       break;
 
     case LIGHT_MODE_CW:

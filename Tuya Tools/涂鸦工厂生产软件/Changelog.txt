@@ -1,0 +1,48 @@
+version:5.1.6
+date:2018-06-29
+git tag:涂鸦工厂生产软件5.1.6
+note:
+	* 增加Zigbee的二次检查功能
+        * 修复扫SN不上传mac数据的问题
+        * 增加访问服务器返回空字符串的处理，解决长时间待机程序报错的问题
+version:5.1.5
+date:2018-06-27
+git tag:涂鸦工厂生产软件5.1.5
+note:
+	* 修复WIFI的SN问题
+	* 修复ZIGBEE的SN问题
+	* 改8266为1M固件
+	* 优化数量定时刷新及其导致的异常问题
+	* 增加Zigbee的二次检查功能
+        * 修复扫SN不上传mac数据的问题
+
+version:5.1.3
+date:2018-06-15
+git tag:涂鸦工厂生产软件5.1.3
+note:
+	* 修复包装检测数据库问题
+	* 修复realtek二次检测问题
+
+version:5.1.2
+date:2018-06-14
+author:zhw
+git tag:涂鸦工厂生产软件5.1.2
+note:
+	* 添加了自研Zigbee的授权测试功能中的SN校验功能，禁止手动输入SN
+
+version:5.1.1
+date:2018-06-12
+author:zhw
+git tag:涂鸦工厂生产软件5.1.1
+note:
+	* 添加了自研Zigbee的授权测试功能
+
+version:5.0.0
+date:2018-05-23
+author:daizb
+git tag:涂鸦工厂生产软件5.0.0
+note:
+	* 首版，整合了现有已量产模块的生产软件
+	* 版本控制和升级功能
+
+

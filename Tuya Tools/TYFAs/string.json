@@ -1,0 +1,88 @@
+﻿{
+  "enResString": {
+    "types":{
+      "connect":"Connect module fail",
+      "gpio":"gpio test",
+      "rf":"RF test",
+      "finger":"Firmware versiong check",
+      "wtInfo":"Write product information",
+      "rdInfo":"Read product information",
+      "applyMac":"Apply mac address",
+      "authorize":"Register successfully",
+      "gwidV":"gwid check",
+      "wtKey":"write key",
+      "wtWifi":"Write ap_ssid and ap_pwd",
+      "validate":"Check module information"
+    },
+    "en_errors": {
+      "-1": "Read module fail！\r\n",
+      "-2": "Waitting for module response timeout！\r\n",
+      "-3": "Serial port abnormal close\r\n",
+      "-4": "Incomplete data received！\r\n",
+      "-5": "Check sum of data received is incorrect！\r\n",
+      "-6": "Enter test mode fail！\r\n",
+      "-7": "The information obtained is incomplete！\r\n",
+      "-8": "Manual termination of the process！\r\n",
+      "-9": "Command failed to send, please check the serial port！\r\n",
+      "-10": "Firmware name does not match！\r\n",
+      "-11": "Firmware version does not match！\r\n",
+      "-12": "Get MAC or muid is empty！\r\n",
+      "-13": "Get MAC or muid is empty！\r\n",
+      "-14": "Mac needs to be allocated\r\n",
+      "-100": "Check error！\r\n",
+      "-101": "Serial port abnormally closed, attempt to open failed！\r\n"
+    },
+    "dn_errors":{
+      "-1": "连接失败！\r\n",
+      "-2": "读配置寄存器失败！\r\n",
+      "-3": "更改波特率失败！\r\n",
+      "-4": "启动烧录失败!\r\n",
+      "-5": "传输文件中途失败\r\n",
+      "-6": "MD5校验失败\r\n",
+      "-7": "固件不存在\r\n"
+    }
+  },
+   "cnResString": {
+    "types":{
+      "connect":"模块连接",
+      "gpio":"gpio测试",
+      "rf":"rf测试",
+      "finger":"固件指纹校验",
+      "wtInfo":"写入生产信息",
+      "rdInfo":"读取模块生产信息",
+      "applyMac":"申请mac地址",
+      "authorize":"服务端注册成功",
+      "gwidV":"gwid校验",
+      "wtKey":"写入key",
+      "wtWifi":"写入wifi热点名称和密码",
+      "validate":"校验模块信息"
+    },
+    "en_errors": {
+      "-1": "模块返回操作失败！\r\n",
+      "-2": "等待模块返回超时！\r\n",
+      "-3": "串口被异常关闭，测试失败！\r\n",
+      "-4": "接收数据不完整，接受数据超时！\r\n",
+      "-5": "返回数据和校验失败！\r\n",
+      "-6": "进入产测命令重发失败！\r\n",
+      "-7": "获取的信息不完整！\r\n",
+      "-8": "手动终止了软件！\r\n",
+      "-9": "命令发送失败,请检查串口！\r\n",
+      "-10": "固件名称不匹配！\r\n",
+      "-11": "固件版本不匹配！\r\n",
+      "-12": "获取到mac或muid为空！\r\n",
+      "-13": "获取到mac或muid为空！\r\n",
+      "-14": "需要分配mac，请在后台配置\r\n",
+      "-100": "校验错误！\r\n",
+      "-101": "串口异常关闭，尝试打开失败！\r\n"
+    },
+    "dn_errors":{
+      "-1": "连接失败！\r\n",
+      "-2": "读配置寄存器失败！\r\n",
+      "-3": "更改波特率失败！\r\n",
+      "-4": "启动烧录失败!\r\n",
+      "-5": "传输文件中途失败\r\n",
+      "-6": "MD5校验失败\r\n",
+      "-7": "固件不存在\r\n"
+    }
+  }
+}

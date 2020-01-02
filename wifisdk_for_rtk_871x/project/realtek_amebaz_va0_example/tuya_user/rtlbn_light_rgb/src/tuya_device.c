@@ -415,20 +415,19 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
 {
   STATIC IRCMD_new last_cmd = -1;
   static uint8_t I = 0;
-
   // uint8_t index;
   if (irType == IRCODESTART || irType == IRCODEREPEAT)
   {
     if (irType == IRCODESTART)
     {
       last_cmd = cmd;
-      PR_DEBUG ("NEW CMD:%x\r\n", last_cmd);
+      PR_NOTICE ("NEW CMD:%x\r\n", last_cmd);
       I = 0;
     }
     else
     {
       I++;
-      PR_DEBUG ("REPEAT%d CMD:%x\r\n", I, last_cmd);
+      //PR_NOTICE ("REPEAT%d CMD:%x\r\n", I, last_cmd);
 
       switch (last_cmd)
       {
@@ -466,7 +465,8 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
   {
     if(light_IrCrtl.IR_Flag==0)
     {
-       if((last_cmd==KEY_B_LEVEL_4)||(last_cmd==KEY_W_LEVEL_5)||(last_cmd==KEY_MODE_STROBE)||(last_cmd==KEY_B_LEVEL_3)||(last_cmd==KEY_B_LEVEL_5))
+	   // 自动模式下，手动、速度和模式 不操作
+	   if((last_cmd==KEY_B_LEVEL_4)||(last_cmd==KEY_W_LEVEL_5)||(last_cmd==KEY_MODE_STROBE)||(last_cmd==KEY_B_LEVEL_3)||(last_cmd==KEY_B_LEVEL_5))
        {
 
        }
@@ -496,6 +496,7 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
   }
       
   light_IrCrtl.IR_INCFlag = 1;
+  
   switch (last_cmd)
   #if USER_IRREMOTE
   {
@@ -574,29 +575,46 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
             {
                 UserIndex = 0;
                 key_trig_num++;
-                if(key_trig_num>3)
+                if(key_trig_num>7)
                   key_trig_num = 0;
                 
-                if(key_trig_num==SCENE_TYPE_BREATH)
-                {
-                   light_IrCrtl.ModeTotals = BREATH_MODES;
-                }
-                else if(key_trig_num==SCENE_TYPE_RAIN_DROP)
-                {
-                   light_IrCrtl.ModeTotals = FIRE_MODES; 
-                }
-                else if(key_trig_num==SCENE_TYPE_COLORFULL)
-                {
-                   light_IrCrtl.ModeTotals = COLORFUL_MODES;
-                }
-                else
-                {
-                  light_IrCrtl.ModeTotals = STREMBER_MODES;
-                }
-                light_ir_fun_scene_change(key_trig_num);
+               if(key_trig_num==SCENE_TYPE_BREATH)
+               {
+                 light_IrCrtl.ModeTotals = BREATH_MODES;
+               }
+               else if(key_trig_num==SCENE_TYPE_RAIN_DROP)
+               {
+                 light_IrCrtl.ModeTotals = FIRE_MODES; 
+               }
+               else if(key_trig_num==SCENE_TYPE_COLORFULL)
+               {
+                 light_IrCrtl.ModeTotals = COLORFUL_MODES;
+               }
+               else if(key_trig_num==SCENE_TYPE_STATIC)
+               {
+                light_IrCrtl.ModeTotals = STREMBER_MODES;
+               }
+               else if(key_trig_num==SCENE_TYPE_MARQUEE)
+               {
+                light_IrCrtl.ModeTotals = MYPAOMA_MODES;
+               }
+			   else if(key_trig_num==SCENE_TYPE_BLINKING)
+               {
+                light_IrCrtl.ModeTotals = MYFLASH_MODES;
+               }
+			   else if(key_trig_num==SCENE_TYPE_SNOWFLAKE)
+               {
+                light_IrCrtl.ModeTotals = MYSCAN_MODES;
+               }
+			   else
+			   {
+				 light_IrCrtl.ModeTotals = MYTRIP_MODES;
+			   }
+				
+               light_ir_fun_scene_change(key_trig_num);
             }
         }
-        PR_NOTICE("index1 ++++ %d %d %d",key_trig_num,UserIndex,light_IrCrtl.ModeTotals);
+	    PR_NOTICE("index1 ++++ %d %d %d ",key_trig_num,UserIndex,light_IrCrtl.ModeTotals);
       break;
       
     // 手动模式功能减
@@ -622,7 +640,7 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
                if(key_trig_num)
                key_trig_num--;
                else
-               key_trig_num = 3;
+               key_trig_num = 7;
                
                if(key_trig_num==SCENE_TYPE_BREATH)
                {
@@ -636,11 +654,26 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
                {
                  light_IrCrtl.ModeTotals = COLORFUL_MODES;
                }
-               else
+               else if(key_trig_num==SCENE_TYPE_STATIC)
                {
                 light_IrCrtl.ModeTotals = STREMBER_MODES;
                }
-               
+               else if(key_trig_num==SCENE_TYPE_MARQUEE)
+               {
+                light_IrCrtl.ModeTotals = MYPAOMA_MODES;
+               }
+			   else if(key_trig_num==SCENE_TYPE_BLINKING)
+               {
+                light_IrCrtl.ModeTotals = MYFLASH_MODES;
+               }
+			   else if(key_trig_num==SCENE_TYPE_SNOWFLAKE)
+               {
+                light_IrCrtl.ModeTotals = MYSCAN_MODES;
+               }
+			   else
+			   {
+				 light_IrCrtl.ModeTotals = MYTRIP_MODES;
+			   }
                UserIndex = light_IrCrtl.ModeTotals-1;
                light_ir_fun_scene_change(key_trig_num);
             }
@@ -650,11 +683,11 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
       
      // 速度加
     case KEY_B_LEVEL_5:
-      PR_NOTICE("+++++++ %d %d",key_trig_num,light_IrCrtl.Speedtimes);
-      if(key_trig_num<4)
+      PR_NOTICE("+++++++ %d %d %d",key_trig_num,light_IrCrtl.Speedtimes,light_IrCrtl.ManulFlag);
+      //if(key_trig_num<4)
       {
         if(light_IrCrtl.Speedtimes<96)
-        light_IrCrtl.Speedtimes = light_IrCrtl.Speedtimes+5;
+          light_IrCrtl.Speedtimes = light_IrCrtl.Speedtimes+5;
         else
           light_IrCrtl.Speedtimes = 100;
         /********全局速度控制*******/
@@ -665,8 +698,8 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
       break;
     // 速度减
    case KEY_B_LEVEL_3:
-       PR_NOTICE("----- %d %d",key_trig_num,light_IrCrtl.Speedtimes);
-      if(key_trig_num<4)
+       PR_NOTICE("----- %d %d %d",key_trig_num,light_IrCrtl.Speedtimes,light_IrCrtl.ManulFlag);
+      //if(key_trig_num<4)
       {
         if(light_IrCrtl.Speedtimes>44)
         light_IrCrtl.Speedtimes = light_IrCrtl.Speedtimes-5;
@@ -688,14 +721,16 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
         light_ir_fun_scene_change(0);
       }
       break;
-   // 亮度减
+   // 亮加
     case KEY_W_LEVEL_5:
-      light_ir_fun_bright_down();
+      //light_ir_fun_bright_down();
+	  light_ir_fun_bright_up();
       break;
     
-   //亮度加
+   //亮度减
     case KEY_MODE_STROBE:
-      light_ir_fun_bright_up();
+      //light_ir_fun_bright_up();
+	  light_ir_fun_bright_down();
       break;
     
     /********   手动模式 ***************/

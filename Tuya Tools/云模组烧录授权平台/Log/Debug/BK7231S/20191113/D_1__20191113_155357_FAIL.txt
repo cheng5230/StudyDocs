@@ -1,0 +1,26 @@
+[20191113_15:53:55_INFO:] Test begin
+[20191113_15:53:55_INFO:] Connect DUT...
+[20191113_15:53:55_INFO:] Open com port: COM3, Baudrate:115200
+[20191113_15:53:55_PASS:] Connect DUT pass!
+[20191113_15:53:55_INFO:] Send port cmd: txevm -g 0...
+[20191113_15:53:55_INFO:] system temperature:240
+[20191113_15:53:55_INFO:] Calibration tx power: IQ_CAL_PWR 1 11M CHAIN0...
+[20191113_15:53:55_INFO:] Send port cmd: txevm -e 1...
+[20191113_15:53:56_INFO:] Send port cmd: txevm -b 0 -r 11 -c 1...
+[20191113_15:53:56_INFO:] Send port cmd: txevm -p 10...
+[20191113_15:53:56_FAIL:] LP_SetVsa(FreqHz=2412000000.00,AmplDb=17.00,port=2) fail!
+[20191113_15:53:56_FAIL:] Device wifi tx measure fail!
+[20191113_15:53:56_FAIL:] LP_SetVsa(FreqHz=2412000000.00,AmplDb=17.00,port=2) fail!
+[20191113_15:53:56_FAIL:] Device wifi tx measure fail!
+[20191113_15:53:56_FAIL:] LP_SetVsa(FreqHz=2412000000.00,AmplDb=17.00,port=2) fail!
+[20191113_15:53:56_FAIL:] Device wifi tx measure fail!
+[20191113_15:53:56_FAIL:] LP_SetVsa(FreqHz=2412000000.00,AmplDb=17.00,port=2) fail!
+[20191113_15:53:56_FAIL:] Device wifi tx measure fail!
+[20191113_15:53:56_FAIL:] LP_SetVsa(FreqHz=2412000000.00,AmplDb=17.00,port=2) fail!
+[20191113_15:53:56_FAIL:] Device wifi tx measure fail!
+[20191113_15:53:56_FAIL:] Calibration tx power fail!
+[20191113_15:53:56_INFO:] Send port cmd: txevm -e 0...
+[20191113_15:53:57_INFO:] Close com port
+[20191113_15:53:57_INFO:] Disconnect DUT pass!
+[20191113_15:53:57_INFO:] Test time: 2.050000 sec
+[20191113_15:53:57_INFO:] Test Finished

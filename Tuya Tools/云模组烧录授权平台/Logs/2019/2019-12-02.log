@@ -1,0 +1,238 @@
+2019-12-02 11:06:55.4403 INFO "COM3runstart"
+2019-12-02 11:06:55.4403 INFO "COM3run2"
+2019-12-02 11:06:55.4590 INFO "COM3run3"
+2019-12-02 11:06:55.5039 INFO "COM3run4"
+2019-12-02 11:06:55.5039 INFO "COM3run5"
+2019-12-02 11:06:55.5039 INFO "COM3runend"
+2019-12-02 11:06:57.2012 INFO "COM3run进入SerilaChange"
+2019-12-02 11:06:57.2012 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 11:06:58.1603 INFO "COM3run进入SerilaChange"
+2019-12-02 11:06:58.1603 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 11:06:58.1603 INFO "COM3TaskRunstart"
+2019-12-02 11:07:28.5885 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"eHyGPUs8AjCCe7Fp","Message":"固件指纹匹配成功","Result":true}
+2019-12-02 11:07:29.1198 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"eHyGPUs8AjCCe7Fp","Message":"写入hid成功","Result":true}
+2019-12-02 11:07:29.2809 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"eHyGPUs8AjCCe7Fp","Message":"获取key成功","Result":true}
+2019-12-02 11:07:29.7254 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"eHyGPUs8AjCCe7Fp","Message":"写入配置信息成功","Result":true}
+2019-12-02 11:07:30.0394 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"eHyGPUs8AjCCe7Fp","Message":"复位成功","Result":true}
+2019-12-02 11:07:31.4101 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"eHyGPUs8AjCCe7Fp","Message":"读取配置成功","Result":true}
+2019-12-02 11:08:12.0944 INFO "COM3run进入SerilaChange"
+2019-12-02 11:08:12.0964 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 11:08:13.4620 INFO "COM3run进入SerilaChange"
+2019-12-02 11:08:13.4620 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 11:08:13.4620 INFO "COM3TaskRunstart"
+2019-12-02 11:08:48.6054 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"f90w9ZntfDKr7Aw0","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 11:11:25.3592 INFO "COM3run进入SerilaChange"
+2019-12-02 11:11:25.3612 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 11:11:25.7573 INFO "COM3run进入SerilaChange"
+2019-12-02 11:11:25.7573 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 11:11:25.7573 INFO "COM3TaskRunstart"
+2019-12-02 14:19:49.8638 INFO "COM3runstart"
+2019-12-02 14:19:49.8638 INFO "COM3run2"
+2019-12-02 14:19:49.8838 INFO "COM3run3"
+2019-12-02 14:19:49.9286 INFO "COM3run4"
+2019-12-02 14:19:49.9286 INFO "COM3run5"
+2019-12-02 14:19:49.9286 INFO "COM3runend"
+2019-12-02 14:19:50.4981 INFO "COM3run进入SerilaChange"
+2019-12-02 14:19:50.4981 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 14:19:50.5071 INFO "COM3TaskRunstart"
+2019-12-02 15:21:09.4861 INFO "COM3runstart"
+2019-12-02 15:21:09.4861 INFO "COM3run2"
+2019-12-02 15:21:09.5048 INFO "COM3run3"
+2019-12-02 15:21:09.5517 INFO "COM3run4"
+2019-12-02 15:21:09.5517 INFO "COM3run5"
+2019-12-02 15:21:09.5517 INFO "COM3runend"
+2019-12-02 15:21:10.9259 INFO "COM3run进入SerilaChange"
+2019-12-02 15:21:10.9259 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:21:10.9458 INFO "COM3TaskRunstart"
+2019-12-02 15:21:21.0581 INFO "COM3run进入SerilaChange"
+2019-12-02 15:21:21.0581 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:21:46.7940 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"f90w9ZntfDKr7Aw0","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 15:21:48.9333 INFO "COM3run进入SerilaChange"
+2019-12-02 15:21:48.9333 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:21:48.9333 INFO "COM3TaskRunstart"
+2019-12-02 15:21:49.6867 INFO "COM3run进入SerilaChange"
+2019-12-02 15:21:49.6867 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:21:53.4504 INFO "COM3run进入SerilaChange"
+2019-12-02 15:21:53.4504 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:21:53.4504 INFO "COM3TaskRunstart"
+2019-12-02 15:21:53.9627 INFO "COM3run进入SerilaChange"
+2019-12-02 15:21:53.9627 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:21:55.4984 INFO "COM3run进入SerilaChange"
+2019-12-02 15:21:55.4984 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:21:55.5054 INFO "COM3TaskRunstart"
+2019-12-02 15:22:06.8801 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:06.8801 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:08.7307 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:08.7307 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:08.7396 INFO "COM3TaskRunstart"
+2019-12-02 15:22:09.6320 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"f90w9ZntfDKr7Aw0","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 15:22:11.5256 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:11.5256 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:13.8238 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:13.8238 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:13.8238 INFO "COM3TaskRunstart"
+2019-12-02 15:22:15.0684 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"f90w9ZntfDKr7Aw0","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 15:22:15.9479 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:15.9479 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:17.1589 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:17.1589 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:17.1589 INFO "COM3TaskRunstart"
+2019-12-02 15:22:17.3450 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:17.3460 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:18.3139 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:18.3158 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:18.3158 INFO "COM3TaskRunstart"
+2019-12-02 15:22:18.5053 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:18.5053 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:19.4738 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:19.4738 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:19.4738 INFO "COM3TaskRunstart"
+2019-12-02 15:22:19.6633 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:19.6633 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:21.2026 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:21.2176 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:21.3642 INFO "COM3TaskRunstart"
+2019-12-02 15:22:21.5706 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:21.6175 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:31.7040 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:31.7090 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:31.7090 INFO "COM3TaskRunstart"
+2019-12-02 15:22:32.5678 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:32.5917 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:34.4222 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:34.4251 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:34.4610 INFO "COM3TaskRunstart"
+2019-12-02 15:22:35.6403 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:35.6523 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:39.5752 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:39.6020 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:39.6020 INFO "COM3TaskRunstart"
+2019-12-02 15:22:40.4948 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"f90w9ZntfDKr7Aw0","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 15:22:40.5397 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"f90w9ZntfDKr7Aw0","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 15:22:48.6942 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:48.6942 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:22:53.1185 INFO "COM3run进入SerilaChange"
+2019-12-02 15:22:53.1185 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:22:53.1185 INFO "COM3TaskRunstart"
+2019-12-02 15:22:59.4308 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"f90w9ZntfDKr7Aw0","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 15:23:27.8849 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"f90w9ZntfDKr7Aw0","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 15:35:11.7905 INFO "COM3runstart"
+2019-12-02 15:35:11.8024 INFO "COM3run2"
+2019-12-02 15:35:11.8024 INFO "COM3run3"
+2019-12-02 15:35:11.8546 INFO "COM3run4"
+2019-12-02 15:35:11.8546 INFO "COM3run5"
+2019-12-02 15:35:11.8546 INFO "COM3runend"
+2019-12-02 15:35:12.5849 INFO "COM3run进入SerilaChange"
+2019-12-02 15:35:12.5849 INFO "COM3runSerilaChange:dsr 0"
+2019-12-02 15:35:12.9031 INFO "COM3run进入SerilaChange"
+2019-12-02 15:35:12.9031 INFO "COM3runSerilaChange:dsr 1"
+2019-12-02 15:35:12.9128 INFO "COM3TaskRunstart"
+2019-12-02 15:35:32.0732 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"466G2fQAz9Am5f74","Message":"固件指纹匹配成功","Result":true}
+2019-12-02 15:35:32.6333 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"466G2fQAz9Am5f74","Message":"写入hid成功","Result":true}
+2019-12-02 15:35:32.8440 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"466G2fQAz9Am5f74","Message":"获取key成功","Result":true}
+2019-12-02 15:35:33.2909 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"466G2fQAz9Am5f74","Message":"写入配置信息成功","Result":true}
+2019-12-02 15:35:33.6037 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"466G2fQAz9Am5f74","Message":"复位成功","Result":true}
+2019-12-02 15:35:34.9782 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"466G2fQAz9Am5f74","Message":"读取配置成功","Result":true}
+2019-12-02 17:23:19.5127 INFO "COM3runstart"
+2019-12-02 17:23:19.5236 INFO "COM3run2"
+2019-12-02 17:23:19.5236 INFO "COM3run3"
+2019-12-02 17:23:19.6114 INFO "COM3run4"
+2019-12-02 17:23:19.6114 INFO "COM3run5"
+2019-12-02 17:23:19.6114 INFO "COM3TaskRunstart"
+2019-12-02 17:23:28.3851 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 17:23:30.5140 INFO "COM3runstart"
+2019-12-02 17:23:30.5140 INFO "COM3run2"
+2019-12-02 17:23:30.5237 INFO "COM3run3"
+2019-12-02 17:23:30.5237 INFO "COM3run4"
+2019-12-02 17:23:30.5357 INFO "COM3run5"
+2019-12-02 17:23:30.5357 INFO "COM3TaskRunstart"
+2019-12-02 17:23:39.2248 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 17:23:42.4825 INFO "COM3runstart"
+2019-12-02 17:23:42.4825 INFO "COM3run2"
+2019-12-02 17:23:42.4922 INFO "COM3run3"
+2019-12-02 17:23:42.4922 INFO "COM3run4"
+2019-12-02 17:23:42.5111 INFO "COM3run5"
+2019-12-02 17:23:42.5111 INFO "COM3TaskRunstart"
+2019-12-02 17:23:51.2231 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 17:23:54.9518 INFO "COM3runstart"
+2019-12-02 17:23:54.9518 INFO "COM3run2"
+2019-12-02 17:23:54.9618 INFO "COM3run3"
+2019-12-02 17:23:54.9618 INFO "COM3run4"
+2019-12-02 17:23:54.9747 INFO "COM3run5"
+2019-12-02 17:23:54.9747 INFO "COM3TaskRunstart"
+2019-12-02 17:24:03.6339 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式失败,发送信息固件无返回","Result":false}
+2019-12-02 17:24:06.1830 INFO "COM3runstart"
+2019-12-02 17:24:06.1830 INFO "COM3run2"
+2019-12-02 17:24:06.1920 INFO "COM3run3"
+2019-12-02 17:24:06.1920 INFO "COM3run4"
+2019-12-02 17:24:06.1920 INFO "COM3run5"
+2019-12-02 17:24:06.1920 INFO "COM3TaskRunstart"
+2019-12-02 17:24:10.8199 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:24:11.1617 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"Flash对比成功","Result":true}
+2019-12-02 17:24:21.4977 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"升级中:固件无返回信息","Result":false}
+2019-12-02 17:28:01.7149 INFO "COM3runstart"
+2019-12-02 17:28:01.7149 INFO "COM3run2"
+2019-12-02 17:28:01.7237 INFO "COM3run3"
+2019-12-02 17:28:01.8038 INFO "COM3run4"
+2019-12-02 17:28:01.8297 INFO "COM3run5"
+2019-12-02 17:28:01.8297 INFO "COM3TaskRunstart"
+2019-12-02 17:28:04.0045 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:28:04.2452 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"固件指纹匹配成功","Result":true}
+2019-12-02 17:28:04.3809 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取Mac成功:68572d680037","Result":true}
+2019-12-02 17:28:04.6158 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取key成功","Result":true}
+2019-12-02 17:28:05.7379 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"写入配置信息成功","Result":true}
+2019-12-02 17:28:06.2145 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"写入国家码成功","Result":true}
+2019-12-02 17:28:06.4185 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:28:06.7826 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"读取配置成功","Result":true}
+2019-12-02 17:28:06.9320 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"读取国家码成功","Result":true}
+2019-12-02 17:28:07.1460 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取Mac成功:68572d680037","Result":true}
+2019-12-02 17:28:07.2926 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"请求下载参数文件成功","Result":true}
+2019-12-02 17:28:09.9356 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"结束文件传输：固件返回成功","Result":true}
+2019-12-02 17:39:23.7173 INFO "COM3runstart"
+2019-12-02 17:39:23.7173 INFO "COM3run2"
+2019-12-02 17:39:23.7263 INFO "COM3run3"
+2019-12-02 17:39:25.8545 INFO "COM3runstart"
+2019-12-02 17:39:25.8545 INFO "COM3run2"
+2019-12-02 17:39:25.8635 INFO "COM3run3"
+2019-12-02 17:41:04.1102 INFO "COM3runstart"
+2019-12-02 17:41:04.1132 INFO "COM3run2"
+2019-12-02 17:41:04.1132 INFO "COM3run3"
+2019-12-02 17:41:04.1660 INFO "COM3run4"
+2019-12-02 17:41:04.1660 INFO "COM3run5"
+2019-12-02 17:41:04.1660 INFO "COM3TaskRunstart"
+2019-12-02 17:41:05.5573 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:41:05.9926 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"Flash对比成功","Result":true}
+2019-12-02 17:41:43.1434 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"复位成功","Result":true}
+2019-12-02 17:41:43.7412 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:41:44.0009 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"固件指纹匹配成功","Result":true}
+2019-12-02 17:41:44.2623 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取Mac成功:68572d680037","Result":true}
+2019-12-02 17:41:44.5076 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取key成功","Result":true}
+2019-12-02 17:41:45.3872 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"写入配置信息成功","Result":true}
+2019-12-02 17:41:45.7548 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"写入国家码成功","Result":true}
+2019-12-02 17:41:45.9766 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:41:46.3172 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"读取配置成功","Result":true}
+2019-12-02 17:41:46.4873 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"读取国家码成功","Result":true}
+2019-12-02 17:41:46.6867 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取Mac成功:68572d680037","Result":true}
+2019-12-02 17:41:46.8256 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"请求下载参数文件成功","Result":true}
+2019-12-02 17:41:49.4393 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"结束文件传输：固件返回成功","Result":true}
+2019-12-02 17:43:42.4515 INFO "COM3runstart"
+2019-12-02 17:43:42.4515 INFO "COM3run2"
+2019-12-02 17:43:42.4613 INFO "COM3run3"
+2019-12-02 17:43:42.4613 INFO "COM3run4"
+2019-12-02 17:43:42.4712 INFO "COM3run5"
+2019-12-02 17:43:42.4712 INFO "COM3TaskRunstart"
+2019-12-02 17:43:45.6600 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:43:45.9186 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"Flash对比成功","Result":true}
+2019-12-02 17:44:17.8904 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"复位成功","Result":true}
+2019-12-02 17:44:18.3803 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:44:18.4942 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"固件指纹匹配成功","Result":true}
+2019-12-02 17:44:18.6817 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取Mac成功:68572d680040","Result":true}
+2019-12-02 17:44:18.9293 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取key成功","Result":true}
+2019-12-02 17:44:20.1549 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"写入配置信息成功","Result":true}
+2019-12-02 17:44:20.5956 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"写入国家码成功","Result":true}
+2019-12-02 17:44:20.8137 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"进入产测模式","Result":true}
+2019-12-02 17:44:21.2863 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"读取配置成功","Result":true}
+2019-12-02 17:44:21.4239 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"读取国家码成功","Result":true}
+2019-12-02 17:44:21.5985 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"获取Mac成功:68572d680040","Result":true}
+2019-12-02 17:44:21.7395 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"请求下载参数文件成功","Result":true}
+2019-12-02 17:44:24.5274 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"PZwr0FHdAGVM402s","Message":"结束文件传输：固件返回成功","Result":true}

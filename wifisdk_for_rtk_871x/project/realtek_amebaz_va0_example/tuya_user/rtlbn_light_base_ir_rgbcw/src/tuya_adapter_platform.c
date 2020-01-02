@@ -101,6 +101,7 @@ VOID tuya_light_pwm_init (IN UINT_T period, IN  UINT_T* duty, IN UINT_T pwm_chan
 
   for (i=0; i<pwm_channel_num; i++)
   {
+    //PR_NOTICE("pwm_init %d",pin_info_list[i]);
     pwmout_init (&pwm_info[i], pin_info_list[i]);
     pwmout_period_us (&pwm_info[i], period);
     pwmout_pulsewidth_us (&pwm_info[i], *duty);
@@ -111,7 +112,7 @@ VOID tuya_light_pwm_init (IN UINT_T period, IN  UINT_T* duty, IN UINT_T pwm_chan
 VOID tuya_light_one_pwm_init (IN UINT_T period, IN  UINT_T* duty, IN UINT_T pwm_channel, IN  UINT_T pin_info)
 {
   user_pwm_period = period;
-
+  //PR_NOTICE("one_pwm_init %d",pin_info);
   pwmout_init (&pwm_info[pwm_channel], pin_info);
   pwmout_period_us (&pwm_info[pwm_channel], period);
   pwmout_pulsewidth_us (&pwm_info[pwm_channel], *duty);
@@ -123,6 +124,7 @@ VOID pwm_set_duty (UINT_T duty, UCHAR_T channel)
 {
   STATIC FLOAT_T  _duty;
   _duty = (FLOAT_T) duty / 1023.0;
+  //PR_NOTICE("pwm_set_duty %d",channel);
   pwmout_write (&pwm_info[channel], _duty);
   user_pwm_duty[channel] = duty;
 }

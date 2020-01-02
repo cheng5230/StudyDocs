@@ -1,0 +1,21 @@
+FileSearchy End User License Agreement
+
+1. Grant of License
+
+You are granted a free non-exclusive license to use the enclosed software for personal and commercial use.
+
+2. Restrictions.
+
+You are not allowed to do any of the following: 
+a) modify or create any derivative works of the Software; 
+b) reverse-engineer, decompile, disassemble the Software;
+c) manipulate or alter the components that make up this Software in any way; 
+d) sell, rent, lease, sublicense, or otherwise transfer rights to the Software; 
+
+3. Distribution
+
+You may copy this software and documentation as you wish, and give exact copies of this software to anyone, and distribute this software and documentation in its unmodified form via electronic means. But you should not charge or requesting donations for any such copies however made and from distributing the software and/or documentation with other products without the author's written permission.
+
+4. Disclaimer of warranty.
+
+THIS SOFTWARE IS PROVIDED "AS IS" AND WITHOUT ANY WARRANTY AS TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR ANY OTHER WARRANTIES EITHER EXPRESSED OR IMPLIED. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.

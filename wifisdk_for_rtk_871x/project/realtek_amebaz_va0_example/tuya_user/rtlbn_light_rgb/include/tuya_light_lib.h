@@ -22,6 +22,7 @@ version: 1.0.2 2018-11-29
 11：支持断电记忆可选
 12：支持配网方式选择（上电次数/按键长按）
 */
+#define USING_MUSICMODE            0 
 
 #define MAX_TEST_SSID_LEN          16
 #define PRODUCT_KEY_DATA_KEY       "XYX_PRODUCT_KEY_DATA_KEY"
@@ -361,6 +362,7 @@ extern uint8_t VoiceSpeed[10];
 extern uint32_t PaoColor[9];
 extern unsigned char __mode_cnts;
 extern LIGHT_IR_CRTL light_IrCrtl;
+extern uint8_t tickscnt;
 
 
 

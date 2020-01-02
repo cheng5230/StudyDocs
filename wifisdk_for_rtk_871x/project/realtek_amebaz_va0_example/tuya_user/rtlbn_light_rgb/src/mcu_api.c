@@ -928,20 +928,25 @@ void VoiceTricolor_mode(unsigned int voicedata,unsigned char speed)
     /******** 声音7彩切换效果 *******/
     if(g_dpmode)
     {
-      if(mcu_times++>2000)
-      {
-        mcu_times = 0;
-        __voice_cnt = 0;
-        mcu_VoiceData = 128;
-        voicedata = mcu_VoiceData-128;
-      }
-      
-      if(mcu_VoiceTemp!=voicedata)
-      {
-        mcu_VoiceTemp=voicedata;
-        mcu_VoiceSpeed = voicedata;
-        light_VoiceData(mcu_VoiceTemp,speed);
-      }
+      // 场景模式
+      #if USING_MUSICMODE
+        if(mcu_times++>2000)
+        {
+          mcu_times = 0;
+          __voice_cnt = 0;
+          mcu_VoiceData = 128;
+          voicedata = mcu_VoiceData-128;
+        }
+        
+        if(mcu_VoiceTemp!=voicedata)
+        {
+          mcu_VoiceTemp=voicedata;
+          mcu_VoiceSpeed = voicedata;
+          light_VoiceData(mcu_VoiceTemp,speed);
+        }
+      #else
+        //light_VoiceData(50,200);
+      #endif
     }
     else
     {
@@ -957,52 +962,58 @@ void VoiceSpk_mode(unsigned int voicedata,unsigned char speed)
     /**************** 声控音量速度        *************/
     if(g_dpmode)
     {
-      if(mcu_VoiceTemp!=voicedata)
-      {
-         mcu_VoiceTemp=voicedata;
-         /*********** 求和 ***********/
-         RecVoice[0] = RecVoice[1];
-         RecVoice[1] = RecVoice[2];
-         RecVoice[2] = RecVoice[3];
-         RecVoice[3] = RecVoice[4];
-         RecVoice[4] = mcu_VoiceTemp;
-         mcu_VoiceSPK = RecVoice[0]+RecVoice[1]+RecVoice[2]+RecVoice[3]+RecVoice[4];
-         /****** 音量大小10个等级 **********/
-         mcu_VoiceTicks = ((mcu_VoiceSPK/10)>9)?9:(mcu_VoiceSPK/10);
-         mcu_VoiceSpeed = VoiceSpeed[mcu_VoiceTicks];
-         mcu_VoiceSPK = mcu_VoiceSPK/2;
-      }
-      else
-      {
-        /***** 1s 未检测到声音停止显示 ****/
-        if(mcu_times++>1000)
+      //场景模式
+      #if USING_MUSICMODE
+        if(mcu_VoiceTemp!=voicedata)
         {
-           mcu_times = 0;
-           mcu_VoiceSPK = 0;
-           mcu_VoiceSpeed = 0;
+           mcu_VoiceTemp=voicedata;
+           /*********** 求和 ***********/
+           RecVoice[0] = RecVoice[1];
+           RecVoice[1] = RecVoice[2];
+           RecVoice[2] = RecVoice[3];
+           RecVoice[3] = RecVoice[4];
+           RecVoice[4] = mcu_VoiceTemp;
+           mcu_VoiceSPK = RecVoice[0]+RecVoice[1]+RecVoice[2]+RecVoice[3]+RecVoice[4];
+           /****** 音量大小10个等级 **********/
+           mcu_VoiceTicks = ((mcu_VoiceSPK/10)>9)?9:(mcu_VoiceSPK/10);
+           mcu_VoiceSpeed = VoiceSpeed[mcu_VoiceTicks];
+           mcu_VoiceSPK = mcu_VoiceSPK/2;
         }
         else
         {
-           /***** 速度逐步降下来 ****/ 
-           if((mcu_times%100)==0) 
-           {
-              if(mcu_VoiceSPK)
-              {
-                 /*********** 求和 ***********/
-                 RecVoice[0] = RecVoice[1];
-                 RecVoice[1] = RecVoice[2];
-                 RecVoice[2] = RecVoice[3];
-                 RecVoice[3] = RecVoice[4];
-                 RecVoice[4] = 0;
-                 mcu_VoiceSPK = RecVoice[0]+RecVoice[1]+RecVoice[2]+RecVoice[3]+RecVoice[4];
-                 /****** 音量大小10个等级 **********/
-                 mcu_VoiceTicks = ((mcu_VoiceSPK/10)>9)?9:(mcu_VoiceSPK/10);
-                 mcu_VoiceSpeed = VoiceSpeed[mcu_VoiceTicks];
-                 mcu_VoiceSPK = mcu_VoiceSPK/2;
-              }
-           }
+          /***** 1s 未检测到声音停止显示 ****/
+          if(mcu_times++>1000)
+          {
+             mcu_times = 0;
+             mcu_VoiceSPK = 0;
+             mcu_VoiceSpeed = 0;
+          }
+          else
+          {
+             /***** 速度逐步降下来 ****/ 
+             if((mcu_times%100)==0) 
+             {
+                if(mcu_VoiceSPK)
+                {
+                   /*********** 求和 ***********/
+                   RecVoice[0] = RecVoice[1];
+                   RecVoice[1] = RecVoice[2];
+                   RecVoice[2] = RecVoice[3];
+                   RecVoice[3] = RecVoice[4];
+                   RecVoice[4] = 0;
+                   mcu_VoiceSPK = RecVoice[0]+RecVoice[1]+RecVoice[2]+RecVoice[3]+RecVoice[4];
+                   /****** 音量大小10个等级 **********/
+                   mcu_VoiceTicks = ((mcu_VoiceSPK/10)>9)?9:(mcu_VoiceSPK/10);
+                   mcu_VoiceSpeed = VoiceSpeed[mcu_VoiceTicks];
+                   mcu_VoiceSPK = mcu_VoiceSPK/2;
+                }
+             }
+          }
         }
-      }
+      #else
+        mcu_Voicelum = 0xff;
+        mcu_VoiceSpeed = 10;
+      #endif
     }
     else
     {
@@ -1035,64 +1046,70 @@ void Voicelum_mode(unsigned int voicedata,unsigned char speed)
     /**************** 声控节奏速度        *************/
     if(g_dpmode)
     {
-      if(mcu_VoiceTemp!=voicedata)
-      {
-          mcu_VoiceTemp=voicedata;
-          if(mcu_VoiceTemp<20)
-           temp = 19;
-          else if(mcu_VoiceTemp<51)
-           temp = mcu_VoiceTemp;
-          else
-           temp = 50;
-
-          mcu_Voicelum = ((temp-19)*255/31);
-          #if 0
-          if(deltavoice<20)
-          mcu_VoiceSpeed = 19;
-          else if(deltavoice<51)
-          mcu_VoiceSpeed = deltavoice;
-          else
-          mcu_VoiceSpeed = 50;
-          
-          mcu_VoiceSpeed = ((50-mcu_VoiceSpeed)<<1) + 4;
-         #else
-         if(mcu_VoiceTicks>maxtemp)
-         {
-            maxtemp = mcu_VoiceTicks;
-         }
-         else
-         {
-            maxtemp = mcu_VoiceTicks;
-            if(__voice_cnt<9)
-            {
-              __voice_cnt++;
-              mcu_VoiceSpeed = VoiceSpeed[__voice_cnt];
-            }
-         }
-         #endif
-      }
-      else
-      {
-        /***** 1s 未检测到声音停止显示 ****/
-        if(mcu_times++>1000)
+      //场景模式
+      #if USING_MUSICMODE
+        if(mcu_VoiceTemp!=voicedata)
         {
-           mcu_times = 0;
-           __voice_cnt = 0;
-           mcu_VoiceSpeed = 0;
+            mcu_VoiceTemp=voicedata;
+            if(mcu_VoiceTemp<20)
+             temp = 19;
+            else if(mcu_VoiceTemp<51)
+             temp = mcu_VoiceTemp;
+            else
+             temp = 50;
+
+            mcu_Voicelum = ((temp-19)*255/31);
+            #if 0
+            if(deltavoice<20)
+            mcu_VoiceSpeed = 19;
+            else if(deltavoice<51)
+            mcu_VoiceSpeed = deltavoice;
+            else
+            mcu_VoiceSpeed = 50;
+            
+            mcu_VoiceSpeed = ((50-mcu_VoiceSpeed)<<1) + 4;
+           #else
+           if(mcu_VoiceTicks>maxtemp)
+           {
+              maxtemp = mcu_VoiceTicks;
+           }
+           else
+           {
+              maxtemp = mcu_VoiceTicks;
+              if(__voice_cnt<9)
+              {
+                __voice_cnt++;
+                mcu_VoiceSpeed = VoiceSpeed[__voice_cnt];
+              }
+           }
+           #endif
         }
         else
         {
-           /***** 速度逐步降下来 ****/ 
-           if((mcu_times%200)==0) 
-           {
-              if(__voice_cnt)
-              {
-                  __voice_cnt = __voice_cnt-1;
-                  mcu_VoiceSpeed = VoiceSpeed[__voice_cnt];
-              }
-           }
+          /***** 1s 未检测到声音停止显示 ****/
+          if(mcu_times++>1000)
+          {
+             mcu_times = 0;
+             __voice_cnt = 0;
+             mcu_VoiceSpeed = 0;
+          }
+          else
+          {
+             /***** 速度逐步降下来 ****/ 
+             if((mcu_times%200)==0) 
+             {
+                if(__voice_cnt)
+                {
+                    __voice_cnt = __voice_cnt-1;
+                    mcu_VoiceSpeed = VoiceSpeed[__voice_cnt];
+                }
+             }
+          }
         }
-      }
+      #else
+        mcu_Voicelum = 0xff;
+        mcu_VoiceSpeed = 10;
+      #endif
    }
    else
    {
@@ -1122,6 +1139,7 @@ void MyVocie_SelectMode(void)
    /** 外置音乐模式才有效 **/
    uint16_t micdata = 0;
    uint8_t micspeed = 0;
+   /*** 场景模式下使用音乐 ***/
    if(g_dpmode)
    {
       micdata = g_deltavoice;

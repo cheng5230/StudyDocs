@@ -18,7 +18,7 @@
 #include "gpio_test.h"
 #include "timer_api.h"
 #include "gpio_irq_api.h"
-
+#include ".compile_usr_cfg.h"
 
 //hw_timer_define
 STATIC gtimer_t ir_timer;
@@ -26,20 +26,18 @@ STATIC gtimer_t ir_timer;
 STATIC SEM_HANDLE get_switch_sem;
 STATIC gpio_irq_t ir_irq;
 STATIC gpio_t test_gpio_x;
-
 STATIC gtimer_t test_timer;
 
-
 #define irCntAllowance   10
-#define PRINTIRCNT      0
-#define IR_GPIO_NUM     PA_19
+#define PRINTIRCNT       0
+#define IR_GPIO_NUM      PA_19
 //#define TEST_GPIO_NUM   PA_19
 #define TIMER_CNT_MAX   ((145 + irCntAllowance))
 
 
 typedef enum
 {
-  KEY_1 = 0x83,//开关
+  KEY_1 = 0x83,//开�?  
   KEY_2 = 0x82,//冷暖
   KEY_3 = 0X81,//
   KEY_4 = 0x80,//
@@ -76,46 +74,15 @@ typedef enum
   KEY_b = 0x20,//夜灯
   KEY_c = 0Xe0,//30
   KEY_d = 0xd0,//60
-  KEY_e = 0xc0,//开关
-  KEY_f = 0x00,//明
-  KEY_g = 0x80,//暗
+  KEY_e = 0xc0,//开�?
+  KEY_f = 0x00,//�?  
+  KEY_g = 0x80,//�?
 } IRCMD_new;
-
 
 typedef enum
 {
-#if 0 // SPECIAL IR REMOTE
-  KEY_BRIGHTNESS_UP = 0x90,
-  KEY_BRIGHTNESS_DOWN = 0xB8,
-  KEY_POWER_OFF = 0xF8,
-  KEY_POWER_ON = 0xB0,
-
-  KEY_R_LEVEL_5 = 0x98,
-  KEY_G_LEVEL_5 = 0xD8,
-  KEY_B_LEVEL_5 = 0x88,
-  KEY_W_LEVEL_5 = 0xA8,
-
-  KEY_R_LEVEL_4 = 0xE8,
-  KEY_G_LEVEL_4 = 0x48,
-  KEY_B_LEVEL_4 = 0x68,
-  KEY_MODE_FLASH = 0xB2,
-
-  KEY_R_LEVEL_3 = 0x02,
-  KEY_G_LEVEL_3 = 0x32,
-  KEY_B_LEVEL_3 = 0x20,
-  KEY_MODE_STROBE = 0x00,
-
-  KEY_R_LEVEL_2 = 0x50,
-  KEY_G_LEVEL_2 = 0x78,
-  KEY_B_LEVEL_2 = 0x70,
-  KEY_MODE_FADE = 0x58,
-
-  KEY_R_LEVEL_1 = 0x38,
-  KEY_G_LEVEL_1 = 0x28,
-  KEY_B_LEVEL_1 = 0xF0,
-  KEY_MODE_SMOOTH = 0x30,
-
-#else // IR REMOTE PROVIDE BY AILY&ALLEN
+  // 5路红外遥控器 
+  #if USER_IR5LU_OR_IR2LU
   KEY_BRIGHTNESS_UP = 0x96,
   KEY_BRIGHTNESS_DOWN = 0xA6,
   KEY_POWER_ON_OFF = 0x46,
@@ -149,8 +116,45 @@ typedef enum
   KEY_G_LEVEL_1 = 0xA8,
   KEY_B_LEVEL_1 = 0x68,
   KEY_MODE_SMOOTH = 0x36,
-#endif
+  #else
+  // 2路红外遥控器
+  KEY_BRIGHTNESS_UP = 0x60,
+  KEY_BRIGHTNESS_DOWN = 0xc0,
+  KEY_POWER_ON = 0x08,
+  KEY_POWER_OFF = 0x40,
+  KEY_WHITE_W = 0x4a,
+  KEY_WHITE_C = 0xce,
+  KEY_CW_TURN_ROUND = 0x6c,
+  KEY_WHITE_xiaoye = 0x12,
+  
+  KEY_RGB_TURN_ROUND = 0x16,
+  KEY_R_LEVEL_5 = 0x20,
+  KEY_G_LEVEL_5 = 0xA0,
+  KEY_B_LEVEL_5 = 0x50,
+  KEY_W_LEVEL_5 = 0xE0,
+
+  KEY_R_LEVEL_4 = 0x10,
+  KEY_G_LEVEL_4 = 0x90,
+  KEY_B_LEVEL_4 = 0x56,
+  KEY_MODE_FLASH = 0x76,
+
+  KEY_R_LEVEL_3 = 0x30,
+  KEY_G_LEVEL_3 = 0xB0,
+  KEY_B_LEVEL_3 = 0x70,
+  KEY_MODE_STROBE = 0xF0,
+
+  KEY_R_LEVEL_2 = 0x66,
+  KEY_G_LEVEL_2 = 0x88,
+  KEY_B_LEVEL_2 = 0x48,
+  KEY_MODE_FADE = 0xC8,
+
+  KEY_R_LEVEL_1 = 0x28,
+  KEY_G_LEVEL_1 = 0xA8,
+  KEY_B_LEVEL_1 = 0x68,
+  KEY_MODE_SMOOTH = 0x36,
+  #endif
 } IRCMD_rfs;
+
 
 typedef enum
 {
@@ -174,6 +178,7 @@ typedef struct
   SFT_TIMER IrDecodeTimer;
   SEM_HANDLE ir_cmddeal_sem;
   THRD_HANDLE ir_thread;
+  MUTEX_HANDLE ir_mutex;
 } IRDEAL;
 
 //VOID gra_change_timer_cb(void);
@@ -184,3 +189,4 @@ typedef VOID (*IR_CALLBACK) (IRCMD cmd, IRCODE irType);
 void light_strip_infrared_init (IR_CALLBACK callback);
 
 #endif
+

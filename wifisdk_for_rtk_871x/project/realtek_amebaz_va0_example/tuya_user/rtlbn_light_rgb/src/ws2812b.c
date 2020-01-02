@@ -266,6 +266,7 @@ uint8_t UserIndex;
 uint8_t UserModeNum;
 uint16_t ModeRunTimes;
 uint16_t twinkle_random;
+uint8_t SwtichCnts;
 
 int size;
 
@@ -476,22 +477,38 @@ void WS2812FX_service(uint8_t type , uint8_t times,uint8_t scene_num,uint8_t mod
               else if(type == SCENE_TYPE_MARQUEE)
               {
                  /************* 跑马灯效果 **********************/
+                #if USING_MUSICMODE
                 delay = WS2812Fx_PaoMa(type,scene_num,times);
+                #else  
+                delay = WS2812Fx_PaoMaNormal(type,scene_num,times);
+                #endif
               }
               else if(type == SCENE_TYPE_BLINKING)
               {
                 /************* 用户闪烁效果 **********************/
+                #if USING_MUSICMODE
                 delay = WS2812Fx_Flash(type,scene_num,times);
+                #else
+                delay = WS2812Fx_FlashNormal(type,scene_num,times);
+                #endif
               }
               else if(type == SCENE_TYPE_SNOWFLAKE)
               {
                 /************* 扫描效果 **********************/
+                #if USING_MUSICMODE
                 delay = WS2812Fx_Scan(type,scene_num,times);
+                #else
+                delay = WS2812Fx_ScanNormal(type,scene_num,times);
+                #endif
               }
               else if(type == SCENE_TYPE_STREAMER_COLOR)
               {
                 /************* 跳变效果 **********************/
+                #if USING_MUSICMODE
                 delay = WS2812Fx_Trip(type,scene_num,times);
+                #else
+                delay = WS2812Fx_TripNormal(type,scene_num,times);
+                #endif
               }
               else 
               {
@@ -589,12 +606,19 @@ void setPixelColor(uint16_t n, uint32_t c) {
        /** 声音亮度控制 **/
        if((g_scenemode == SCENE_TYPE_STREAMER_COLOR)||(g_scenemode == SCENE_TYPE_SNOWFLAKE))
        {
+         #if USING_MUSICMODE
          r = ((r * mcu_Voicelum) >> 8);
       	 g =((g * mcu_Voicelum) >> 8);
       	 b = ((b * mcu_Voicelum) >> 8);
+         #else
+         r = (r * brightness) >> 8;
+      	 g = (g * brightness) >> 8;
+      	 b = (b * brightness) >> 8;
+         #endif
        }
        else
        {
+         // 场景模式 
          if(g_dpmode)
          {
             r = (r * brightness) >> 8;
@@ -603,6 +627,7 @@ void setPixelColor(uint16_t n, uint32_t c) {
          }
          else
          {
+             // 音乐模式
              r = ((r * mcu_Voicelum) >> 8);
           	 g =((g * mcu_Voicelum) >> 8);
           	 b = ((b * mcu_Voicelum) >> 8);
@@ -835,9 +860,14 @@ uint16_t running(uint32_t color1, uint32_t color2) {
   
   SEGMENT_RUNTIME.counter_mode_step = (SEGMENT_RUNTIME.counter_mode_step + 1) % SEGMENT_LENGTH;
   //SEGMENT_RUNTIME.counter_mode_step = (SEGMENT_RUNTIME.counter_mode_step + 1) % size_u;
-  if(SEGMENT_RUNTIME.counter_mode_step==0)
+  if(SEGMENT_RUNTIME.counter_mode_call>255)
   {
+    PaomaFlag = 1;
     return (100);
+  }
+  else
+  {
+    PaomaFlag = 0;
   }
   return (SEGMENT.speed / SEGMENT_LENGTH);
 }
@@ -1139,6 +1169,16 @@ uint16_t fire_flicker(int rev_intensity) {
     g =  max(g - flicker, 0);
     b =  max(b - flicker, 0);
     setPixelColor(i,((uint32_t)r << 16) | ((uint32_t)g <<  8) | b);
+  }
+
+  if(SEGMENT_RUNTIME.counter_mode_step++>255)
+  {
+    SEGMENT_RUNTIME.counter_mode_step = 0;
+    PaomaFlag = 1;
+  }
+  else
+  {
+    PaomaFlag = 0;
   }
   
   return (SEGMENT.speed / SEGMENT_LENGTH);
@@ -1675,6 +1715,15 @@ uint16_t WS2812FX_mode_running_lights(void) {
   }
   
   SEGMENT_RUNTIME.counter_mode_step = (SEGMENT_RUNTIME.counter_mode_step + 1) % 256;
+   /**** 运行次数控制 ****/
+  if(SEGMENT_RUNTIME.counter_mode_step ==0)
+  {
+    PaomaFlag = 1;
+  }
+  else
+  {
+    PaomaFlag = 0;
+  }
   return (SEGMENT.speed / SEGMENT_LENGTH);
 }
 
@@ -2290,7 +2339,19 @@ uint16_t WS2812FX_mode_fire_flicker_intense(void) {
 	    rgbBuffer[pixelnumber*3+1] = (color >> 8)& 0;
 	    rgbBuffer[pixelnumber*3+2] = color& 0;
     }
-          
+
+   SEGMENT_RUNTIME.counter_mode_step = (SEGMENT_RUNTIME.counter_mode_step + 1) % 256;
+   /**** 运行次数控制 ****/
+   if(SEGMENT_RUNTIME.counter_mode_call++>255)
+   {
+     SEGMENT_RUNTIME.counter_mode_call = 0;
+     PaomaFlag = 1;
+   }
+   else
+   {
+     PaomaFlag = 0;
+   }
+  
 	  return (SEGMENT.speed / 128);
 }
 
@@ -2727,7 +2788,7 @@ uint16_t WS2812FX_mode_custom_BWaveFade3(void){
 	    }
   }
 
-   return (SEGMENT.speed/4);
+   return (SEGMENT.speed/64);
  }
 
  /*
@@ -2773,7 +2834,7 @@ uint16_t WS2812FX_mode_custom_BWaveFade3(void){
 			 }
 		 }
    }
-	return (SEGMENT.speed/4);
+	return (SEGMENT.speed/64);
 }
 
   /*
@@ -2895,7 +2956,7 @@ uint16_t WS2812FX_mode_custom_BWaveFade3(void){
 				 }
 			 }
 	   }
-		return (SEGMENT.speed/4);
+		return (SEGMENT.speed/64);
 	}
 
 /*
@@ -2903,18 +2964,21 @@ uint16_t WS2812FX_mode_custom_BWaveFade3(void){
   * 自动变幻 : 在流光模式和随机闪烁模式之间切换，10s计时
   */
  uint16_t WS2812FX_mode_custom_AutoSwitch(void){ 
-	 uint16_t i,j,k;
-	if(Ms_heart<AutoSwitch_5s)
+ uint16_t i,j,k;
+    
+    SwtichCnts++;
+	if(SwtichCnts<50)
 	{
 	    /*流光模式------ 10s切换        WS2812FX_mode_multi_dynamic */
 		for(i=SEGMENT.start; i <= SEGMENT.stop; i++) {
 		  setPixelColor(i, color_wheel(random8()));
 		}
-		return (SEGMENT.speed);
+		//PR_NOTICE("------------ %d %d ",SwtichCnts,SEGMENT.speed);
+		return (SEGMENT.speed/64);
 	}
-	else if(Ms_heart<AutoSwitch_10s)
+	else 
 	{
-		/*随机跳动模式------ 10s切换        WS2812FX_mode_multi_dynamic */
+		  /*随机跳动模式------ 10s切换        WS2812FX_mode_multi_dynamic */
 		  BlinkCnt++;
 	    for(i=0;i<SEGMENT.stop;i++){
 	      setPixelColor(i,BLACK);
@@ -2951,15 +3015,13 @@ uint16_t WS2812FX_mode_custom_BWaveFade3(void){
   				 }
   			 }
 	    }
-		return (SEGMENT.speed/4);
+      
+    if(SwtichCnts>100)
+      SwtichCnts = 0;
+      // PR_NOTICE("------------ %d %d ",SwtichCnts,SEGMENT.speed);
+		return (SEGMENT.speed/16);
 	}
-	else
-	{
-    Ms_heart = 0;
-    BlinkCnt = 0; 
-		return (SEGMENT.speed/256);
-	}
- }
+}
 
 /*
  * Custom modes
@@ -3098,6 +3160,14 @@ void rainbowWithGlitter(void)
 
 void confetti(void) 
 {
+  if(SEGMENT_RUNTIME.counter_mode_step==0)
+  {
+    SEGMENT_RUNTIME.counter_mode_step = 1;
+    for(uint16_t i=0; i < SEGMENT_LENGTH; i++) {
+      setPixelColor(SEGMENT.start + i, BLACK);
+    } 
+  }
+  
   fadeToBlackBy(rgbBuffer, DISPLAY_BUF_MAX_PIXEL, 10);
   int pos = random8Var(DISPLAY_BUF_MAX_PIXEL);
   rgbBuffer[pos*3] +=gHue + random8Var(64);
@@ -3237,8 +3307,20 @@ void  UserSwitch_Ticks(uint8_t scene_num,uint8_t type,uint8_t MaxMode)
    {
        if(FlashFlag == 1)
        {
-          if(ModeRunTimes>RUNNING_30S)
-          {
+          #if USING_MUSICMODE
+           if(ModeRunTimes>RUNNING_10S)
+          #else
+           __scene_cnt++;
+           if(__scene_cnt >= scene_num)
+           {
+              __scene_cnt = 0;
+           }
+           // 场景模式
+           if(g_dpmode)
+             ModeRunTimes = RUNNING_10S+1;
+           if(ModeRunTimes>RUNNING_10S)
+          #endif
+           {
              FlashFlag = 0;
              ModeRunTimes = 0;
         		 Ms_heart = 0;
@@ -3269,7 +3351,19 @@ void  UserSwitch_Ticks(uint8_t scene_num,uint8_t type,uint8_t MaxMode)
    {
       if(ScanFlag)
       {
-        if(ModeRunTimes>RUNNING_30S)
+        #if USING_MUSICMODE
+          if(ModeRunTimes>RUNNING_10S)
+        #else
+          __scene_cnt++;
+          if(__scene_cnt >= scene_num)
+          {
+             __scene_cnt = 0;
+          }
+          // 场景模式
+         if(g_dpmode)
+           ModeRunTimes = RUNNING_10S+1;
+        if(ModeRunTimes>RUNNING_10S)
+        #endif
         {
            ModeRunTimes = 0;
            ScanFlag = 0;
@@ -3300,7 +3394,19 @@ void  UserSwitch_Ticks(uint8_t scene_num,uint8_t type,uint8_t MaxMode)
    {
       if(TripFlag)
       {
-        if(ModeRunTimes>RUNNING_30S)
+        #if USING_MUSICMODE
+         if(ModeRunTimes>RUNNING_10S)
+        #else
+           __scene_cnt++;
+           if(__scene_cnt >= scene_num)
+           {
+              __scene_cnt = 0;
+           }
+          // 场景模式
+         if(g_dpmode)
+           ModeRunTimes = RUNNING_10S+1;
+         if(ModeRunTimes>RUNNING_10S)
+        #endif
         {
            ModeRunTimes = 0;
            TripFlag = 0;
@@ -3331,7 +3437,19 @@ void  UserSwitch_Ticks(uint8_t scene_num,uint8_t type,uint8_t MaxMode)
    {
       if(UsrColorFlag)
       {
-        if(ModeRunTimes>RUNNING_30S)
+        #if USING_MUSICMODE
+         if(ModeRunTimes>RUNNING_10S)
+        #else
+           __scene_cnt++;
+           if(__scene_cnt >= scene_num)
+           {
+              __scene_cnt = 0;
+           }
+         // 场景模式
+         if(g_dpmode)
+           ModeRunTimes = RUNNING_10S+1;
+         if(ModeRunTimes>RUNNING_10S)
+        #endif
         {
            ModeRunTimes = 0;
            UsrColorFlag = 0;
@@ -3655,6 +3773,7 @@ uint16_t WS2812Fx_Streamber(uint8_t type,uint8_t scene_num,uint8_t times)
   #endif
   /***** 刷新显示 ******/
   show();
+
   #if 0
   /**** 时间计数模式----30s切换 ***********/
   UserRun_Switch(scene_num,type,STREMBER_MODES);
@@ -3666,6 +3785,15 @@ uint16_t WS2812Fx_Streamber(uint8_t type,uint8_t scene_num,uint8_t times)
   }
   else
   {
+	// 自动模式速度处理
+	if(light_IrCrtl.IR_Mode)
+	{
+		times = light_IrCrtl.ManulTimes;
+	}
+	else
+	{
+       // 非自动模式速度处理
+	}
     UserSwitch_Ticks(STREMBER_RUNCNTS,type,STREMBER_MODES);
   }
   #endif
@@ -3716,7 +3844,7 @@ uint16_t WS2812Fx_Breath(uint8_t type,uint8_t scene_num,uint8_t times)
   {
     SEGMENT.speed = WS2812FX_mode_custom_BWaveFade3();
   }
-  else if(UserIndex==4)
+  else  
   {
     __scene_cnt = scene_num;
     SEGMENT.speed = WS2812FX_mode_rainbow();
@@ -3734,7 +3862,16 @@ uint16_t WS2812Fx_Breath(uint8_t type,uint8_t scene_num,uint8_t times)
   }
   else
   {
-    UserSwitch_Ticks(scene_num,type,BREATH_MODES);
+	// 自动模式速度处理
+	if(light_IrCrtl.IR_Mode)
+	{
+		times = light_IrCrtl.ManulTimes;
+	}
+	else
+	{
+       // 非自动模式速度处理
+	}
+	UserSwitch_Ticks(scene_num,type,BREATH_MODES);
   }
   #endif
   /*****用户设定速度返回设置 ********/
@@ -3750,7 +3887,7 @@ uint16_t WS2812Fx_Breath(uint8_t type,uint8_t scene_num,uint8_t times)
 /************************* 火焰效果处理*************/
 uint16_t WS2812Fx_Fire(uint8_t type,uint8_t scene_num,uint8_t times)
 {
-  #if 1
+  #if 0
   /********** 获取用户颜色 *************/
   UsrColors = __GetWs2812FxColors(__scene_cnt,type);
   UserModeNum = scene_num;
@@ -3842,6 +3979,7 @@ uint16_t WS2812Fx_Fire(uint8_t type,uint8_t scene_num,uint8_t times)
   }
   /********** 刷新显示 *************/
   show();
+  
   #if 0
    /**** 时间计数模式显示 ***********/
   UserRun_Switch(scene_num,type,FIRE_MODES);
@@ -3877,7 +4015,7 @@ uint16_t WS2812Fx_Fire(uint8_t type,uint8_t scene_num,uint8_t times)
   {
     SEGMENT.speed = WS2812FX_mode_fire_flicker_intense();
   }
-  else if(UserIndex==3)
+  else  
   {
     SEGMENT.speed = WS2812FX_mode_fire_flicker_soft();
   }
@@ -3886,20 +4024,44 @@ uint16_t WS2812Fx_Fire(uint8_t type,uint8_t scene_num,uint8_t times)
   /********** 刷新显示 *************/
   show();
   /**** 时间计数模式显示 ***********/
+  #if 0
+   /**** 时间计数模式显示 ***********/
   UserRun_Switch(scene_num,type,FIRE_MODES);
+  #else
+  /**** 时间计数模式----每种模式运行1次 ***********/
+  if(light_IrCrtl.ManulFlag)
+  {
+    times = light_IrCrtl.ManulTimes;
+  }
+  else
+  {
+	// 自动模式速度处理
+	if(light_IrCrtl.IR_Mode)
+	{
+		times = light_IrCrtl.ManulTimes;
+	}
+	else
+	{
+       // 非自动模式速度处理
+	}
+	UserSwitch_Ticks(scene_num,type,4);
+  }
+  #endif
+  
   if(SEGMENT.speed <SPEED_MIN)
   {
      SEGMENT.speed = SPEED_MIN;
   }
   times = times;
   #endif
+  
   return ((SEGMENT.speed /4) *times);
 }
 
 /************************* 炫彩效果处理*************/
 uint16_t WS2812Fx_Colorful(uint8_t type,uint8_t scene_num,uint8_t times)
 {
-  #if 1
+  #if 0
   /********** 获取用户颜色 *************/
   UsrColors = __GetWs2812FxColors(__scene_cnt,type);
   UserModeNum = scene_num;
@@ -3995,139 +4157,139 @@ uint16_t WS2812Fx_Colorful(uint8_t type,uint8_t scene_num,uint8_t times)
   #endif
   SEGMENT.speed = SPEED_MIN<<1;
   #else
-  /********** 获取用户颜色 *************/
-  UsrColors = __GetWs2812FxColors(__scene_cnt,type);
-  /********** 自定义效果实现 *************/
-  if(UserIndex==0)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_running_random();
-  }
-  else if(UserIndex==1)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_custom_SportLight();
-  }
-  else if(UserIndex==2)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_multi_dynamic();
-  }
-  else if(UserIndex==3)
-  {
-    SEGMENT.speed = WS2812FX_mode_custom_AutoSwitch();
-  }
-  /********** 刷新显示 *************/
-  show();
-  /**** 时间计数模式显示 ***********/
-  UserRun_Switch(scene_num,type,COLORFUL_MODES);
-  /*****用户设定速度返回设置 ********/
-  if(SEGMENT.speed <SPEED_MIN)
-  {
-     SEGMENT.speed = SPEED_MIN;
-  }
-  times = times;
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    /********** 自定义效果实现 *************/
+    if(UserIndex==0)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_running_random();
+    }
+    else if(UserIndex==1)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_custom_SportLight();
+    }
+    else if(UserIndex==2)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_multi_dynamic();
+    }
+    else  
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_AutoSwitch();
+    }
+    /********** 刷新显示 *************/
+    show();
+    /**** 时间计数模式----每种模式运行1次 ***********/
+    if(SEGMENT_RUNTIME.counter_mode_call >= 255) 
+    {
+      ColorfulFlag = 1;
+    }
+    else
+    {
+      ColorfulFlag = 0;
+    }
+    
+    if(light_IrCrtl.ManulFlag)
+    {
+      times = light_IrCrtl.ManulTimes;
+    }
+    else
+    {
+	   // 自动模式速度处理
+	   if(light_IrCrtl.IR_Mode)
+	   {
+		  times = light_IrCrtl.ManulTimes;
+	   }
+	   else
+	   {
+	      // 非自动模式速度处理
+	   }
+	   UserSwitch_Ticks(scene_num,type,4);
+    }
+    /*****用户设定速度返回设置 ********/
+    if(SEGMENT.speed <SPEED_MIN)
+    {
+       SEGMENT.speed = SPEED_MIN;
+    }
+    times = times;
   #endif
   return ((SEGMENT.speed /4) *times);
 }
 
-
-/**** 音乐闪烁 --- 节奏七彩闪烁 声音大小控制亮度 ****/
-uint16_t WS2812Fx_PaoMa(uint8_t type,uint8_t scene_num,uint8_t times)
+/**** 常规跑马    ****/
+uint16_t WS2812Fx_PaoMaNormal(uint8_t type,uint8_t scene_num,uint8_t times)
 {
-  #if 0
-  /********** 获取用户颜色 *************/
-  UsrColors = __GetWs2812FxColors(__scene_cnt,type);
-  UserModeNum = scene_num;
-  /********** 自定义效果实现 *************/
-  if(UserIndex==0)
-  {
-    SEGMENT.speed = WS2812FX_mode_color_wipe();
-  }
-  else if(UserIndex==1)
-  {
-    SEGMENT.speed = WS2812FX_mode_color_wipe_inv();
-  }
-  else if(UserIndex==2)
-  {
-    SEGMENT.speed = WS2812FX_mode_color_wipe_rev();
-  }
-  else if(UserIndex==3)
-  {
-    SEGMENT.speed = WS2812FX_mode_color_wipe_rev_inv();
-  }
-  else if(UserIndex==4)
-  {
-    SEGMENT.speed = WS2812FX_mode_chase_white();
-  }
-  else if(UserIndex==5)
-  {
-    SEGMENT.speed = WS2812FX_mode_chase_color();
-  }
-  else if(UserIndex==6)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_chase_random();
-  }
-  else if(UserIndex==7)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_chase_rainbow();
-  }
-  else if(UserIndex==8)
-  {
-    SEGMENT.speed = WS2812FX_mode_chase_flash();
-  }
-  else if(UserIndex==9)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_chase_flash_random();
-  }
-  else if(UserIndex==10)
-  {
-    SEGMENT.speed = WS2812FX_mode_chase_blackout();
-  }
-  else if(UserIndex==11)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_chase_blackout_rainbow();
-  }
-  else if(UserIndex==12)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_color_sweep_random();
-  }
-  else if(UserIndex==13)
-  {
-    SEGMENT.speed = WS2812FX_mode_custom_WaterDrop();
-  }
-  /********** 刷新显示 *************/
-  show();
-  /**** 时间计数模式显示 ***********/
-  UserRun_Switch(scene_num,type,PAOMA_MODES);
-  /*****用户设定速度返回设置 ********/
-  if(SEGMENT.speed <SPEED_MIN)
-  {
-     SEGMENT.speed = SPEED_MIN;
-  }
-  times = times >>1;
-  #else
-  /********** 刷新显示 *************/
-  if(UserIndex==0)
-  {
-      g_paomaVoiceFlag = 0;
-  }
-  else if(UserIndex==1)
-  {
-     g_paomaVoiceFlag = 1;
-  }
-  /********** 刷新显示 *************/
-  //PR_NOTICE("-----------------:%d %d %d \n", mcu_VoiceSpeed,SEGMENT_RUNTIME.counter_mode_call,ModeRunTimes);
-  if(mcu_VoiceSpeed)
-  {
-    times = mcu_VoiceSpeed;
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
+    /********** 自定义效果实现 *************/
+    if(UserIndex==0)
+    {
+      SEGMENT.speed = WS2812FX_mode_color_wipe();
+    }
+    else if(UserIndex==1)
+    {
+      SEGMENT.speed = WS2812FX_mode_color_wipe_inv();
+    }
+    else if(UserIndex==2)
+    {
+      SEGMENT.speed = WS2812FX_mode_color_wipe_rev();
+    }
+    else if(UserIndex==3)
+    {
+      SEGMENT.speed = WS2812FX_mode_color_wipe_rev_inv();
+    }
+    else if(UserIndex==4)
+    {
+      SEGMENT.speed = WS2812FX_mode_chase_white();
+    }
+    else if(UserIndex==5)
+    {
+      SEGMENT.speed = WS2812FX_mode_chase_color();
+    }
+    else if(UserIndex==6)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_chase_random();
+    }
+    else if(UserIndex==7)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_chase_rainbow();
+    }
+    else if(UserIndex==8)
+    {
+      SEGMENT.speed = WS2812FX_mode_chase_flash();
+    }
+    else if(UserIndex==9)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_chase_flash_random();
+    }
+    else if(UserIndex==10)
+    {
+      SEGMENT.speed = WS2812FX_mode_chase_blackout();
+    }
+    else if(UserIndex==11)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_chase_blackout_rainbow();
+    }
+    else if(UserIndex==12)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_color_sweep_random();
+    }
+    else 
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_WaterDrop();
+    }
+    /********** 刷新显示 *************/
+    show();
     /**** 时间计数模式显示 ***********/
-    if(SEGMENT_RUNTIME.counter_mode_call > SEGMENT_LENGTH) 
+    if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
     {
       UsrColorFlag = 1;
     }
@@ -4135,44 +4297,252 @@ uint16_t WS2812Fx_PaoMa(uint8_t type,uint8_t scene_num,uint8_t times)
     {
       UsrColorFlag = 0;
     }
-    UserSwitch_Ticks(1,type,PAOMA_MODES);    // PAOMA_CNTS
-  }
-  else
-  {
-    times = 1;
-  }
-  SEGMENT.speed = SPEED_MIN<<1;
+	
+	if(light_IrCrtl.ManulFlag)
+    {
+      times = light_IrCrtl.ManulTimes;
+    }
+    else
+    {
+	   // 自动模式速度处理
+	   if(light_IrCrtl.IR_Mode)
+	   {
+		  times = light_IrCrtl.ManulTimes;
+	   }
+	   else
+	   {
+	      // 非自动模式速度处理
+	   }
+       UserSwitch_Ticks(scene_num,type,14);    // PAOMA_CNTS
+    }
+	
+    /*****用户设定速度返回设置 ********/
+    if(SEGMENT.speed <SPEED_MIN)
+    SEGMENT.speed = SPEED_MIN;
+    times = times >>1;
+    
+    return (SEGMENT.speed *times);
+}
+
+/**** 音乐闪烁 --- 节奏七彩闪烁 声音大小控制亮度 ****/
+uint16_t WS2812Fx_PaoMa(uint8_t type,uint8_t scene_num,uint8_t times)
+{
+   #if 1
+      /********** 刷新显示 *************/
+      if(UserIndex==0)
+      {
+          g_paomaVoiceFlag = 0;
+      }
+      else 
+      {
+         g_paomaVoiceFlag = 1;
+      }
+      /********** 刷新显示 *************/
+      #if USING_MUSICMODE
+        if(mcu_VoiceSpeed)
+        {
+          times = mcu_VoiceSpeed;
+          /**** 时间计数模式显示 ***********/
+          if(SEGMENT_RUNTIME.counter_mode_call > SEGMENT_LENGTH) 
+          {
+            UsrColorFlag = 1;
+          }
+          else
+          {
+            UsrColorFlag = 0;
+          }
+          UserSwitch_Ticks(1,type,PAOMA_MODES);    // PAOMA_CNTS
+        }
+        else
+        {
+          times = 1;
+        }
+      #else
+        // 场景模式无音乐感应
+        if(g_dpmode)
+        {
+            /**** 时间计数模式显示 ***********/
+            if(SEGMENT_RUNTIME.counter_mode_call > SEGMENT_LENGTH) 
+            {
+              UsrColorFlag = 1;
+            }
+            else
+            {
+              UsrColorFlag = 0;
+            }
+            tickscnt++;
+            UserSwitch_Ticks(1,type,PAOMA_MODES);    // PAOMA_CNTS
+        }
+        else
+        {
+          if(mcu_VoiceSpeed)
+          {
+            times = mcu_VoiceSpeed;
+            /**** 时间计数模式显示 ***********/
+            if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+            {
+              UsrColorFlag = 1;
+            }
+            else
+            {
+              UsrColorFlag = 0;
+            }
+            UserSwitch_Ticks(1,type,PAOMA_MODES);    // PAOMA_CNTS
+          }
+          else
+          {
+            times = 1;
+          }
+        }
+      #endif
+      SEGMENT.speed = SPEED_MIN<<1;
+  #else
+      /********** 获取用户颜色 *************/
+      UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+      UserModeNum = scene_num;
+      /********** 自定义效果实现 *************/
+      if(UserIndex==0)
+      {
+        SEGMENT.speed = WS2812FX_mode_color_wipe();
+      }
+      else if(UserIndex==1)
+      {
+        SEGMENT.speed = WS2812FX_mode_color_wipe_inv();
+      }
+      else if(UserIndex==2)
+      {
+        SEGMENT.speed = WS2812FX_mode_color_wipe_rev();
+      }
+      else if(UserIndex==3)
+      {
+        SEGMENT.speed = WS2812FX_mode_color_wipe_rev_inv();
+      }
+      else if(UserIndex==4)
+      {
+        SEGMENT.speed = WS2812FX_mode_chase_white();
+      }
+      else if(UserIndex==5)
+      {
+        SEGMENT.speed = WS2812FX_mode_chase_color();
+      }
+      else if(UserIndex==6)
+      {
+        __scene_cnt = scene_num;
+        SEGMENT.speed = WS2812FX_mode_chase_random();
+      }
+      else if(UserIndex==7)
+      {
+        __scene_cnt = scene_num;
+        SEGMENT.speed = WS2812FX_mode_chase_rainbow();
+      }
+      else if(UserIndex==8)
+      {
+        SEGMENT.speed = WS2812FX_mode_chase_flash();
+      }
+      else if(UserIndex==9)
+      {
+        __scene_cnt = scene_num;
+        SEGMENT.speed = WS2812FX_mode_chase_flash_random();
+      }
+      else if(UserIndex==10)
+      {
+        SEGMENT.speed = WS2812FX_mode_chase_blackout();
+      }
+      else if(UserIndex==11)
+      {
+        __scene_cnt = scene_num;
+        SEGMENT.speed = WS2812FX_mode_chase_blackout_rainbow();
+      }
+      else if(UserIndex==12)
+      {
+        __scene_cnt = scene_num;
+        SEGMENT.speed = WS2812FX_mode_color_sweep_random();
+      }
+      else if(UserIndex==13)
+      {
+        SEGMENT.speed = WS2812FX_mode_custom_WaterDrop();
+      }
+      /********** 刷新显示 *************/
+      show();
+      /**** 时间计数模式显示 ***********/
+      //UserRun_Switch(scene_num,type,PAOMA_MODES);
+      UserSwitch_Ticks(scene_num,type,PAOMA_MODES);
+      /*****用户设定速度返回设置 ********/
+      if(SEGMENT.speed <SPEED_MIN)
+      {
+         SEGMENT.speed = SPEED_MIN;
+      }
+      times = times >>1;
   #endif
   return (SEGMENT.speed *times);
 }
 
-/************************* 音乐炫彩 节奏控制流动*************/
-uint16_t WS2812Fx_Flash(uint8_t type,uint8_t scene_num,uint8_t times)
+/************************* 常规闪烁 *************/
+uint16_t WS2812Fx_FlashNormal(uint8_t type,uint8_t scene_num,uint8_t times)
 {
-  #if 1
-  /********** 刷新显示 *************/
-  if(UserIndex==0)
-  {
-    Usr_Paoma0();
-  }
-  else if(UserIndex==1)
-  {
-    WS2812FX_mode_running_random();
-  }
-  else if(UserIndex==2)
-  {
-    WS2812FX_mode_multi_dynamic();
-  }
-  /********** 刷新显示 *************/
-  if(mcu_VoiceSpeed)
-  {
-    times = mcu_VoiceSpeed;
-    #if 0
-    /**** 时间计数模式显示 ***********/
-    UserRun_Switch(scene_num,type,FLASH_MODES);
-    #else
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
+    /********** 自定义效果实现 *************/
+    if(UserIndex==0)
+    {
+      SEGMENT.speed = WS2812FX_mode_theater_chase();
+    }
+    else if(UserIndex==1)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_twinkle_random();
+    }
+    else if(UserIndex==2)
+    {
+      SEGMENT.speed = WS2812FX_mode_sparkle();
+    }
+    else if(UserIndex==3)
+    {
+      SEGMENT.speed = WS2812FX_mode_strobe();
+    }
+    else if(UserIndex==4)
+    {
+      SEGMENT.speed = WS2812FX_mode_multi_strobe();
+    }
+    else if(UserIndex==5)
+    {
+       __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_blink_rainbow();
+    }
+    else if(UserIndex==6)
+    {
+      SEGMENT.speed = WS2812FX_mode_circus_combustus();
+    }
+    else if(UserIndex==7)
+    {
+      SEGMENT.speed = WS2812FX_mode_halloween();
+    }
+    else if(UserIndex==8)
+    {
+      SEGMENT.speed = WS2812FX_mode_tricolor_chase();
+    }
+    else if(UserIndex==9)
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_FixedTwlinkle();
+    }
+    else if(UserIndex==10)
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_AlterTwlinkle();
+    }
+    else if(UserIndex==11)
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_RandomTwinkle();
+    }
+    else 
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_custom_Confetti();
+    }
+    /********** 刷新显示 *************/
+    show();
     /**** 时间计数模式----每种模式运行1次 ***********/
-    if(SEGMENT_RUNTIME.counter_mode_call > SEGMENT_LENGTH) 
+    if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
     {
       FlashFlag = 1;
     }
@@ -4181,118 +4551,212 @@ uint16_t WS2812Fx_Flash(uint8_t type,uint8_t scene_num,uint8_t times)
       FlashFlag = 0;
     }
     /**** 时间控制--运行次数控制 ***********/
-    show();
-    UserSwitch_Ticks(1,type,FLASH_MODES);   // FLASH_RUNCNTS
-    #endif
-  }
-  else
-  {
-    times = 1;
-  }
-  SEGMENT.speed = SPEED_MIN<<1;
+	if(light_IrCrtl.ManulFlag)
+    {
+      times = light_IrCrtl.ManulTimes;
+    }
+    else
+    {
+	   // 自动模式速度处理
+	   if(light_IrCrtl.IR_Mode)
+	   {
+		  times = light_IrCrtl.ManulTimes;
+	   }
+	   else
+	   {
+	      // 非自动模式速度处理
+	   }
+	   UserSwitch_Ticks(scene_num,type,13);   // FLASH_RUNCNTS
+    }
+    
+    if(SEGMENT.speed <SPEED_MIN)
+    {
+       SEGMENT.speed = SPEED_MIN<<1;
+    }
+    times = times;
+    return (SEGMENT.speed *times);
+}
+
+/************************* 音乐炫彩 节奏控制流动*************/
+uint16_t WS2812Fx_Flash(uint8_t type,uint8_t scene_num,uint8_t times)
+{
+  #if 1
+    /********** 刷新显示 *************/
+    if(UserIndex==0)
+    {
+      Usr_Paoma0();
+    }
+    else if(UserIndex==1)
+    {
+      WS2812FX_mode_running_random();
+    }
+    else 
+    {
+      WS2812FX_mode_multi_dynamic();
+    }
+    /********** 刷新显示 *************/
+    #if USING_MUSICMODE
+      if(mcu_VoiceSpeed)
+      {
+        times = mcu_VoiceSpeed;
+        /**** 时间计数模式----每种模式运行1次 ***********/
+        if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+        {
+          FlashFlag = 1;
+        }
+        else
+        {
+          FlashFlag = 0;
+        }
+        /**** 时间控制--运行次数控制 ***********/
+        show();
+        UserSwitch_Ticks(1,type,FLASH_MODES);   // FLASH_RUNCNTS
+      }
+      else
+      {
+        times = 1;
+      }
+    #else
+      // 场景模式无音乐感应
+      if(g_dpmode)
+      {
+        /**** 时间计数模式----每种模式运行1次 ***********/
+        if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+        {
+          FlashFlag = 1;
+        }
+        else
+        {
+          FlashFlag = 0;
+        }
+        /**** 时间控制--运行次数控制 ***********/
+        show();
+        UserSwitch_Ticks(1,type,FLASH_MODES);   // FLASH_RUNCNTS
+      }
+      else
+      {
+        if(mcu_VoiceSpeed)
+        {
+          times = mcu_VoiceSpeed;
+          /**** 时间计数模式----每种模式运行1次 ***********/
+          if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+          {
+            FlashFlag = 1;
+          }
+          else
+          {
+            FlashFlag = 0;
+          }
+          /**** 时间控制--运行次数控制 ***********/
+          show();
+          UserSwitch_Ticks(1,type,FLASH_MODES);   // FLASH_RUNCNTS
+        }
+        else
+        {
+          times = 1;
+        }
+      }
+      SEGMENT.speed = SPEED_MIN<<1;
+   #endif
   #else
-  /********** 获取用户颜色 *************/
-  UsrColors = __GetWs2812FxColors(__scene_cnt,type);
-  UserModeNum = scene_num;
-  /********** 自定义效果实现 *************/
-  if(UserIndex==0)
-  {
-    SEGMENT.speed = WS2812FX_mode_theater_chase();
-  }
-  else if(UserIndex==1)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_twinkle_random();
-  }
-  else if(UserIndex==2)
-  {
-    SEGMENT.speed = WS2812FX_mode_sparkle();
-  }
-  else if(UserIndex==3)
-  {
-    SEGMENT.speed = WS2812FX_mode_strobe();
-  }
-  else if(UserIndex==4)
-  {
-    SEGMENT.speed = WS2812FX_mode_multi_strobe();
-  }
-  else if(UserIndex==5)
-  {
-     __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_blink_rainbow();
-  }
-  else if(UserIndex==6)
-  {
-    SEGMENT.speed = WS2812FX_mode_circus_combustus();
-  }
-  else if(UserIndex==7)
-  {
-    SEGMENT.speed = WS2812FX_mode_halloween();
-  }
-  else if(UserIndex==8)
-  {
-    SEGMENT.speed = WS2812FX_mode_tricolor_chase();
-  }
-  else if(UserIndex==9)
-  {
-    SEGMENT.speed = WS2812FX_mode_custom_FixedTwlinkle();
-  }
-  else if(UserIndex==10)
-  {
-    SEGMENT.speed = WS2812FX_mode_custom_AlterTwlinkle();
-  }
-  else if(UserIndex==11)
-  {
-    SEGMENT.speed = WS2812FX_mode_custom_RandomTwinkle();
-  }
-  else if(UserIndex==12)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_custom_Confetti();
-  }
-  /********** 刷新显示 *************/
-  show();
-  /**** 时间计数模式显示 ***********/
-  UserRun_Switch(scene_num,type,PAOMA_MODES);
-  if(SEGMENT.speed <SPEED_MIN)
-  {
-     SEGMENT.speed = SPEED_MIN;
-  }
-  times = times;
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
+    /********** 自定义效果实现 *************/
+    if(UserIndex==0)
+    {
+      SEGMENT.speed = WS2812FX_mode_theater_chase();
+    }
+    else if(UserIndex==1)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_twinkle_random();
+    }
+    else if(UserIndex==2)
+    {
+      SEGMENT.speed = WS2812FX_mode_sparkle();
+    }
+    else if(UserIndex==3)
+    {
+      SEGMENT.speed = WS2812FX_mode_strobe();
+    }
+    else if(UserIndex==4)
+    {
+      SEGMENT.speed = WS2812FX_mode_multi_strobe();
+    }
+    else if(UserIndex==5)
+    {
+       __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_blink_rainbow();
+    }
+    else if(UserIndex==6)
+    {
+      SEGMENT.speed = WS2812FX_mode_circus_combustus();
+    }
+    else if(UserIndex==7)
+    {
+      SEGMENT.speed = WS2812FX_mode_halloween();
+    }
+    else if(UserIndex==8)
+    {
+      SEGMENT.speed = WS2812FX_mode_tricolor_chase();
+    }
+    else if(UserIndex==9)
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_FixedTwlinkle();
+    }
+    else if(UserIndex==10)
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_AlterTwlinkle();
+    }
+    else if(UserIndex==11)
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_RandomTwinkle();
+    }
+    else if(UserIndex==12)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_custom_Confetti();
+    }
+    /********** 刷新显示 *************/
+    show();
+    /**** 时间计数模式显示 ***********/
+    //UserRun_Switch(scene_num,type,PAOMA_MODES);
+    UserSwitch_Ticks(scene_num,type,PAOMA_MODES);
+    if(SEGMENT.speed <SPEED_MIN)
+    {
+       SEGMENT.speed = SPEED_MIN;
+    }
+    times = times;
   #endif
   return ((SEGMENT.speed /4) *times);
 }
 
-/************************* 音乐跑马 *************/
-uint16_t WS2812Fx_Scan(uint8_t type,uint8_t scene_num,uint8_t times)
+/************************* 常规扫描 *************/
+uint16_t WS2812Fx_ScanNormal(uint8_t type,uint8_t scene_num,uint8_t times)
 {
-  #if 1
-  /********** 刷新显示 *************/
-  if(UserIndex==0)
-  {
-    UsrColors = RED;
-    SEGMENT.speed = WS2812FX_mode_scan();
-  }
-  else if(UserIndex==1)
-  {
-    UsrColors = GREEN;
-    SEGMENT.speed = WS2812FX_mode_dual_scan();
-  }
-  else if(UserIndex==2)
-  {
-    SEGMENT.speed = WS2812FX_mode_icu();
-  }
-  /********** 刷新显示 *************/
-  if(mcu_VoiceSpeed)
-  {
-    times = mcu_VoiceSpeed;
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
+    
+    /********** 自定义效果实现 *************/
+    if(UserIndex==0)
+    {
+      SEGMENT.speed = WS2812FX_mode_scan();
+    }
+    else if(UserIndex==1)
+    {
+      SEGMENT.speed = WS2812FX_mode_dual_scan();
+    }
+    else 
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_icu();
+    }
+    /********** 刷新显示 *************/
     show();
-    #if 0
-    /**** 时间计数模式显示 ***********/
-    UserRun_Switch(scene_num,type,FLASH_MODES);
-    #else
     /**** 时间计数模式----每种模式运行1次 ***********/
-    if(SEGMENT_RUNTIME.counter_mode_call > SEGMENT_LENGTH) 
+    if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
     {
       ScanFlag = 1;
     }
@@ -4301,73 +4765,180 @@ uint16_t WS2812Fx_Scan(uint8_t type,uint8_t scene_num,uint8_t times)
       ScanFlag = 0;
     }
     /**** 时间控制--运行次数控制 ***********/
-    UserSwitch_Ticks(1,type,SCAN_MODES);  // SCAN_RUNCNTS
+	if(light_IrCrtl.ManulFlag)
+    {
+      times = light_IrCrtl.ManulTimes;
+    }
+    else
+    {
+	   // 自动模式速度处理
+	   if(light_IrCrtl.IR_Mode)
+	   {
+		  times = light_IrCrtl.ManulTimes;
+	   }
+	   else
+	   {
+	      // 非自动模式速度处理
+	   }
+	   UserSwitch_Ticks(scene_num,type,3);	
+    }
+    /*****用户设定速度返回设置 ********/
+    if(SEGMENT.speed <SPEED_MIN)
+    {
+       SEGMENT.speed = SPEED_MIN;
+    }
+    return ((SEGMENT.speed /4) *times);
+}
+
+/************************* 音乐跑马 *************/
+uint16_t WS2812Fx_Scan(uint8_t type,uint8_t scene_num,uint8_t times)
+{
+  #if 1
+    #if USING_MUSICMODE
+    UsrColors = RED;
+    #else
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
     #endif
-  }
-  else
-  {
-    times = 1;
-  }
-  SEGMENT.speed = SPEED_MIN<<1;
+    /********** 刷新显示 *************/
+    if(UserIndex==0)
+    {
+      SEGMENT.speed = WS2812FX_mode_scan();
+    }
+    else if(UserIndex==1)
+    {
+      SEGMENT.speed = WS2812FX_mode_dual_scan();
+    }
+    else 
+    {
+      SEGMENT.speed = WS2812FX_mode_icu();
+    }
+    /********** 刷新显示 *************/
+    #if USING_MUSICMODE
+      if(mcu_VoiceSpeed)
+      {
+        times = mcu_VoiceSpeed;
+        show();
+        /**** 时间计数模式----每种模式运行1次 ***********/
+        if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+        {
+          ScanFlag = 1;
+        }
+        else
+        {
+          ScanFlag = 0;
+        }
+        /**** 时间控制--运行次数控制 ***********/
+        UserSwitch_Ticks(1,type,SCAN_MODES);  // SCAN_RUNCNTS
+      }
+      else
+      {
+        times = 1;
+      }
+    #else
+      // 场景模式无音乐感应
+      if(g_dpmode)
+      {
+        show();
+        /**** 时间计数模式----每种模式运行1次 ***********/
+        if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+        {
+          ScanFlag = 1;
+        }
+        else
+        {
+          ScanFlag = 0;
+        }
+        /**** 时间控制--运行次数控制 ***********/
+        UserSwitch_Ticks(scene_num,type,SCAN_MODES);  // SCAN_RUNCNTS
+      }
+      else
+      {
+        if(mcu_VoiceSpeed)
+        {
+          times = mcu_VoiceSpeed;
+          show();
+          /**** 时间计数模式----每种模式运行1次 ***********/
+          if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+          {
+            ScanFlag = 1;
+          }
+          else
+          {
+            ScanFlag = 0;
+          }
+          /**** 时间控制--运行次数控制 ***********/
+          UserSwitch_Ticks(1,type,SCAN_MODES);  // SCAN_RUNCNTS
+        }
+        else
+        {
+          times = 1;
+        }
+      }
+      SEGMENT.speed = SPEED_MIN<<1;
+   #endif
   #else
-  /********** 获取用户颜色 *************/
-  UsrColors = __GetWs2812FxColors(__scene_cnt,type);
-  UserModeNum = scene_num;
-  
-  /********** 自定义效果实现 *************/
-  if(UserIndex==0)
-  {
-    SEGMENT.speed = WS2812FX_mode_scan();
-  }
-  else if(UserIndex==1)
-  {
-    SEGMENT.speed = WS2812FX_mode_dual_scan();
-  }
-  else if(UserIndex==2)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_icu();
-  }
-  /********** 刷新显示 *************/
-  show();
-  /**** 时间计数模式显示 ***********/
-  UserRun_Switch(scene_num,type,PAOMA_MODES);
-  /*****用户设定速度返回设置 ********/
-  if(SEGMENT.speed <SPEED_MIN)
-  {
-     SEGMENT.speed = SPEED_MIN;
-  }
-  times = times;
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
+    
+    /********** 自定义效果实现 *************/
+    if(UserIndex==0)
+    {
+      SEGMENT.speed = WS2812FX_mode_scan();
+    }
+    else if(UserIndex==1)
+    {
+      SEGMENT.speed = WS2812FX_mode_dual_scan();
+    }
+    else if(UserIndex==2)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_icu();
+    }
+    /********** 刷新显示 *************/
+    show();
+    /**** 时间计数模式显示 ***********/
+    //UserRun_Switch(scene_num,type,PAOMA_MODES);
+    UserSwitch_Ticks(scene_num,type,PAOMA_MODES);
+    /*****用户设定速度返回设置 ********/
+    if(SEGMENT.speed <SPEED_MIN)
+    {
+       SEGMENT.speed = SPEED_MIN;
+    }
+    times = times;
   #endif
-  
   return ((SEGMENT.speed /4) *times);
 }
 
-/************************* 音乐闪烁 *************/
-uint16_t WS2812Fx_Trip(uint8_t type,uint8_t scene_num,uint8_t times)
+/************************* 常规跳变 *************/
+uint16_t WS2812Fx_TripNormal(uint8_t type,uint8_t scene_num,uint8_t times)
 {
-  #if 1
-  /********** 刷新显示 *************/
-  if(UserIndex==0)
-  {
-    UsrColors = RED;
-    SEGMENT.speed = WS2812FX_mode_theater_chase();
-  }
-  else if(UserIndex==1)
-  {
-    SEGMENT.speed = WS2812FX_mode_custom_Confetti();
-  }
-  /********** 刷新显示 *************/
-  if(mcu_VoiceSpeed)
-  {
-    times = mcu_VoiceSpeed;
+     /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
+    
+    /********** 自定义效果实现 *************/
+    if(UserIndex==0)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_random_color();
+    }
+    else if(UserIndex==1)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_single_dynamic();
+    }
+    else 
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_rainbow();
+    }
+    /********** 刷新显示 *************/
     show();
-    #if 0
-    /**** 时间计数模式显示 ***********/
-    UserRun_Switch(scene_num,type,FLASH_MODES);
-    #else
-    /**** 时间计数模式----每种模式运行1次 ***********/
-    if(SEGMENT_RUNTIME.counter_mode_call > SEGMENT_LENGTH) 
+     /**** 时间计数模式----每种模式运行1次 ***********/
+    if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
     {
       TripFlag = 1;
     }
@@ -4376,45 +4947,149 @@ uint16_t WS2812Fx_Trip(uint8_t type,uint8_t scene_num,uint8_t times)
       TripFlag = 0;
     }
     /**** 时间控制--运行次数控制 ***********/
-    UserSwitch_Ticks(1,type,TRIP_MODES);   // TRIP_RUNCNTS
+	if(light_IrCrtl.ManulFlag)
+    {
+      times = light_IrCrtl.ManulTimes;
+    }
+    else
+    {
+	   // 自动模式速度处理
+	   if(light_IrCrtl.IR_Mode)
+	   {
+		  times = light_IrCrtl.ManulTimes;
+	   }
+	   else
+	   {
+	      // 非自动模式速度处理
+	   }
+       UserSwitch_Ticks(scene_num,type,3);   // TRIP_RUNCNTS
+    }
+    /*****用户设定速度返回设置 ********/
+    if(SEGMENT.speed <SPEED_MIN)
+    {
+       SEGMENT.speed = SPEED_MIN;
+    }
+    times = times;
+    
+  return ((SEGMENT.speed /4) *times);
+}
+
+/************************* 音乐闪烁 *************/
+uint16_t WS2812Fx_Trip(uint8_t type,uint8_t scene_num,uint8_t times)
+{
+  #if 1
+    #if USING_MUSICMODE
+    UsrColors = RED;
+    #else
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
     #endif
-  }
-  else
-  {
-    times = 1;
-  }
-  SEGMENT.speed = SPEED_MIN<<1;
+    /********** 刷新显示 *************/
+    if(UserIndex==0)
+    {
+      SEGMENT.speed = WS2812FX_mode_theater_chase();
+    }
+    else 
+    {
+      SEGMENT.speed = WS2812FX_mode_custom_Confetti();
+    }
+    /********** 刷新显示 *************/
+    #if USING_MUSICMODE
+      if(mcu_VoiceSpeed)
+      {
+        times = mcu_VoiceSpeed;
+        show();
+        /**** 时间计数模式----每种模式运行1次 ***********/
+        if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+        {
+          TripFlag = 1;
+        }
+        else
+        {
+          TripFlag = 0;
+        }
+        /**** 时间控制--运行次数控制 ***********/
+        UserSwitch_Ticks(1,type,TRIP_MODES);   // TRIP_RUNCNTS
+      }
+      else
+      {
+        times = 1;
+      }
+    #else
+      // 场景模式无音乐感应
+      if(g_dpmode)
+      {
+        show();
+        /**** 时间计数模式----每种模式运行1次 ***********/
+        if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+        {
+          TripFlag = 1;
+        }
+        else
+        {
+          TripFlag = 0;
+        }
+        /**** 时间控制--运行次数控制 ***********/
+        UserSwitch_Ticks(scene_num,type,TRIP_MODES);   // TRIP_RUNCNTS
+      }
+      else
+      {
+        if(mcu_VoiceSpeed)
+        {
+          times = mcu_VoiceSpeed;
+          show();
+          /**** 时间计数模式----每种模式运行1次 ***********/
+          if(SEGMENT_RUNTIME.counter_mode_call >= SEGMENT_LENGTH) 
+          {
+            TripFlag = 1;
+          }
+          else
+          {
+            TripFlag = 0;
+          }
+          /**** 时间控制--运行次数控制 ***********/
+          UserSwitch_Ticks(1,type,TRIP_MODES);   // TRIP_RUNCNTS
+        }
+        else
+        {
+          times = 1;
+        }
+      }
+      SEGMENT.speed = SPEED_MIN<<1;
+  #endif
   #else
-  /********** 获取用户颜色 *************/
-  UsrColors = __GetWs2812FxColors(__scene_cnt,type);
-  UserModeNum = scene_num;
-  
-  /********** 自定义效果实现 *************/
-  if(UserIndex==0)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_random_color();
-  }
-  else if(UserIndex==1)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_single_dynamic();
-  }
-  else if(UserIndex==2)
-  {
-    __scene_cnt = scene_num;
-    SEGMENT.speed = WS2812FX_mode_rainbow();
-  }
-  /********** 刷新显示 *************/
-  show();
-  /**** 时间计数模式显示 ***********/
-  UserRun_Switch(scene_num,type,PAOMA_MODES);
-  /*****用户设定速度返回设置 ********/
-  if(SEGMENT.speed <SPEED_MIN)
-  {
-     SEGMENT.speed = SPEED_MIN;
-  }
-  times = times;
+    /********** 获取用户颜色 *************/
+    UsrColors = __GetWs2812FxColors(__scene_cnt,type);
+    UserModeNum = scene_num;
+    
+    /********** 自定义效果实现 *************/
+    if(UserIndex==0)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_random_color();
+    }
+    else if(UserIndex==1)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_single_dynamic();
+    }
+    else if(UserIndex==2)
+    {
+      __scene_cnt = scene_num;
+      SEGMENT.speed = WS2812FX_mode_rainbow();
+    }
+    /********** 刷新显示 *************/
+    show();
+    /**** 时间计数模式显示 ***********/
+    //UserRun_Switch(scene_num,type,PAOMA_MODES);
+    UserSwitch_Ticks(scene_num,type,PAOMA_MODES);
+    /*****用户设定速度返回设置 ********/
+    if(SEGMENT.speed <SPEED_MIN)
+    {
+       SEGMENT.speed = SPEED_MIN;
+    }
+    times = times;
   #endif
   return ((SEGMENT.speed /4) *times);
 }

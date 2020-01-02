@@ -1,0 +1,273 @@
+2019-11-26 17:11:24.4310 INFO "COM3runstart"
+2019-11-26 17:11:24.4429 INFO "COM3run2"
+2019-11-26 17:11:24.4429 INFO "COM3run3"
+2019-11-26 17:11:24.4948 INFO "COM3run4"
+2019-11-26 17:11:24.4948 INFO "COM3run5"
+2019-11-26 17:11:24.5117 INFO "COM3TaskRunstart"
+2019-11-26 17:11:25.3037 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMicrosoft Windows [∞Ê±æ 10.0.18362.476]","Result":true}
+2019-11-26 17:11:25.3037 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º(c) 2019 Microsoft Corporation°£±£¡ÙÀ˘”–»®¿˚°£","Result":true}
+2019-11-26 17:11:25.3187 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:11:25.3187 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºD:\\Work\\LocalGit\\ProductionTest\\TYDA\\–¬∞ÊÕø—ªπ§≥ß…’¬º ⁄»®ºÏ≤‚»Ìº˛\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\SNruT0MaFuAqvTDW\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-26 17:11:27.5141 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºesptool.py v2.7-dev","Result":true}
+2019-11-26 17:11:27.5211 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºSerial port COM3","Result":true}
+2019-11-26 17:11:27.8586 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConnecting....","Result":true}
+2019-11-26 17:11:28.8656 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºDetecting chip type... ESP8266","Result":true}
+2019-11-26 17:11:28.8656 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChip is ESP8266EX","Result":true}
+2019-11-26 17:11:28.8806 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºFeatures: WiFi","Result":true}
+2019-11-26 17:11:28.8806 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMAC: b4:e6:2d:50:8e:b6","Result":true}
+2019-11-26 17:11:28.8955 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºUploading stub...","Result":true}
+2019-11-26 17:11:28.8955 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºRunning stub...","Result":true}
+2019-11-26 17:11:28.9105 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºStub running...","Result":true}
+2019-11-26 17:11:28.9105 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanging baud rate to 1500000","Result":true}
+2019-11-26 17:11:28.9264 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanged.","Result":true}
+2019-11-26 17:11:28.9264 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConfiguring flash size...","Result":true}
+2019-11-26 17:11:28.9414 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºCompressed 1044480 bytes to 326030...","Result":true}
+2019-11-26 17:11:28.9414 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:11:29.0421 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00000000... (5 %)","Result":true}
+2019-11-26 17:11:29.2177 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00004000... (10 %)","Result":true}
+2019-11-26 17:11:29.4262 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00008000... (15 %)","Result":true}
+2019-11-26 17:11:29.7111 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0000c000... (20 %)","Result":true}
+2019-11-26 17:11:29.8866 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00010000... (25 %)","Result":true}
+2019-11-26 17:11:30.1338 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00014000... (30 %)","Result":true}
+2019-11-26 17:11:30.3515 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00018000... (35 %)","Result":true}
+2019-11-26 17:11:30.5885 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0001c000... (40 %)","Result":true}
+2019-11-26 17:11:30.8776 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00020000... (45 %)","Result":true}
+2019-11-26 17:11:31.0535 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00024000... (50 %)","Result":true}
+2019-11-26 17:11:31.2554 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00028000... (55 %)","Result":true}
+2019-11-26 17:11:31.4928 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0002c000... (60 %)","Result":true}
+2019-11-26 17:11:31.6673 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00030000... (65 %)","Result":true}
+2019-11-26 17:11:31.8708 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00034000... (70 %)","Result":true}
+2019-11-26 17:11:32.0880 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00038000... (75 %)","Result":true}
+2019-11-26 17:11:32.2626 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0003c000... (80 %)","Result":true}
+2019-11-26 17:11:32.4621 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00040000... (85 %)","Result":true}
+2019-11-26 17:11:32.6878 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00044000... (90 %)","Result":true}
+2019-11-26 17:11:32.8637 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00048000... (95 %)","Result":true}
+2019-11-26 17:11:35.7550 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0004c000... (100 %)","Result":true}
+2019-11-26 17:11:35.7749 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º≥…π¶","Result":true}
+2019-11-26 17:11:50.6906 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"Ω¯»Î≤˙≤‚ƒ£ Ω ß∞‹,∑¢ÀÕ–≈œ¢πÃº˛Œﬁ∑µªÿ","Result":false}
+2019-11-26 17:11:56.0600 INFO "COM3runstart"
+2019-11-26 17:11:56.0600 INFO "COM3run2"
+2019-11-26 17:11:56.0700 INFO "COM3run3"
+2019-11-26 17:11:56.0700 INFO "COM3run4"
+2019-11-26 17:11:56.0700 INFO "COM3run5"
+2019-11-26 17:11:56.0839 INFO "COM3TaskRunstart"
+2019-11-26 17:11:56.3711 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMicrosoft Windows [∞Ê±æ 10.0.18362.476]","Result":true}
+2019-11-26 17:11:56.3801 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º(c) 2019 Microsoft Corporation°£±£¡ÙÀ˘”–»®¿˚°£","Result":true}
+2019-11-26 17:11:56.3801 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:11:56.3971 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºD:\\Work\\LocalGit\\ProductionTest\\TYDA\\–¬∞ÊÕø—ªπ§≥ß…’¬º ⁄»®ºÏ≤‚»Ìº˛\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\SNruT0MaFuAqvTDW\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-26 17:11:56.7102 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºesptool.py v2.7-dev","Result":true}
+2019-11-26 17:11:56.7102 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºSerial port COM3","Result":true}
+2019-11-26 17:11:59.5653 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConnecting........_","Result":true}
+2019-11-26 17:12:00.5752 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºDetecting chip type... ESP8266","Result":true}
+2019-11-26 17:12:00.5832 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChip is ESP8266EX","Result":true}
+2019-11-26 17:12:00.5832 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºFeatures: WiFi","Result":true}
+2019-11-26 17:12:00.5981 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMAC: b4:e6:2d:50:8e:b6","Result":true}
+2019-11-26 17:12:00.5981 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºUploading stub...","Result":true}
+2019-11-26 17:12:00.6141 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºRunning stub...","Result":true}
+2019-11-26 17:12:00.6141 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºStub running...","Result":true}
+2019-11-26 17:12:00.6301 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanging baud rate to 1500000","Result":true}
+2019-11-26 17:12:00.6301 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanged.","Result":true}
+2019-11-26 17:12:00.6460 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConfiguring flash size...","Result":true}
+2019-11-26 17:12:00.6460 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºCompressed 1044480 bytes to 326030...","Result":true}
+2019-11-26 17:12:00.6620 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:12:00.7517 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00000000... (5 %)","Result":true}
+2019-11-26 17:12:00.9293 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00004000... (10 %)","Result":true}
+2019-11-26 17:12:01.1347 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00008000... (15 %)","Result":true}
+2019-11-26 17:12:01.4191 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0000c000... (20 %)","Result":true}
+2019-11-26 17:12:01.9065 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00010000... (25 %)","Result":true}
+2019-11-26 17:12:01.9176 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00014000... (30 %)","Result":true}
+2019-11-26 17:12:02.0871 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00018000... (35 %)","Result":true}
+2019-11-26 17:12:02.3792 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0001c000... (40 %)","Result":true}
+2019-11-26 17:12:02.6710 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00020000... (45 %)","Result":true}
+2019-11-26 17:12:02.8448 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00024000... (50 %)","Result":true}
+2019-11-26 17:12:03.0453 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00028000... (55 %)","Result":true}
+2019-11-26 17:12:03.3316 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0002c000... (60 %)","Result":true}
+2019-11-26 17:12:03.5072 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00030000... (65 %)","Result":true}
+2019-11-26 17:12:03.7113 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00034000... (70 %)","Result":true}
+2019-11-26 17:12:03.9244 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00038000... (75 %)","Result":true}
+2019-11-26 17:12:04.1002 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0003c000... (80 %)","Result":true}
+2019-11-26 17:12:04.3021 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00040000... (85 %)","Result":true}
+2019-11-26 17:12:04.5196 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00044000... (90 %)","Result":true}
+2019-11-26 17:12:04.6940 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00048000... (95 %)","Result":true}
+2019-11-26 17:12:07.5976 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0004c000... (100 %)","Result":true}
+2019-11-26 17:12:07.6165 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º≥…π¶","Result":true}
+2019-11-26 17:12:09.3971 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"Ω¯»Î≤˙≤‚ƒ£ Ω","Result":true}
+2019-11-26 17:12:09.7173 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"πÃº˛÷∏Œ∆∆•≈‰≥…π¶","Result":true}
+2019-11-26 17:12:10.0247 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°Mac≥…π¶:b4e62d508eb6","Result":true}
+2019-11-26 17:12:10.4862 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°key≥…π¶","Result":true}
+2019-11-26 17:12:11.0389 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"–¥»Î≈‰÷√–≈œ¢≥…π¶","Result":true}
+2019-11-26 17:12:11.3826 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"–¥»Îπ˙º“¬Î≥…π¶","Result":true}
+2019-11-26 17:12:11.9823 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"Ω¯»Î≤˙≤‚ƒ£ Ω","Result":true}
+2019-11-26 17:12:12.3876 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"∂¡»°≈‰÷√≥…π¶","Result":true}
+2019-11-26 17:12:12.5860 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"∂¡»°π˙º“¬Î≥…π¶","Result":true}
+2019-11-26 17:12:12.8091 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°Mac≥…π¶:b4e62d508eb6","Result":true}
+2019-11-26 17:13:10.2651 INFO "COM3runΩ¯»ÎSerilaChange"
+2019-11-26 17:13:10.2651 INFO "COM3runSerilaChange:dsr 0"
+2019-11-26 17:13:10.8537 INFO "COM3runΩ¯»ÎSerilaChange"
+2019-11-26 17:13:10.8537 INFO "COM3runSerilaChange:dsr 1"
+2019-11-26 17:13:10.8537 INFO "COM3TaskRunstart"
+2019-11-26 17:13:11.1529 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMicrosoft Windows [∞Ê±æ 10.0.18362.476]","Result":true}
+2019-11-26 17:13:11.1609 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º(c) 2019 Microsoft Corporation°£±£¡ÙÀ˘”–»®¿˚°£","Result":true}
+2019-11-26 17:13:11.1609 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:13:11.1769 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºD:\\Work\\LocalGit\\ProductionTest\\TYDA\\–¬∞ÊÕø—ªπ§≥ß…’¬º ⁄»®ºÏ≤‚»Ìº˛\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\SNruT0MaFuAqvTDW\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-26 17:13:11.4182 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºesptool.py v2.7-dev","Result":true}
+2019-11-26 17:13:11.4253 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºSerial port COM3","Result":true}
+2019-11-26 17:13:11.7643 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConnecting....","Result":true}
+2019-11-26 17:13:12.7757 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºDetecting chip type... ESP8266","Result":true}
+2019-11-26 17:13:12.7757 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChip is ESP8266EX","Result":true}
+2019-11-26 17:13:12.7916 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºFeatures: WiFi","Result":true}
+2019-11-26 17:13:12.7916 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMAC: b4:e6:2d:50:8e:b6","Result":true}
+2019-11-26 17:13:12.8076 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºUploading stub...","Result":true}
+2019-11-26 17:13:12.8076 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºRunning stub...","Result":true}
+2019-11-26 17:13:12.8226 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºStub running...","Result":true}
+2019-11-26 17:13:12.8226 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanging baud rate to 1500000","Result":true}
+2019-11-26 17:13:12.8375 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanged.","Result":true}
+2019-11-26 17:13:12.8375 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConfiguring flash size...","Result":true}
+2019-11-26 17:13:12.8556 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºCompressed 1044480 bytes to 326030...","Result":true}
+2019-11-26 17:13:12.8644 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:13:12.9525 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00000000... (5 %)","Result":true}
+2019-11-26 17:13:13.1273 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00004000... (10 %)","Result":true}
+2019-11-26 17:13:13.3382 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00008000... (15 %)","Result":true}
+2019-11-26 17:13:13.6214 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0000c000... (20 %)","Result":true}
+2019-11-26 17:13:13.7969 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00010000... (25 %)","Result":true}
+2019-11-26 17:13:13.9989 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00014000... (30 %)","Result":true}
+2019-11-26 17:13:14.2864 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00018000... (35 %)","Result":true}
+2019-11-26 17:13:14.5789 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0001c000... (40 %)","Result":true}
+2019-11-26 17:13:14.8735 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00020000... (45 %)","Result":true}
+2019-11-26 17:13:15.0492 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00024000... (50 %)","Result":true}
+2019-11-26 17:13:15.2479 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00028000... (55 %)","Result":true}
+2019-11-26 17:13:15.5356 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0002c000... (60 %)","Result":true}
+2019-11-26 17:13:15.7121 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00030000... (65 %)","Result":true}
+2019-11-26 17:13:15.9142 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00034000... (70 %)","Result":true}
+2019-11-26 17:13:16.1419 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00038000... (75 %)","Result":true}
+2019-11-26 17:13:16.3195 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0003c000... (80 %)","Result":true}
+2019-11-26 17:13:16.5209 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00040000... (85 %)","Result":true}
+2019-11-26 17:13:16.7405 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00044000... (90 %)","Result":true}
+2019-11-26 17:13:16.9141 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00048000... (95 %)","Result":true}
+2019-11-26 17:13:19.8495 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0004c000... (100 %)","Result":true}
+2019-11-26 17:13:19.8495 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º≥…π¶","Result":true}
+2019-11-26 17:13:21.5929 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"Ω¯»Î≤˙≤‚ƒ£ Ω","Result":true}
+2019-11-26 17:13:22.1550 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"πÃº˛÷∏Œ∆∆•≈‰≥…π¶","Result":true}
+2019-11-26 17:13:22.5413 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°Mac≥…π¶:b4e62d508eb6","Result":true}
+2019-11-26 17:13:22.8868 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°key≥…π¶","Result":true}
+2019-11-26 17:13:23.3893 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"–¥»Î≈‰÷√–≈œ¢≥…π¶","Result":true}
+2019-11-26 17:13:23.8331 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"–¥»Îπ˙º“¬Î≥…π¶","Result":true}
+2019-11-26 17:13:24.4173 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"Ω¯»Î≤˙≤‚ƒ£ Ω","Result":true}
+2019-11-26 17:13:24.8801 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"∂¡»°≈‰÷√≥…π¶","Result":true}
+2019-11-26 17:13:25.0819 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"∂¡»°π˙º“¬Î≥…π¶","Result":true}
+2019-11-26 17:13:25.3088 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°Mac≥…π¶:b4e62d508eb6","Result":true}
+2019-11-26 17:13:31.2977 INFO "COM3runΩ¯»ÎSerilaChange"
+2019-11-26 17:13:31.3014 INFO "COM3runSerilaChange:dsr 0"
+2019-11-26 17:13:31.8452 INFO "COM3runΩ¯»ÎSerilaChange"
+2019-11-26 17:13:31.8482 INFO "COM3runSerilaChange:dsr 1"
+2019-11-26 17:13:31.8662 INFO "COM3TaskRunstart"
+2019-11-26 17:13:32.1233 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMicrosoft Windows [∞Ê±æ 10.0.18362.476]","Result":true}
+2019-11-26 17:13:32.1322 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º(c) 2019 Microsoft Corporation°£±£¡ÙÀ˘”–»®¿˚°£","Result":true}
+2019-11-26 17:13:32.1322 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:13:32.1502 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºD:\\Work\\LocalGit\\ProductionTest\\TYDA\\–¬∞ÊÕø—ªπ§≥ß…’¬º ⁄»®ºÏ≤‚»Ìº˛\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\SNruT0MaFuAqvTDW\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-26 17:13:32.4086 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºesptool.py v2.7-dev","Result":true}
+2019-11-26 17:13:32.4177 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºSerial port COM3","Result":true}
+2019-11-26 17:13:32.7596 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConnecting....","Result":true}
+2019-11-26 17:13:33.7706 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºDetecting chip type... ESP8266","Result":true}
+2019-11-26 17:13:33.7706 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChip is ESP8266EX","Result":true}
+2019-11-26 17:13:33.7885 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºFeatures: WiFi","Result":true}
+2019-11-26 17:13:33.7885 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMAC: b4:e6:2d:50:8e:b6","Result":true}
+2019-11-26 17:13:33.8055 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºUploading stub...","Result":true}
+2019-11-26 17:13:33.8055 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºRunning stub...","Result":true}
+2019-11-26 17:13:33.8234 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºStub running...","Result":true}
+2019-11-26 17:13:33.8324 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanging baud rate to 1500000","Result":true}
+2019-11-26 17:13:33.8324 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanged.","Result":true}
+2019-11-26 17:13:33.8534 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConfiguring flash size...","Result":true}
+2019-11-26 17:13:33.8634 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºCompressed 1044480 bytes to 326030...","Result":true}
+2019-11-26 17:13:33.8634 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:13:33.9476 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00000000... (5 %)","Result":true}
+2019-11-26 17:13:34.1236 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00004000... (10 %)","Result":true}
+2019-11-26 17:13:34.3365 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00008000... (15 %)","Result":true}
+2019-11-26 17:13:34.6203 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0000c000... (20 %)","Result":true}
+2019-11-26 17:13:34.7945 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00010000... (25 %)","Result":true}
+2019-11-26 17:13:34.9631 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00014000... (30 %)","Result":true}
+2019-11-26 17:13:34.9733 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºA fatal error occurred: Invalid head of packet (0xFE)","Result":true}
+2019-11-26 17:13:34.9733 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º ß∞‹A fatal error occurred: Invalid head of packet (0xFE)","Result":false}
+2019-11-26 17:13:35.8758 INFO "COM3runΩ¯»ÎSerilaChange"
+2019-11-26 17:13:35.8788 INFO "COM3runSerilaChange:dsr 1"
+2019-11-26 17:13:35.8788 INFO "COM3TaskRunstart"
+2019-11-26 17:13:36.1737 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMicrosoft Windows [∞Ê±æ 10.0.18362.476]","Result":true}
+2019-11-26 17:13:36.1837 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º(c) 2019 Microsoft Corporation°£±£¡ÙÀ˘”–»®¿˚°£","Result":true}
+2019-11-26 17:13:36.1926 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:13:36.1926 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºD:\\Work\\LocalGit\\ProductionTest\\TYDA\\–¬∞ÊÕø—ªπ§≥ß…’¬º ⁄»®ºÏ≤‚»Ìº˛\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\SNruT0MaFuAqvTDW\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-26 17:13:36.4390 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºesptool.py v2.7-dev","Result":true}
+2019-11-26 17:13:36.4470 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºSerial port COM3","Result":true}
+2019-11-26 17:13:36.7861 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConnecting....","Result":true}
+2019-11-26 17:13:37.8029 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºDetecting chip type... ESP8266","Result":true}
+2019-11-26 17:13:37.8029 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChip is ESP8266EX","Result":true}
+2019-11-26 17:13:37.8209 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºFeatures: WiFi","Result":true}
+2019-11-26 17:13:37.8209 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMAC: b4:e6:2d:50:8e:b6","Result":true}
+2019-11-26 17:13:37.8388 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºUploading stub...","Result":true}
+2019-11-26 17:13:37.8388 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºRunning stub...","Result":true}
+2019-11-26 17:13:37.8558 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºStub running...","Result":true}
+2019-11-26 17:13:37.8638 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanging baud rate to 1500000","Result":true}
+2019-11-26 17:13:37.8638 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanged.","Result":true}
+2019-11-26 17:13:37.8817 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConfiguring flash size...","Result":true}
+2019-11-26 17:13:37.8817 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºCompressed 1044480 bytes to 326030...","Result":true}
+2019-11-26 17:13:37.8997 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:13:37.9780 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00000000... (5 %)","Result":true}
+2019-11-26 17:13:38.1521 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00004000... (10 %)","Result":true}
+2019-11-26 17:13:38.3650 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00008000... (15 %)","Result":true}
+2019-11-26 17:13:38.5986 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0000c000... (20 %)","Result":true}
+2019-11-26 17:13:38.7733 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00010000... (25 %)","Result":true}
+2019-11-26 17:13:38.9437 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00014000... (30 %)","Result":true}
+2019-11-26 17:13:38.9437 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºA fatal error occurred: Invalid head of packet (0xFF)","Result":true}
+2019-11-26 17:13:38.9606 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º ß∞‹A fatal error occurred: Invalid head of packet (0xFF)","Result":false}
+2019-11-26 17:13:39.7089 INFO "COM3runΩ¯»ÎSerilaChange"
+2019-11-26 17:13:39.7089 INFO "COM3runSerilaChange:dsr 1"
+2019-11-26 17:13:39.7089 INFO "COM3TaskRunstart"
+2019-11-26 17:13:39.9722 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMicrosoft Windows [∞Ê±æ 10.0.18362.476]","Result":true}
+2019-11-26 17:13:39.9722 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º(c) 2019 Microsoft Corporation°£±£¡ÙÀ˘”–»®¿˚°£","Result":true}
+2019-11-26 17:13:39.9912 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:13:39.9912 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºD:\\Work\\LocalGit\\ProductionTest\\TYDA\\–¬∞ÊÕø—ªπ§≥ß…’¬º ⁄»®ºÏ≤‚»Ìº˛\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>tools\\efrxx\\esptool.exe --port COM3 -b 1500000 write_flash --flash_mode qio --flash_size keep 0x0 \"C:\\Users\\lj504\\AppData\\Roaming\\Tuya\\TYDA\\bin\\SNruT0MaFuAqvTDW\\esp_common_raw_3.1.2_target_QIO.bin\"&exit","Result":true}
+2019-11-26 17:13:40.2505 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºesptool.py v2.7-dev","Result":true}
+2019-11-26 17:13:40.2585 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºSerial port COM3","Result":true}
+2019-11-26 17:13:40.5982 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConnecting....","Result":true}
+2019-11-26 17:13:41.6092 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºDetecting chip type... ESP8266","Result":true}
+2019-11-26 17:13:41.6192 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChip is ESP8266EX","Result":true}
+2019-11-26 17:13:41.6282 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºFeatures: WiFi","Result":true}
+2019-11-26 17:13:41.6282 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºMAC: b4:e6:2d:50:8e:b6","Result":true}
+2019-11-26 17:13:41.6451 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºUploading stub...","Result":true}
+2019-11-26 17:13:41.6451 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºRunning stub...","Result":true}
+2019-11-26 17:13:41.6631 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºStub running...","Result":true}
+2019-11-26 17:13:41.6631 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanging baud rate to 1500000","Result":true}
+2019-11-26 17:13:41.6800 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºChanged.","Result":true}
+2019-11-26 17:13:41.6800 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºConfiguring flash size...","Result":true}
+2019-11-26 17:13:41.6990 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºCompressed 1044480 bytes to 326030...","Result":true}
+2019-11-26 17:13:41.7080 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º","Result":true}
+2019-11-26 17:13:41.7848 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00000000... (5 %)","Result":true}
+2019-11-26 17:13:41.9599 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00004000... (10 %)","Result":true}
+2019-11-26 17:13:42.1643 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00008000... (15 %)","Result":true}
+2019-11-26 17:13:42.4072 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0000c000... (20 %)","Result":true}
+2019-11-26 17:13:42.5827 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00010000... (25 %)","Result":true}
+2019-11-26 17:13:42.8321 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00014000... (30 %)","Result":true}
+2019-11-26 17:13:43.1183 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00018000... (35 %)","Result":true}
+2019-11-26 17:13:43.4132 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0001c000... (40 %)","Result":true}
+2019-11-26 17:13:43.7023 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00020000... (45 %)","Result":true}
+2019-11-26 17:13:43.8769 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00024000... (50 %)","Result":true}
+2019-11-26 17:13:44.0793 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00028000... (55 %)","Result":true}
+2019-11-26 17:13:44.3186 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0002c000... (60 %)","Result":true}
+2019-11-26 17:13:44.4932 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00030000... (65 %)","Result":true}
+2019-11-26 17:13:44.6946 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00034000... (70 %)","Result":true}
+2019-11-26 17:13:44.9263 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00038000... (75 %)","Result":true}
+2019-11-26 17:13:45.1018 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0003c000... (80 %)","Result":true}
+2019-11-26 17:13:45.3022 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00040000... (85 %)","Result":true}
+2019-11-26 17:13:45.5249 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00044000... (90 %)","Result":true}
+2019-11-26 17:13:45.6984 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x00048000... (95 %)","Result":true}
+2019-11-26 17:13:48.6181 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬ºWriting at 0x0004c000... (100 %)","Result":true}
+2019-11-26 17:13:48.6181 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"…’¬º≥…π¶","Result":true}
+2019-11-26 17:13:50.4088 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"Ω¯»Î≤˙≤‚ƒ£ Ω","Result":true}
+2019-11-26 17:13:50.9054 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"πÃº˛÷∏Œ∆∆•≈‰≥…π¶","Result":true}
+2019-11-26 17:13:51.1788 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°Mac≥…π¶:b4e62d508eb6","Result":true}
+2019-11-26 17:13:51.5790 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°key≥…π¶","Result":true}
+2019-11-26 17:13:52.0833 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"–¥»Î≈‰÷√–≈œ¢≥…π¶","Result":true}
+2019-11-26 17:13:52.3456 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"–¥»Îπ˙º“¬Î≥…π¶","Result":true}
+2019-11-26 17:13:52.9026 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"Ω¯»Î≤˙≤‚ƒ£ Ω","Result":true}
+2019-11-26 17:13:53.3467 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"∂¡»°≈‰÷√≥…π¶","Result":true}
+2019-11-26 17:13:53.5827 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"∂¡»°π˙º“¬Î≥…π¶","Result":true}
+2019-11-26 17:13:53.9268 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"SNruT0MaFuAqvTDW","Message":"ªÒ»°Mac≥…π¶:b4e62d508eb6","Result":true}

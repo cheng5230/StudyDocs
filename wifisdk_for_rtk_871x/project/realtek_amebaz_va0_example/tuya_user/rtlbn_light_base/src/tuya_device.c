@@ -286,13 +286,13 @@ STATIC VOID __userIrCmdDeal (IRCMD cmd, IRCODE irType)
     if (irType == IRCODESTART)
     {
       last_cmd = cmd;
-      PR_DEBUG ("NEW CMD:%x\r\n", last_cmd);
+      PR_NOTICE ("NEW CMD:%x\r\n", last_cmd);
       I = 0;
     }
     else
     {
       I++;
-      PR_DEBUG ("REPEAT%d CMD:%x\r\n", I, last_cmd);
+      //PR_NOTICE ("REPEAT%d CMD:%x\r\n", I, last_cmd);
 
       switch (last_cmd)
       {

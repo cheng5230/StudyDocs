@@ -1,0 +1,169 @@
+2019-12-12 10:34:08.3819 FATAL UI线程捕获未处理异常：调用的目标发生了异常。
+2019-12-12 10:52:08.8881 INFO "COM3runstart"
+2019-12-12 10:52:08.8998 INFO "COM3run2"
+2019-12-12 10:52:08.8998 INFO "COM3run3"
+2019-12-12 10:52:08.9533 INFO "COM3run4"
+2019-12-12 10:52:08.9752 INFO "COM3run5"
+2019-12-12 10:52:08.9752 INFO "COM3TaskRunstart"
+2019-12-12 10:52:10.8434 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"JxF8z50YSskQQ7zs","Message":"获取固件指纹失败:固件名称不匹配或者固件版本不匹配","Result":false}
+2019-12-12 11:16:49.9544 INFO "COM3runstart"
+2019-12-12 11:16:49.9544 INFO "COM3run2"
+2019-12-12 11:16:49.9734 INFO "COM3run3"
+2019-12-12 11:16:50.0185 INFO "COM3run4"
+2019-12-12 11:16:50.0185 INFO "COM3run5"
+2019-12-12 11:16:50.0185 INFO "COM3TaskRunstart"
+2019-12-12 11:17:27.4649 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"Failed to enter production test: firmware has no return information","Result":false}
+2019-12-12 11:17:52.9201 INFO "COM3runstart"
+2019-12-12 11:17:52.9201 INFO "COM3run2"
+2019-12-12 11:17:52.9308 INFO "COM3run3"
+2019-12-12 11:17:52.9388 INFO "COM3run4"
+2019-12-12 11:17:52.9388 INFO "COM3run5"
+2019-12-12 11:17:52.9388 INFO "COM3runend"
+2019-12-12 11:17:53.5818 INFO "COM3run进入SerilaChange"
+2019-12-12 11:17:53.5818 INFO "COM3runSerilaChange:dsr 0"
+2019-12-12 11:17:53.9034 INFO "COM3run进入SerilaChange"
+2019-12-12 11:17:53.9034 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 11:17:53.9264 INFO "COM3TaskRunstart"
+2019-12-12 11:18:05.1307 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"固件指纹匹配成功","Result":true}
+2019-12-12 11:18:05.5055 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入hid成功","Result":true}
+2019-12-12 11:18:05.8525 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"Get Key Success","Result":true}
+2019-12-12 11:18:06.3048 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入配置信息成功","Result":true}
+2019-12-12 11:18:06.6198 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"复位成功","Result":true}
+2019-12-12 11:18:07.0971 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"读取配置成功","Result":true}
+2019-12-12 11:18:40.3110 INFO "COM3run进入SerilaChange"
+2019-12-12 11:18:40.3138 INFO "COM3runSerilaChange:dsr 0"
+2019-12-12 11:18:40.7144 INFO "COM3run进入SerilaChange"
+2019-12-12 11:18:40.7144 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 11:18:40.7383 INFO "COM3TaskRunstart"
+2019-12-12 11:18:51.8003 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"固件指纹匹配成功","Result":true}
+2019-12-12 11:18:52.1457 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入hid成功","Result":true}
+2019-12-12 11:18:52.3639 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"Get Key Success","Result":true}
+2019-12-12 11:18:52.7965 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入配置信息成功","Result":true}
+2019-12-12 11:18:53.1131 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"复位成功","Result":true}
+2019-12-12 11:18:53.6722 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"读取配置成功","Result":true}
+2019-12-12 11:18:55.3272 INFO "COM3run进入SerilaChange"
+2019-12-12 11:18:55.3301 INFO "COM3runSerilaChange:dsr 0"
+2019-12-12 11:18:55.5687 INFO "COM3run进入SerilaChange"
+2019-12-12 11:18:55.5687 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 11:18:55.5687 INFO "COM3TaskRunstart"
+2019-12-12 11:19:06.6919 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"固件指纹匹配成功","Result":true}
+2019-12-12 11:19:07.0676 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入hid成功","Result":true}
+2019-12-12 11:19:07.2086 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"Get Key Success","Result":true}
+2019-12-12 11:19:07.6469 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"写入配置信息成功","Result":true}
+2019-12-12 11:19:07.9644 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"复位成功","Result":true}
+2019-12-12 11:19:08.4153 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"CUTKVtEc0gkTN4WP","Message":"读取配置成功","Result":true}
+2019-12-12 15:55:56.1146 INFO "COM3runstart"
+2019-12-12 15:55:56.1257 INFO "COM3run2"
+2019-12-12 15:55:56.1257 INFO "COM3run3"
+2019-12-12 15:55:56.1815 INFO "COM3run4"
+2019-12-12 15:55:56.1815 INFO "COM3run5"
+2019-12-12 15:55:56.1815 INFO "COM3runend"
+2019-12-12 15:55:56.8341 INFO "COM3run进入SerilaChange"
+2019-12-12 15:55:56.8361 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 15:55:56.8361 INFO "COM3TaskRunstart"
+2019-12-12 15:56:11.8844 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Failed to enter production test","Result":false}
+2019-12-12 15:56:13.4782 INFO "COM3run进入SerilaChange"
+2019-12-12 15:56:13.4782 INFO "COM3runSerilaChange:dsr 0"
+2019-12-12 15:56:13.7201 INFO "COM3run进入SerilaChange"
+2019-12-12 15:56:13.7201 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 15:56:13.7201 INFO "COM3TaskRunstart"
+2019-12-12 15:56:17.9389 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"固件指纹匹配成功","Result":true}
+2019-12-12 15:56:18.0078 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"获取Mac成功ec1bbdfffe953d64","Result":true}
+2019-12-12 15:56:20.1720 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee Set Pid successfully","Result":true}
+2019-12-12 15:56:20.5207 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Get Key Success","Result":true}
+2019-12-12 15:56:21.0667 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee Set Pid successfully","Result":true}
+2019-12-12 15:56:21.3170 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee The firmware signature was successfully obtained","Result":true}
+2019-12-12 15:56:22.3331 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee The firmware signature was successfully obtained","Result":true}
+2019-12-12 15:56:40.2043 INFO "COM3run进入SerilaChange"
+2019-12-12 15:56:40.2043 INFO "COM3runSerilaChange:dsr 0"
+2019-12-12 15:56:49.5473 INFO "COM3run进入SerilaChange"
+2019-12-12 15:56:49.5473 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 15:56:49.5473 INFO "COM3TaskRunstart"
+2019-12-12 15:56:53.7917 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"固件指纹匹配成功","Result":true}
+2019-12-12 15:56:53.8524 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"获取Mac成功ec1bbdfffe953d64","Result":true}
+2019-12-12 15:56:55.9603 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"ZigbeePid写入成功","Result":true}
+2019-12-12 15:56:56.2337 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"获取key成功","Result":true}
+2019-12-12 15:56:56.7676 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"ZigbeePid写入成功","Result":true}
+2019-12-12 15:56:56.9640 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee获取固件签名成功","Result":true}
+2019-12-12 15:56:57.9754 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee获取固件签名成功","Result":true}
+2019-12-12 16:00:46.8471 INFO "COM3runstart"
+2019-12-12 16:00:46.8471 INFO "COM3run2"
+2019-12-12 16:00:46.8561 INFO "COM3run3"
+2019-12-12 16:00:46.8561 INFO "COM3run4"
+2019-12-12 16:00:46.8561 INFO "COM3run5"
+2019-12-12 16:00:46.8681 INFO "COM3runend"
+2019-12-12 16:00:49.0810 INFO "COM3runstart"
+2019-12-12 16:00:49.0810 INFO "COM3run2"
+2019-12-12 16:00:49.0899 INFO "COM3run3"
+2019-12-12 16:00:49.0899 INFO "COM3run4"
+2019-12-12 16:00:49.0899 INFO "COM3run5"
+2019-12-12 16:00:49.1099 INFO "COM3runend"
+2019-12-12 16:00:50.7539 INFO "COM3runstart"
+2019-12-12 16:00:50.7539 INFO "COM3run2"
+2019-12-12 16:00:50.7637 INFO "COM3run3"
+2019-12-12 16:00:50.7637 INFO "COM3run4"
+2019-12-12 16:00:50.7736 INFO "COM3run5"
+2019-12-12 16:00:50.7736 INFO "COM3runend"
+2019-12-12 16:01:01.3455 INFO "COM3runstart"
+2019-12-12 16:01:01.3455 INFO "COM3run2"
+2019-12-12 16:01:01.3554 INFO "COM3run3"
+2019-12-12 16:01:01.3554 INFO "COM3run4"
+2019-12-12 16:01:01.3684 INFO "COM3run5"
+2019-12-12 16:01:01.3684 INFO "COM3runend"
+2019-12-12 16:01:08.4876 INFO "COM3runstart"
+2019-12-12 16:01:08.4876 INFO "COM3run2"
+2019-12-12 16:01:08.4973 INFO "COM3run3"
+2019-12-12 16:01:08.4973 INFO "COM3run4"
+2019-12-12 16:01:08.4973 INFO "COM3run5"
+2019-12-12 16:01:08.5082 INFO "COM3runend"
+2019-12-12 16:01:09.1479 INFO "COM3run进入SerilaChange"
+2019-12-12 16:01:09.1506 INFO "COM3runSerilaChange:dsr 0"
+2019-12-12 16:01:09.3896 INFO "COM3run进入SerilaChange"
+2019-12-12 16:01:09.3896 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 16:01:09.3896 INFO "COM3TaskRunstart"
+2019-12-12 16:01:13.6258 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"固件指纹匹配成功","Result":true}
+2019-12-12 16:01:13.6866 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"获取Mac成功ec1bbdfffe953d64","Result":true}
+2019-12-12 16:01:15.7725 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee Set Pid successfully","Result":true}
+2019-12-12 16:01:17.3479 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Get Key Success","Result":true}
+2019-12-12 16:01:17.8881 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee Set Pid successfully","Result":true}
+2019-12-12 16:01:18.0746 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee The firmware signature was successfully obtained","Result":true}
+2019-12-12 16:01:19.0874 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee The firmware signature was successfully obtained","Result":true}
+2019-12-12 16:05:32.9750 INFO "COM3runstart"
+2019-12-12 16:05:32.9867 INFO "COM3run2"
+2019-12-12 16:05:32.9947 INFO "COM3run3"
+2019-12-12 16:05:33.0426 INFO "COM3run4"
+2019-12-12 16:05:33.0426 INFO "COM3run5"
+2019-12-12 16:05:33.0426 INFO "COM3runend"
+2019-12-12 16:05:33.5298 INFO "COM3run进入SerilaChange"
+2019-12-12 16:05:33.5298 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 16:05:33.5298 INFO "COM3TaskRunstart"
+2019-12-12 16:05:37.7708 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"固件指纹匹配成功","Result":true}
+2019-12-12 16:05:37.8284 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"GPIO测试成功","Result":true}
+2019-12-12 16:05:37.8980 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"获取Mac成功ec1bbdfffe953d64","Result":true}
+2019-12-12 16:05:41.5566 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee RF Test Success26","Result":true}
+2019-12-12 16:05:41.6217 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee Set Pid successfully","Result":true}
+2019-12-12 16:05:42.0517 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Get Key Success","Result":true}
+2019-12-12 16:05:42.5926 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee Set Pid successfully","Result":true}
+2019-12-12 16:05:43.4502 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee The firmware signature was successfully obtained","Result":true}
+2019-12-12 16:05:44.4650 INFO {"Type":null,"PortName":"COM3","Sn":"","Token":"mxrcBy3XPZyY9Hph","Message":"Zigbee The firmware signature was successfully obtained","Result":true}
+2019-12-12 16:08:59.6789 INFO "COM3runstart"
+2019-12-12 16:08:59.6917 INFO "COM3run2"
+2019-12-12 16:08:59.6997 INFO "COM3run3"
+2019-12-12 16:08:59.7466 INFO "COM3run4"
+2019-12-12 16:08:59.7466 INFO "COM3run5"
+2019-12-12 16:08:59.7466 INFO "COM3runend"
+2019-12-12 16:09:00.2411 INFO "COM3run进入SerilaChange"
+2019-12-12 16:09:00.2431 INFO "COM3runSerilaChange:dsr 0"
+2019-12-12 16:09:00.4703 INFO "COM3run进入SerilaChange"
+2019-12-12 16:09:00.4703 INFO "COM3runSerilaChange:dsr 1"
+2019-12-12 16:09:00.8907 INFO "COM3TaskRunstart"
+2019-12-12 16:10:49.8370 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug>cd tools\\efrxx\\esp_rf_auto_test ","Result":true}
+2019-12-12 16:10:49.8370 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>esp_test.exe \"{\\\"SLOT_NUM\\\":\\\"1\\\",\\\"CONFIG_PATH\\\":\\\"./config/dutConfig_esp8266\\\"}\"  ","Result":true}
+2019-12-12 16:10:55.4178 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"sync count : 1 ","Result":true}
+2019-12-12 16:10:57.8907 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"sync count : 2 ","Result":true}
+2019-12-12 16:11:00.3624 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"sync count : 3 ","Result":true}
+2019-12-12 16:11:02.8308 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"sync count : 4 ","Result":true}
+2019-12-12 16:11:05.3028 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"sync count : 5 ","Result":true}
+2019-12-12 16:11:07.2352 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"--<SYNC FAIL>--","Result":true}
+2019-12-12 16:11:07.2352 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"CURRENT TEST RESULT IS -1","Result":true}
+2019-12-12 16:11:07.2920 INFO {"Type":null,"PortName":"","Sn":"","Token":"MpvzhhZJSZv4eqCA","Message":"D:\\Work\\LocalGit\\ProductionTest\\TYDA\\新版涂鸦工厂烧录授权检测软件\\NewTuYaSmart\\NewTuYaSmart\\bin\\Debug\\tools\\efrxx\\esp_rf_auto_test>exit  ","Result":true}
