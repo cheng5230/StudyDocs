@@ -1,0 +1,15 @@
+"F:\IAR\arm\bin\armproc.dll" 
+
+"F:\IAR\arm\bin\armJET.dll" 
+
+"C:\Users\Administrator\Desktop\sdk-ameba-v4.0c\project\realtek_ameba1_va0_example\EWARM-RELEASE\Debug\Exe\application.axf" 
+
+--plugin "F:\IAR\arm\bin\armbat.dll" 
+
+--macro "C:\Users\Administrator\Desktop\sdk-ameba-v4.0c\project\realtek_ameba1_va0_example\EWARM-RELEASE\..\..\..\component\soc\realtek\8195a\misc\iar_utility\common\preload.mac" 
+
+--flash_loader "C:\Users\Administrator\Desktop\sdk-ameba-v4.0c\project\realtek_ameba1_va0_example\EWARM-RELEASE\tmp.board" 
+
+
+
+
